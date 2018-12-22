@@ -1,0 +1,42 @@
+.phone-callback {
+  max-width: 195px;
+  text-align: right;
+  color: $white;
+  // padding-right: 15px;
+
+  // @media(min-width: $screen-md) {
+  //   padding-right: 41px;
+  // }
+}
+
+.phone-callback__tel {
+  display: block;
+  font: 400 12px/25px $unineue;
+  font-weight: 700;
+  color: $white;
+  // background: url("../img/sprite/phone-call-wh.svg") no-repeat 0 50% / 14px;
+
+  @media(min-width: $screen-md) {
+    font-size: 16px;
+  }
+
+  // @media(min-width: $screen-xl) {
+  //   margin-bottom: -3px;
+  // }
+}
+
+.phone-callback__btn {
+  // display: none;
+
+  @media(min-width: $screen-md) {
+    display: inline-block;
+    color: #73777c;
+    background: transparent;
+    font: 300 9px/17px $geometria;
+    padding: 0;
+    margin-right: 3px;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 1px dotted #515558;
+  }
+}

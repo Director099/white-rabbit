@@ -1,0 +1,20 @@
+.title {
+  font-family: $geometria;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 46px;
+  color: $black;
+
+  span {
+    font-weight: 700;
+  }
+
+  &--white {
+    color: $white;
+
+    span {
+      color: $white;
+    }
+  }
+}
+

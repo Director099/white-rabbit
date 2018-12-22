@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fafafa;
+  font: 300 16px $geometria;
+  color: $text-color;
+}
+
+a {
+  cursor: pointer;
+  transition: $time;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button {
+  transition: $time;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
