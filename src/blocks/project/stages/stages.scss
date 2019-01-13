@@ -1,0 +1,91 @@
+$gradient-color: linear-gradient(-238deg, rgba(55, 36, 110, 0.28) 0%, rgba(196, 117, 140, 0.28) 100%);
+$color: rgba(196, 117, 140, 0.28);
+
+.stages {
+  padding-top: 79px;
+  padding-bottom: 69px;
+}
+
+.stages__all {
+  margin-left: 70px;
+}
+
+.stages__header {
+  margin-bottom: 86px;
+}
+
+.stages__item {
+  width: 832px;
+}
+
+.stages__slider .owl-stage-outer {
+  overflow: visible;
+}
+
+.stages__slider {
+  margin-bottom: 89px;
+}
+
+.stages__dots-list {
+  @include ul-none();
+  display: flex;
+  justify-content: space-between;
+  counter-reset: dots;
+  max-width: 1060px;
+}
+
+.stages__dots-item {
+  position: relative;
+  max-width: 170px;
+  width: 100%;
+  counter-increment: dots;
+  z-index: 1;
+}
+
+.stages__dot {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 21px;
+  padding-top: 41px;
+  padding-bottom: 9px;
+  border-bottom: 1px dashed transparent;
+  color: #3d3e52;
+  transition: $time;
+
+  &::after {
+    content: "0"counter(dots);
+    position: absolute;
+    top: -5px;
+    left: -4px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 62px;
+    color: #ebebeb;
+    z-index: -1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 27px;
+    width: 10px;
+    height: 2px;
+    background-color: $black;
+  }
+
+  &--active {
+    color: $black;
+    font-weight: 700;
+    border-bottom: 1px dashed $black;
+
+    &::after {
+      @include text-gradient($gradient-color, $color);
+    }
+  }
+
+  &:hover {
+    color: inherit;
+  }
+}

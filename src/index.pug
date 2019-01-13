@@ -6,8 +6,203 @@ block header
   .fullpage
     .container
       +page-header()
+      section.main-block
+        h1.main-block__title Косметическое отбеливание зубов в Уфе
+        p.main-block__ton от #[span 6] до #[span 20] тонов
+        button.main-block__toggle(type="button", aria-label="Переключение разницы до и после")
+          span(aria-label="Переключатель")
+        span.main-block__text Посмотри, как изменятся твои зубы после первой процедуры за 15-45 мин
+        button.btn.btn--main.main-block__btn Записаться в студию
 block content
   main
+    .section.stages
+      .container
+        section.section__header.section__header--center.stages__header
+          p.title-tagline Как происходит отбеливание зубов
+          h2.title Комфортно, безопасно и безболезненно
+        .stages__all
+          .stages__slider.owl-carousel.owl-theme
+            .stages__item(data-hash="1")
+              .stage
+                section.stage__content
+                  strong.stage__count 01 / этап
+                  h3.stage__title Эргономичные кресла
+                  p Наш подход — дизайн не в ущерб комфорту!
+                  p В большинстве студий отбеливания используют  китайские кресла капсулы (ball chair), в которых не удобно находится больше двух минут, клиенты испытывают дискомфорт, а процедура отбеливания больше похожа на испытание для позвоночника.
+                  p В студии отбеливания white rabbits — мы используем удобные эргономичные кресла
+                .stage__decor.stage__decor--1
+                  img(src="img/content-img/stage-1.png", alt="Эргономичные кресла")
+            .stages__item(data-hash="2")
+              .stage
+                section.stage__content
+                  strong.stage__count 01 / этап
+                  h3.stage__title Гель — White Rabbit
+                  p Профессиональный гель white rabbit, содержит не менее 6% пероксид карбамида — согласно ТР ТС 009/2011.
+                  p Это самое безопасное и эффективное средство отбеливания зубов из существующих не способное навредить. Гель подходит даже для зубов с высокой чувствительностью.
+                  p Раздражающее действие – нет Аллергические эффекты – нет
+                .stage__decor.stage__decor--2
+                  img(src="img/content-img/stage-2.png", alt="Эргономичные кресла")
+            .stages__item(data-hash="3")
+              .stage
+                section.stage__content
+                  strong.stage__count 01 / этап
+                  h3.stage__title LED лампа холодного свечения
+                  p Для осветления эмали, мы используем светодиодную LED-лампу, излучающую  холодный свет
+                  p Под воздействием лампы, отбеливающий гель проникает в эмаль и дентин, окисляя пигменты окрашивающие зуб. Затем, окисленные пигменты вымываются из тканей зуба вместе с водой. Для лучшего результата, мы рекомендуем проводить не менее трёх сессий по 15 минут за одно посещение
+                .stage__decor.stage__decor--3
+                  img(src="img/content-img/stage-3.png", alt="Эргономичные кресла")
+            .stages__item(data-hash="4")
+              .stage
+                section.stage__content
+                  strong.stage__count 01 / этап
+                  h3.stage__title От 6 до 20 тонов за сеанс
+                  p В зависимости от индивидуальных особенностей и естественного тона вашей эмали, за один визит в нашу студию, вы сможете получить результат отбеливания от 6 до 20 тонов.
+                  p После процедуры на 5-7 дней следует отказатьсяот продуктов содержащих искусственные или натуральные красители, а так же от пищи с повышенной кислотностью. При соблюдении всех рекомендаций, результат сохранитьсяот полу года до двух лет.
+                .stage__decor.stage__decor--1
+                  img(src="img/content-img/stage-1.png", alt="Эргономичные кресла")
+          ol.stages__dots-list
+            li.stages__dots-item
+              a.stages__dot.stages__dot--active(href="#1") Удобная посадка
+            li.stages__dots-item
+              a.stages__dot(href="#2") Отбеливающий гель
+            li.stages__dots-item
+              a.stages__dot(href="#3") LED - лампа
+            li.stages__dots-item
+              a.stages__dot(href="#4") Результат
+    .section.result
+      .container
+        section.section__header.section__header--center.result__header
+          p.title-tagline Результаты процедуры
+          h2.title Посмотрите #[span результат] отбеливания на примере наших клиентов
+      .result__slider.owl-carousel.owl-theme
+        a.result__item(href="img/content-img/result-1.jpg", data-fancybox)
+          img.result__img(src="img/content-img/result-1.jpg", alt="Изображение девушки")
+          .result__insta
+            span instagram
+            strong @whiterabbit_studio
+          a.result__item(href="img/content-img/result-2.jpg", data-fancybox)
+            img.result__img(src="img/content-img/result-2.jpg", alt="Изображение девушки")
+            .result__insta
+              span instagram
+              strong @whiterabbit_studio
+          a.result__item(href="img/content-img/result-3.jpg", data-fancybox)
+            img.result__img(src="img/content-img/result-3.jpg", alt="Изображение девушки")
+            .result__insta
+              span instagram
+              strong @whiterabbit_studio
+          a.result__item(href="img/content-img/result-4.jpg", data-fancybox)
+            img.result__img(src="img/content-img/result-4.jpg", alt="Изображение девушки")
+            .result__insta
+              span instagram
+              strong @whiterabbit_studio
+          a.result__item(href="img/content-img/result-5.jpg", data-fancybox)
+            img.result__img(src="img/content-img/result-5.jpg", alt="Изображение девушки")
+            .result__insta
+              span instagram
+              strong @whiterabbit_studio
+    .section.section--black.catalog
+      .container
+        section.section__header.section__header--center.catalog__header
+          p.title-tagline.title-tagline--white.catalog__tagline каталог товаров клиники
+          h2.title.title--white Самостоятельный #[span уход за зубами] с продукцией от White Rabbit
+        ul.nav(role="tablist")
+          li.nav__item
+            a.nav__link.active(data-toggle="tab" href="#tab-1") Все товары
+          li.nav__item
+            a.nav__link(data-toggle="tab" href="#tab-2") Зубная паста
+          li.nav__item
+            a.nav__link(data-toggle="tab" href="#tab-3") Зубные щетки
+          li.nav__item
+            a.nav__link(data-toggle="tab" href="#tab-4") Ополаскиватели
+        .tab-content
+          .tab-pane.fade.show.active(id="tab-1")
+            .catalog__slider.owl-carousel.owl-theme
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+          .tab-pane(id="tab-2")
+            .catalog__slider.owl-carousel.owl-theme
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+          .tab-pane(id="tab-3")
+            .catalog__slider.owl-carousel.owl-theme
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+          .tab-pane(id="tab-4")
+            .catalog__slider.owl-carousel.owl-theme
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+    .section.news
+      .container
+        section.section__header.section__header--center.news__header
+          p.title-tagline Блог студии
+          h2.title #[span Советы] и полезные статьи по уходу за зубами
+        .section__row.news__mb
+          .section__col-large
+            article.digest.digest--big
+              img.digest__img(src="img/content-img/digest-1.jpg", alt="Заголовок статьи с видео блоком")
+              .digest__prev.digest__prev--none-color
+                span.digest__data 26, ноябрь 2018
+                h3.digest__title.digest__title--black Как замечательно отбеливать зубы в студии WR
+                p.digest__text Товарищи! начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
+                footer.digest__footer
+                  a.btn.btn--main(href="single.html") Читать далее
+                  span.digest__data.digest__data--black 26, ноябрь 2018
+          .section__col-medium
+            a.digest.digest--mb(href="single.html")
+              article.digest__article
+                img.digest__img(src="img/content-img/digest-2.jpg", alt="Как замечательно отбеливать зубы в студии WR")
+                .digest__prev
+                  span.digest__data 26, ноябрь 2018
+                  h3.digest__title Как замечательно отбеливать зубы в студии WR
+            .section__row
+              .section__col-fifty
+                a.digest(href="single.html")
+                  article.digest__article
+                    img.digest__img(src="img/content-img/digest-3.jpg", alt="Название статьи с кликабельным заголовком")
+                    .digest__prev
+                      span.digest__data 26, ноябрь 2018
+                      h3.digest__title.digest__title--size-mini Название статьи с кликабельным заголовком
+              .section__col-fifty
+                a.digest(href="single.html")
+                  article.digest__article
+                    img.digest__img(src="img/content-img/digest-4.jpg", alt="Название статьи с кликабельным заголовком")
+                    .digest__prev
+                      span.digest__data 26, ноябрь 2018
+                      h3.digest__title.digest__title--size-mini Название статьи с кликабельным заголовком
+        .section__footer.section__footer--center
+          a.btn.btn--dott(href="blog.html") Смотреть все статьи
 block footer
   +page-footer()
 

@@ -13,49 +13,48 @@ $field-padding-horizontal:    0.7em !default;
 $border-radius:               rem(3px) !default;
 
 .btn {
-
-  $block-name:                &; // #{$block-name}__element
-
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-  padding: $field-padding-vertical  $field-padding-horizontal;
+  padding: 12px 20px;
   white-space: nowrap;
   user-select: none;
   text-align: center;
-  font-size: 1em;
+  font-size: 10px;
   font-family: inherit;
-  line-height: $line-height;
+  font-weight: 700;
+  line-height: 16px;
   text-decoration: none;
-  text-transform: none;
-  color: $text-color;
-  border-radius: $border-radius;
-  border: 1px solid $gray-lighter;
+  text-transform: uppercase;
+  color: $white;
+  border-radius: 50px;
+  border: none;
   background-color: $gray-lightest;
   background-image: none;
   cursor: pointer;
+  letter-spacing: 2px;
 
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $text-color;
-    background-color: darken($gray-lightest, 10%);
-    border-color: darken($gray-lighter, 12%);
+    // color: $text-color;
+    // background-color: darken($gray-lightest, 10%);
+    // border-color: darken($gray-lighter, 12%);
   }
 
   &:visited {
-    color: $text-color;
+    // color: $text-color;
   }
 
   &:active,
   &:focus {
-    @include field-focus;
+    // @include field-focus;
   }
 
   &--disabled,
   &:disabled {
-    opacity: $opacity;
+    opacity: 0.5;
     cursor: not-allowed;
     color: $text-color;
     background-color: $gray-lightest;
@@ -71,25 +70,34 @@ $border-radius:               rem(3px) !default;
   //   vertical-align: middle;
   // }
 
+  &--dott {
+    background: transparent;
+    border-radius: 0;
+    padding: 0 0 12px;
+    border-bottom: 1px dashed $black;
+    color: $black;
+    font-size: 16px;
+    text-transform: none;
+    letter-spacing: normal;
+  }
 
+  &--main {
+    color: #fff;
+    background-image: linear-gradient(-39deg, #7c2189 0%, #da4453 100%), linear-gradient(64deg, #3a1f70 0%, #dc768e 100%);
+    // border: 1px solid $color-main;
 
-  // &--main {
-  //   color: #fff;
-  //   background-color: $color-main;
-  //   border: 1px solid $color-main;
+    &:hover,
+    &:focus {
+      color: #fff;
+      // background-color: darken($color-main, 10%);
+      // border-color: darken($color-main, 12%);
+    }
 
-  //   &:hover,
-  //   &:focus {
-  //     color: #fff;
-  //     background-color: darken($color-main, 10%);
-  //     border-color: darken($color-main, 12%);
-  //   }
-
-  //   &--disabled,
-  //   &:disabled {
-  //     color: #fff;
-  //     background-color: $color-main;
-  //     border-color: $color-main;
-  //   }
-  // }
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      // background-color: $color-main;
+      // border-color: $color-main;
+    }
+  }
 }

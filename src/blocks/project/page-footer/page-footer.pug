@@ -1,2 +1,24 @@
 mixin page-footer()
-  footer.page-footer footer
+  footer.page-footer
+    .container
+      .page-footer__row
+        .page-footer__column
+          p #[strong г. Уфа,] ул. Ленина 53, офис 505
+          ul.social
+            li.social__item
+              a.social__link(href="#", target="_blank", aria-label="Социальная сеть Facebook")
+            li.social__item
+              a.social__link(href="#", target="_blank", aria-label="Социальная сеть Instagram")
+            li.social__item
+              a.social__link(href="#", target="_blank", aria-label="Социальная сеть Vkontakte")
+        .page-footer__column
+          a.logo(href="index.html")
+            img(src="img/icon/logo-wh.svg", alt="Косметическое  отбеливание  зубов в Уфе")
+        .page-footer__column
+          .phone
+            span.phone__text Телефон для записи
+            a.phone__link(href="tel:88007755807") 8 800 77 55 807
+            ul.phone__list-messager
+              li.phone__messager Телефон
+              li.phone__messager Whats’app
+              li.phone__messager Telegram

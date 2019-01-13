@@ -1,0 +1,25 @@
+.nav {
+  justify-content: center;
+  margin-bottom: 86px;
+}
+
+.nav__link {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  color: #6a7388;
+  padding: 15px 34px;
+  border-radius: 50px;
+  border: none;
+  transition: $time;
+
+  &:hover {
+    color: #6a7388;
+  }
+}
+
+.nav__link.active {
+  background-color: #3f4959;
+  color: $white;
+  font-weight: 700;
+}

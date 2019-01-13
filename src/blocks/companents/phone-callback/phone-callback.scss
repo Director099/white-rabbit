@@ -2,6 +2,7 @@
   max-width: 195px;
   text-align: right;
   color: $white;
+  margin-top: 6px;
   // padding-right: 15px;
 
   // @media(min-width: $screen-md) {
@@ -11,9 +12,10 @@
 
 .phone-callback__tel {
   display: block;
-  font: 400 12px/25px $unineue;
+  font: 400 12px/20px $unineue;
   font-weight: 700;
   color: $white;
+  margin-right: 5px;
   // background: url("../img/sprite/phone-call-wh.svg") no-repeat 0 50% / 14px;
 
   @media(min-width: $screen-md) {
