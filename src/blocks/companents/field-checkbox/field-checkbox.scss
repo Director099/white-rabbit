@@ -36,7 +36,7 @@ $border-radius:               rem(3px) !default;
     line-height: $line-height;
   }
 
-  &__name-text {
+  &__text {
     display: inline-block;
 
     // свой чекбокс с картинкой
@@ -70,10 +70,6 @@ $border-radius:               rem(3px) !default;
       border-radius: $border-radius;
     }
 
-    @at-root input:focus ~ &:before {
-      @include field-focus;
-    }
-
     &:after {
       content: '';
       position: absolute;
@@ -85,12 +81,8 @@ $border-radius:               rem(3px) !default;
       border-left: 2px solid currentColor;
       border-bottom: 2px solid currentColor;
       transform: rotate(-45deg);
-      transition: opacity $transition-time;
+      transition: opacity $time;
       box-shadow: 1px 2px 0 #fff, inset 0 -2px 0 #fff;
-
-      @at-root input:checked ~ & {
-        opacity: 1;
-      }
     }
 
     // / свой чекбокс без картинок
@@ -104,11 +96,6 @@ $border-radius:               rem(3px) !default;
     margin: 0;
     transform: translateY(-50%);
 
-    &:focus,
-    &:active {
-      @include field-focus;
-    }
-
     // сокрытие инпута в случае использования своего чекбокса
     opacity: 0;
   }
@@ -116,8 +103,9 @@ $border-radius:               rem(3px) !default;
   &__help-text-wrap {
     padding-left: 1.5em;
   }
+}
 
-  &__help-text {
-    @include field-help-text;
-  }
+.field-checkbox__text {
+  font-size: 9px;
+  color: #a0a2ad;
 }

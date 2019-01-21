@@ -19,10 +19,18 @@ $border-radius:               rem(3px) !default;
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 
   &__name {
-    @include field-name;
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: #adb3bd;
+    margin-left: 14px;
+    margin-bottom: 10px;
+    // @include field-name;
   }
 
   &__input-wrap {
@@ -33,25 +41,27 @@ $border-radius:               rem(3px) !default;
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    // height: 2.125em;
-    padding: $field-padding-vertical  $field-padding-horizontal;
+    box-shadow: 0 13px 13px rgba(53, 85, 136, 0.25);
+    border-radius: 10px;
+    border: 1px solid #3f4959;
+    background-color: #3f4959;
     margin: 0;
+    padding: 9px;
     line-height: $line-height;
-    font-size: 1em;
+    font-size: 12px;
     font-family: inherit;
-    background-color: #fff;
-    border: 1px solid $border-color;
-    border-radius: $border-radius;
     appearance: textfield;
+    letter-spacing: 1.2px;
+    color: #9aaac7;
 
     &:focus {
-      @include field-focus;
+      // @include field-focus;
     }
 
     &[disabled],
     &[readonly] {
       cursor: default;
-      background-color: $gray-lighter;
+      // background-color: $gray-lighter;
     }
 
     &[type='search']::-webkit-search-cancel-button,
@@ -74,16 +84,16 @@ $border-radius:               rem(3px) !default;
       opacity: 1;
     }
 
-    @at-root textarea#{&} {
-      $textarea-height: ($line-height * 2) + ($field-padding-vertical * 2);
+    // @at-root textarea#{&} {
+    //   $textarea-height: ($line-height * 2) + ($field-padding-vertical * 2);
 
-      height: auto;
-      min-height: calc(#{$textarea-height} + 2px);
-      resize: vertical;
-    }
+    //   height: auto;
+    //   min-height: calc(#{$textarea-height} + 2px);
+    //   resize: vertical;
+    // }
   }
 
   &__help-text {
-    @include field-help-text;
+    // @include field-help-text;
   }
 }

@@ -1,0 +1,14 @@
+.services {
+  padding-top: 109px;
+  padding-bottom: 76px;
+}
+
+.services__row {
+  @include ul-none();
+  @include make-row();
+}
+
+.services__column {
+  @include make-col-ready();
+  @include make-col(4);
+}

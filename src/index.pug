@@ -69,6 +69,139 @@ block content
               a.stages__dot(href="#3") LED - лампа
             li.stages__dots-item
               a.stages__dot(href="#4") Результат
+    .section.visiting
+      .container
+        section.section__header.section__header--center.visiting__header
+          p.title-tagline.visiting__tagline online запись
+          h2.title Получай #[span приятные] бонусы после записи в студию
+        .visiting__content
+          .visiting__desk
+            p.visiting__subtitle При каждом посещении дарим вам приятные подарки
+            ul.visiting__list
+              li.visiting__item
+                strong Бамбуковая зубная щетка с&nbsp;угольным напылением
+                p После первого посещение, вы получаете скидку на второе до 10%
+              li.visiting__item
+                strong Комплекс по уходу
+                p Профессиональный набор по уходу за гигиеной рта от WRITE RABBIT
+              li.visiting__item
+                strong Лечебную воду
+                p Профессиональный набор по уходу за гигиеной рта от WRITE RABBIT
+          form.form
+            h3.form__title Онлайн запись в студию
+            label.field-text
+              span.field-text__name Ваш телефон
+              input.field-text__input(type="tel" placeholder="+7 (___) - __ - __ - ___" required)
+            label.field-text
+              span.field-text__name Выбор услуги
+
+            .form__row
+              .form__column-7
+                label.field-text
+                  select.selectpicker(data-width="100%")
+                    option Mustard
+                    option Ketchup
+                    option Relish
+              .form__column-5
+                label.field-text
+                  select.selectpicker(data-width="100%")
+                    option Mustard
+                    option Ketchup
+                    option Relish
+            button.btn.btn--main Записаться в студию
+            label.field-checkbox
+              input.field-checkbox__input(type="checkbox")
+              span.field-checkbox__text Я даю согласие на обработку #[a(href="#" target="_blank") персональных данных]
+    .section.section--black.services
+      .container
+        section.section__header.section__header--center.services__header
+          p.title-tagline.title-tagline--white.services__tagline наши улуги
+          h2.title.title--white #[span Услуги] студии
+        ul.services__row
+          li.services__column
+            section.service.service--ultra
+              header.service__header
+                .service__tooth-tone.service__tooth-tone--fill
+                  span.service__quantity от 14 до 20 тонов
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--ultra ULTRA
+              p.service__desc отбеливание
+              footer.service__footer
+                .service__char.service__char--ident
+                  span.service__char-text Время процедуры:
+                  span.service__char-total 45 #[sub мин]
+                .service__char
+                  span.service__char-text Стоимость
+                  span.service__char-total.service__char-total--ru 3300
+                button.btn.btn--main.service__btn Записаться
+          li.services__column
+            section.service.service--medium
+              header.service__header
+                .service__tooth-tone.service__tooth-tone--8
+                  span.service__quantity от 8 до 12 тонов
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--medium MEDIUM
+              p.service__desc отбеливание
+              footer.service__footer
+                .service__char.service__char--ident
+                  span.service__char-text Время процедуры:
+                  span.service__char-total 30 #[sub мин]
+                .service__char
+                  span.service__char-text Стоимость
+                  span.service__char-total.service__char-total--ru 2700
+                button.btn.btn--main.service__btn Записаться
+          li.services__column
+            section.service.service--light
+              header.service__header
+                .service__tooth-tone.service__tooth-tone--6
+                  span.service__quantity от 3 до 6 тонов
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--light LIGHT
+              p.service__desc отбеливание
+              footer.service__footer
+                .service__char.service__char--ident
+                  span.service__char-text Время процедуры:
+                  span.service__char-total 15 #[sub мин]
+                .service__char
+                  span.service__char-text Стоимость
+                  span.service__char-total.service__char-total--ru 1500
+                button.btn.btn--main.service__btn Записаться
+          li.services__column
+            section.service.service--min.service--fortification
+              header.service__header
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--fortification Укрепление
+              p.service__desc эмали
+              footer.service__footer
+                .service__char.service__char--ident
+                  span.service__char-text Время процедуры:
+                  span.service__char-total 45 #[sub мин]
+                .service__char
+                  span.service__char-text Стоимость
+                  span.service__char-total.service__char-total--ru 3300
+                button.btn.btn--main.service__btn Записаться
+          li.services__column
+            section.service.service--min.service--couple
+              header.service__header
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--couple Приходите вдвоем
+              p.service__desc.service__desc--size.service__desc--width для ультра и&nbsp;медиум процедур отбеливания
+              footer.service__footer
+                .service__char
+                  span.service__char-text.service__char-text--size Скидка
+                  span.service__char-total.service__char-total--ru.service__char-total--size 1000
+                p.service__stipulation.service__stipulation--white суммарная скидка, при одновременном сеансе
+          li.services__column
+            section.service.service--min.service--birthday
+              header.service__header
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--black.service__title--birthday День Рождения
+              p.service__desc.service__desc--size.service__desc--black за 14 дней до и после дня рождения
+              footer.service__footer
+                .service__char
+                  span.service__char-text.service__char-text--size.service__char-text--black Скидка
+                  span.service__char-total.service__char-total--ru.service__char-total--size.service__char-total--black 500
+                p.service__stipulation на любой вид услуг в студии отбеливания
     .section.result
       .container
         section.section__header.section__header--center.result__header

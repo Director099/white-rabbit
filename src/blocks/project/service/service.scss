@@ -1,0 +1,277 @@
+.service {
+  position: relative;
+  width: 100%;
+  min-height: 460px;
+  padding: 37px 32px 22px 29px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-image: linear-gradient(-217deg, #1e2328 0%, #080a0d 100%);
+
+  &--min {
+    min-height: 380px;
+  }
+
+  &--ultra {
+    background: url("../img/decor/service-1.png") no-repeat;
+  }
+
+  &--medium {
+    background: url("../img/decor/service-2.png") no-repeat;
+  }
+
+  &--light {
+    background: url("../img/decor/service-3.png") no-repeat;
+  }
+
+  &--fortification {
+    background: url("../img/decor/service-4.png") no-repeat;
+  }
+
+  &--couple {
+    background: url("../img/decor/service-5.png") no-repeat;
+  }
+
+  &--birthday {
+    background: url("../img/decor/service-6.png") no-repeat;
+  }
+}
+
+.services__tagline {
+  margin-bottom: 18px;
+}
+
+.services__header {
+  margin-bottom: 58px;
+}
+
+.service__quantity {
+  font-size: 14px;
+  font-weight: 300;
+  color: #6a7388;
+}
+
+.service__title {
+  max-width: 200px;
+  font-size: 30px;
+  font-weight: 700;
+  color: $white;
+  margin-bottom: 0;
+
+  &--black {
+    color: $black;
+  }
+
+  &--fortification {
+    margin-top: -9px;
+  }
+
+  &--couple {
+    margin-top: -50px;
+    margin-bottom: 11px;
+  }
+
+  &--birthday {
+    margin-top: 80px;
+    margin-bottom: 5px;
+  }
+
+  &--ultra {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+  }
+
+  &--medium {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+
+    @include text-gradient(
+      linear-gradient(-39deg, #7a818c 0%, #ffffff 100%),
+      #ffffff
+    )
+  }
+
+  &--light {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+
+    @include text-gradient(
+      linear-gradient(-39deg, #8c897a 0%, #ffffff 100%),
+      #ffffff
+    )
+  }
+}
+
+.service__header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 57px;
+}
+
+.service__question {
+  position: absolute;
+  top: -4px;
+  right: -1px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  opacity: 0.6;
+  background: url("../img/icon/question-mark.svg") no-repeat center / cover;
+}
+
+.service__desc {
+  max-width: 185px;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 79px;
+  color: $white;
+
+  &--size {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  &--width {
+    max-width: 130px;
+  }
+
+  &--black {
+    color: $black;
+  }
+}
+
+.service__tooth-tone {
+  position: relative;
+  width: 121px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 121px;
+    height: 13px;
+    margin-bottom: 5px;
+    background-image: url("../img/icon/tooth.svg");
+    background-repeat: space;
+    background-size: 11px 12px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 13px;
+    background-image: url("../img/icon/tooth-wh.svg");
+    background-repeat: space;
+    background-size: 11px 12px;
+  }
+
+  &--fill::after {
+    width: 100%;
+  }
+
+  &--8::after {
+    width: 88px;
+  }
+
+  &--6::after {
+    width: 66px;
+  }
+}
+
+.service__char {
+
+
+  &--ident {
+    margin-bottom: 32px;
+  }
+}
+
+.service__char-text {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #828ba2;
+  margin-bottom: 4px;
+
+  &--size {
+    font-size: 14px;
+    font-weight: 700;
+    color: $white;
+  }
+
+  &--black {
+    color: $black;
+  }
+}
+
+.service__char-total sub {
+  font-size: 14px;
+  font-weight: 200;
+  font-family: $geometria;
+  bottom: 0;
+}
+
+.service__char-total {
+  font-size: 29px;
+  font-weight: 300;
+  font-family: $unineue;
+  color: $white;
+
+  &--ru {
+    padding-right: 23px;
+    background: url("../img/icon/ruble-wh.svg") no-repeat 100% 50% / 20px;
+  }
+
+  &--size {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    background-position: 100% 68%;
+  }
+
+  &--black {
+    color: $black;
+    background-image: url("../img/icon/ruble.svg")
+  }
+}
+
+.service__footer {
+  position: absolute;
+  bottom: 18px;
+  left: 29px;
+  right: 32px;
+}
+
+.service__btn {
+  position: absolute;
+  right: 0;
+  letter-spacing: 1.8px;
+  bottom: 5px;
+  padding: 10px 19px;
+  font-size: 9px;
+}
+
+.service__stipulation {
+  position: absolute;
+  bottom: 7px;
+  right: 0;
+  max-width: 165px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+
+  &--white {
+    color: $white;
+  }
+}

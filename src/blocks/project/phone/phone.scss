@@ -1,0 +1,35 @@
+.phone {
+  max-width: 178px;
+  width: 100%;
+  margin-left: auto;
+  // margin-top: 4px;
+}
+
+.phone__text {
+  display: block;
+  font-size: 11px;
+  font-weight: 300;
+  color: #737f91;
+  margin-bottom: 13px;
+}
+
+.phone__link {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: $unineue;
+  color: $white;
+}
+
+.phone__list-messager {
+  @include ul-none();
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone__messager {
+  font-size: 8px;
+  font-weight: 300;
+  color: $white;
+}
