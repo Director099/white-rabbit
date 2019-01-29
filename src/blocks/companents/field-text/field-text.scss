@@ -97,3 +97,16 @@ $border-radius:               rem(3px) !default;
     // @include field-help-text;
   }
 }
+
+.field-text .dropdown-toggle {
+  text-transform: none;
+  font-weight: 300;
+  font-size: 12px;
+  border-radius: 10px;
+  background: #3f4959;
+  color: #9aaac7;
+  letter-spacing: normal;
+  padding: 8.5px 5px 8.5px 16px;
+  box-shadow: 0 13px 13px rgba(53, 85, 136, 0.25);
+  border: 1px solid #3f4959;
+}

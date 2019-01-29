@@ -9,12 +9,42 @@ $font-size--h3:               rem(24px) !default;
 $line-height:                 1.5 !default;
 
 .form {
+  position: relative;
   max-width: 270px;
   width: 100%;
   padding: 38px 23px 27px;
   box-shadow: 0 17px 29px rgba(89, 89, 89, 0.15);
   border-radius: 10px;
   background-image: linear-gradient(-218deg, #384049 0%, #080a0d 100%);
+
+  &--arch {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 0;
+      right: 0;
+      width: calc(100% - 40px);
+      height: 5px;
+      border-radius: 50px 50px 0 0;
+      background: #4d596b;
+      margin: 0 auto;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -22px;
+    width: 41px;
+    height: 28px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #fafafa;
+    z-index: 2;
+  }
 }
 
 .form__fieldset {
@@ -53,12 +83,25 @@ $line-height:                 1.5 !default;
 .form__row {
   display: flex;
   justify-content: space-between;
+
+  &--ident {
+    margin-bottom: 15px;
+  }
 }
 
 .form__column-7 {
   max-width: 124px;
+  width: 100%;
 }
 
 .form__column-5 {
   max-width: 95px;
+  width: 100%;
+}
+
+.form__btn {
+  width: 100%;
+  margin-bottom: 26px;
+  padding: 16px 15px 12px;
+  box-shadow: 0 4px 0 #8f287e, 0 9px 13px rgba(150,43,122,.35);
 }

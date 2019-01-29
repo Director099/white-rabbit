@@ -69,6 +69,7 @@ block content
               a.stages__dot(href="#3") LED - лампа
             li.stages__dots-item
               a.stages__dot(href="#4") Результат
+    .section.section--black(style="height: 830px")
     .section.visiting
       .container
         section.section__header.section__header--center.visiting__header
@@ -87,30 +88,37 @@ block content
               li.visiting__item
                 strong Лечебную воду
                 p Профессиональный набор по уходу за гигиеной рта от WRITE RABBIT
-          form.form
+          form.form.form--arch
             h3.form__title Онлайн запись в студию
             label.field-text
               span.field-text__name Ваш телефон
               input.field-text__input(type="tel" placeholder="+7 (___) - __ - __ - ___" required)
             label.field-text
               span.field-text__name Выбор услуги
-
-            .form__row
+              select.selectpicker(data-width="100%")
+                option - Выберете услугу -
+                option MEDIUM отбеливание
+                option LIGHT отбеливание
+                option LIGHT отбеливание
+                option ULTRA отбеливание
+                option Укрепление эмали
+            span.field-text__name выберете время
+            .form__row.form__row--ident
               .form__column-7
                 label.field-text
                   select.selectpicker(data-width="100%")
-                    option Mustard
-                    option Ketchup
-                    option Relish
+                    option 27 октября
+                    option 28 октября
+                    option 29 октября
               .form__column-5
                 label.field-text
                   select.selectpicker(data-width="100%")
-                    option Mustard
-                    option Ketchup
-                    option Relish
-            button.btn.btn--main Записаться в студию
+                    option 12 : 00
+                    option 13 : 00
+                    option 14 : 00
+            button.btn.btn--main.form__btn Записаться в студию
             label.field-checkbox
-              input.field-checkbox__input(type="checkbox")
+              input.field-checkbox__input(type="checkbox" checked)
               span.field-checkbox__text Я даю согласие на обработку #[a(href="#" target="_blank") персональных данных]
     .section.section--black.services
       .container
