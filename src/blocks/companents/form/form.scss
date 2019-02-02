@@ -30,21 +30,23 @@ $line-height:                 1.5 !default;
       background: #4d596b;
       margin: 0 auto;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: -22px;
+      width: 41px;
+      height: 28px;
+      margin: 0 auto;
+      border-radius: 50%;
+      background: #fafafa;
+      z-index: 2;
+    }
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: -22px;
-    width: 41px;
-    height: 28px;
-    margin: 0 auto;
-    border-radius: 50%;
-    background: #fafafa;
-    z-index: 2;
-  }
+
 }
 
 .form__fieldset {
@@ -104,4 +106,8 @@ $line-height:                 1.5 !default;
   margin-bottom: 26px;
   padding: 16px 15px 12px;
   box-shadow: 0 4px 0 #8f287e, 0 9px 13px rgba(150,43,122,.35);
+}
+
+.form__mb {
+  margin-bottom: 20px;
 }

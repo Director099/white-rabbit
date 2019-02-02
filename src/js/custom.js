@@ -8,27 +8,77 @@
 
 // Плавный скол с навигации
 
-/* $(".scrollto > a").click(function () {
+ $("[data-scroll]").click(function () {
   var elementClick = $(this).attr("href")
   var destination = $(elementClick).offset().top;
   jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
   return false;
-}); */
+});
 
-// Плавный скол с навигации
+$(".page-header__toggle-btn").on("click", function() {
+  $("body").toggleClass("overflow");
+  $(".page-header__toggle").toggleClass("page-header__toggle--active");
+  $(".page-header__toggle-btn").toggleClass("page-header__toggle-btn--active");
+  $(".menu").toggleClass("menu--active");
+})
+
+var videoSlider = $(".slide-video__slides");
+
+function setSlideCount(slideCount) {
+  var $el = $('.slide-video__total');
+  $el.text(slideCount);
+}
+
+function setCurrentSlideNumber(currentSlide) {
+  var $el = $('.slide-video__current');
+  $el.text(currentSlide + 1);
+}
+
+videoSlider.on('init', function(event, slick) {
+  setSlideCount(slick.slideCount);
+})
+
+videoSlider.slick({
+  dots: false,
+  vertical: true,
+  arrows: false,
+  draggable: false,
+  slidesToShow: 3,
+  slidesToScroll: 1
+});
+
+
+videoSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  setCurrentSlideNumber(nextSlide);
+});
+
+$('.slide-video__arrow--prev').on('click', function() {
+  videoSlider.slick('slickPrev');
+});
+
+$('.slide-video__arrow--next').on('click', function() {
+  videoSlider.slick('slickNext');
+});
+
+
+// фото слайдер
 
 $('.result__slider').owlCarousel({
   loop: true,
   margin: 0,
   nav: true,
+  dots: false,
   responsive:{
     0:{
         items:1
     },
-    600:{
+    450:{
+        items:2
+    },
+    768:{
         items:3
     },
-    1000:{
+    1200:{
         items:5
     }
   }
@@ -67,14 +117,30 @@ $('.catalog__slider').owlCarousel({
   nav: false,
   dots: true,
   responsive:{
-    0:{
-        items:1
+    0: {
+      items:1
     },
-    600:{
-        items:3
+    768: {
+      items:2
     },
-    1000:{
-        items:4
+    992: {
+      items:3
+    },
+    1200: {
+      items:4
     }
   }
 })
+
+$(".service__question").hover(
+  function() {
+    var current = $(this).parents(".service").find(".service__answer");
+    current.addClass("service__answer--active");
+  },
+  function() {
+    var current = $(this).parents(".service").find(".service__answer");
+    current.removeClass("service__answer--active");
+  }
+)
+
+$('input[type=tel]').mask("+7 (000) 000 00 00");

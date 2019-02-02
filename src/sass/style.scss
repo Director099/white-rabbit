@@ -17,6 +17,10 @@
 
 @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
 @import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
+
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
 // My style
@@ -39,7 +43,9 @@
 @import "../blocks/companents/field-text/field-text";
 @import "../blocks/companents/field-checkbox/field-checkbox";
 @import "../blocks/companents/form/form";
+@import "../blocks/companents/menu/menu";
 
+@import "../blocks/project/modal/modal";
 @import "../blocks/project/container/container";
 @import "../blocks/project/section/section";
 @import "../blocks/project/page-header/page-header";
@@ -58,3 +64,5 @@
 @import "../blocks/project/phone/phone";
 @import "../blocks/project/service/service";
 @import "../blocks/project/visiting/visiting";
+@import "../blocks/project/navigation/navigation";
+@import "../blocks/project/slide-video/slide-video";

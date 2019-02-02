@@ -96,3 +96,31 @@
   font-weight: 700;
   color: #efefef;
 }
+
+.result .owl-nav {
+  margin: 0;
+}
+
+.result .owl-nav [class*=owl-] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  box-shadow: 0 17px 38px rgba(89, 89, 89, 0.11);
+  background-color: $white !important;
+
+  span {
+    font-size: 50px;
+    line-height: 21px;
+  }
+}
+
+.result .owl-nav .owl-prev {
+  left: 40px;
+}
+
+.result .owl-nav .owl-next {
+  right: 40px;
+}

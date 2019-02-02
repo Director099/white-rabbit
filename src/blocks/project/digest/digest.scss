@@ -35,6 +35,8 @@
   &--none-color {
     background-image: none;
     justify-content: flex-end;
+    padding: 35px 43px;
+
   }
 }
 
@@ -55,15 +57,26 @@
     color: $black;
   }
 
-  &--size-big {
-    font-size: 30px;
-    line-height: auto;
-  }
 
   &--size-mini {
     font-size: 16px;
     line-height: 25px;
   }
+}
+
+.digest__big-title {
+  max-width: 280px;
+  margin-bottom: 12px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.digest__text {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
+  margin-bottom: 42px;
+  max-width: 360px;
 }
 
 .digest__data {
@@ -76,5 +89,81 @@
 
   &--black {
     color: $black;
+  }
+
+  &--size {
+    font-size: 11px;
+  }
+}
+
+.digest__play {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 89px;
+  height: 89px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 1;
+  margin-bottom: 25px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    border-radius: 50%;
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border: 1px solid rgba($black, 80%);
+    z-index: -1;
+    mask-image: -webkit-gradient(linear, 30% 30%, right bottom, from(rgba(0, 0, 0, 0)), to(black));
+  }
+}
+
+.digest__play span {
+  margin: auto;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: none;
+  background-image: url("../img/icon/icon-play.svg"), linear-gradient(-209deg, #697178 0%, #080a0d 100%);
+  background-size: 17px, auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.digest__btn {
+  position: relative;
+  padding: 14px 39px 13px 18px;
+  margin-right: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 21px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-180deg);
+    width: 15px;
+    height: 15px;
+    background: url("../img/icon/icon-arrow-back.svg") no-repeat 0 2px/12px;
+  }
+}
+
+@keyframes circle  {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

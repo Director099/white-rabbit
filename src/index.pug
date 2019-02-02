@@ -12,10 +12,39 @@ block header
         button.main-block__toggle(type="button", aria-label="Переключение разницы до и после")
           span(aria-label="Переключатель")
         span.main-block__text Посмотри, как изменятся твои зубы после первой процедуры за 15-45 мин
-        button.btn.btn--main.main-block__btn Записаться в студию
+        button.btn.btn--main.main-block__btn(data-toggle="modal" data-target="#modal-register") Записаться в студию
+    .slide-video
+      .slide-video__slides
+        a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
+          img.slide-video__img(src="img/content-img/video-1.jpg")
+          button.slide-video__play(type="button" aria-label="Запуск видео")
+          p.slide-video__rev #отзывы клиентов
+        a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
+          img.slide-video__img(src="img/content-img/video-2.jpg")
+          button.slide-video__play(type="button" aria-label="Запуск видео")
+          p.slide-video__rev #отзывы клиентов
+        a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
+          img.slide-video__img(src="img/content-img/video-3.jpg")
+          button.slide-video__play(type="button" aria-label="Запуск видео")
+          p.slide-video__rev #отзывы клиентов
+        a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
+          img.slide-video__img(src="img/content-img/video-2.jpg")
+          button.slide-video__play(type="button" aria-label="Запуск видео")
+          p.slide-video__rev #отзывы клиентов
+        a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
+          img.slide-video__img(src="img/content-img/video-1.jpg")
+          button.slide-video__play(type="button" aria-label="Запуск видео")
+          p.slide-video__rev #отзывы клиентов
+      footer.slide-video__footer
+        p.slide-video__sum
+          span.slide-video__current 1
+          span.slide-video__total
+        .slide-video__arrows
+          button.slide-video__arrow.slide-video__arrow--prev(aria-label="Слайд назад")
+          button.slide-video__arrow.slide-video__arrow--next(aria-label="Слайд Вперед")
 block content
   main
-    .section.stages
+    .section.stages(id="stages")
       .container
         section.section__header.section__header--center.stages__header
           p.title-tagline Как происходит отбеливание зубов
@@ -69,8 +98,12 @@ block content
               a.stages__dot(href="#3") LED - лампа
             li.stages__dots-item
               a.stages__dot(href="#4") Результат
-    .section.section--black(style="height: 830px")
-    .section.visiting
+    .section.section--black.bleach(id="bleach" style="height: 830px")
+      .container
+        section.section__header.section__header--center.visiting__header
+          p.title-tagline.visiting__tagline интерактивный прайс-лист
+          h2.title #[span Выбери ] отбеливания — сравни разницу
+    .section.visiting(id="visiting")
       .container
         section.section__header.section__header--center.visiting__header
           p.title-tagline.visiting__tagline online запись
@@ -88,39 +121,8 @@ block content
               li.visiting__item
                 strong Лечебную воду
                 p Профессиональный набор по уходу за гигиеной рта от WRITE RABBIT
-          form.form.form--arch
-            h3.form__title Онлайн запись в студию
-            label.field-text
-              span.field-text__name Ваш телефон
-              input.field-text__input(type="tel" placeholder="+7 (___) - __ - __ - ___" required)
-            label.field-text
-              span.field-text__name Выбор услуги
-              select.selectpicker(data-width="100%")
-                option - Выберете услугу -
-                option MEDIUM отбеливание
-                option LIGHT отбеливание
-                option LIGHT отбеливание
-                option ULTRA отбеливание
-                option Укрепление эмали
-            span.field-text__name выберете время
-            .form__row.form__row--ident
-              .form__column-7
-                label.field-text
-                  select.selectpicker(data-width="100%")
-                    option 27 октября
-                    option 28 октября
-                    option 29 октября
-              .form__column-5
-                label.field-text
-                  select.selectpicker(data-width="100%")
-                    option 12 : 00
-                    option 13 : 00
-                    option 14 : 00
-            button.btn.btn--main.form__btn Записаться в студию
-            label.field-checkbox
-              input.field-checkbox__input(type="checkbox" checked)
-              span.field-checkbox__text Я даю согласие на обработку #[a(href="#" target="_blank") персональных данных]
-    .section.section--black.services
+          +form("form--arch")
+    .section.section--black.services(id="services")
       .container
         section.section__header.section__header--center.services__header
           p.title-tagline.title-tagline--white.services__tagline наши улуги
@@ -141,7 +143,9 @@ block content
                 .service__char
                   span.service__char-text Стоимость
                   span.service__char-total.service__char-total--ru 3300
-                button.btn.btn--main.service__btn Записаться
+                button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
           li.services__column
             section.service.service--medium
               header.service__header
@@ -157,7 +161,9 @@ block content
                 .service__char
                   span.service__char-text Стоимость
                   span.service__char-total.service__char-total--ru 2700
-                button.btn.btn--main.service__btn Записаться
+                button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
           li.services__column
             section.service.service--light
               header.service__header
@@ -173,7 +179,9 @@ block content
                 .service__char
                   span.service__char-text Стоимость
                   span.service__char-total.service__char-total--ru 1500
-                button.btn.btn--main.service__btn Записаться
+                button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
           li.services__column
             section.service.service--min.service--fortification
               header.service__header
@@ -187,7 +195,9 @@ block content
                 .service__char
                   span.service__char-text Стоимость
                   span.service__char-total.service__char-total--ru 3300
-                button.btn.btn--main.service__btn Записаться
+                button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
           li.services__column
             section.service.service--min.service--couple
               header.service__header
@@ -199,6 +209,8 @@ block content
                   span.service__char-text.service__char-text--size Скидка
                   span.service__char-total.service__char-total--ru.service__char-total--size 1000
                 p.service__stipulation.service__stipulation--white суммарная скидка, при одновременном сеансе
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
           li.services__column
             section.service.service--min.service--birthday
               header.service__header
@@ -210,7 +222,9 @@ block content
                   span.service__char-text.service__char-text--size.service__char-text--black Скидка
                   span.service__char-total.service__char-total--ru.service__char-total--size.service__char-total--black 500
                 p.service__stipulation на любой вид услуг в студии отбеливания
-    .section.result
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
+    .section.result(id="result")
       .container
         section.section__header.section__header--center.result__header
           p.title-tagline Результаты процедуры
@@ -241,7 +255,12 @@ block content
             .result__insta
               span instagram
               strong @whiterabbit_studio
-    .section.section--black.catalog
+          a.result__item(href="img/content-img/result-5.jpg", data-fancybox)
+            img.result__img(src="img/content-img/result-5.jpg", alt="Изображение девушки")
+            .result__insta
+              span instagram
+              strong @whiterabbit_studio
+    .section.section--black.catalog(id="catalog")
       .container
         section.section__header.section__header--center.catalog__header
           p.title-tagline.title-tagline--white.catalog__tagline каталог товаров клиники
@@ -304,7 +323,7 @@ block content
                 +tovar()
               .catalog__item
                 +tovar()
-    .section.news
+    .section.news(id="news")
       .container
         section.section__header.section__header--center.news__header
           p.title-tagline Блог студии
@@ -313,13 +332,14 @@ block content
           .section__col-large
             article.digest.digest--big
               img.digest__img(src="img/content-img/digest-1.jpg", alt="Заголовок статьи с видео блоком")
-              .digest__prev.digest__prev--none-color
-                span.digest__data 26, ноябрь 2018
-                h3.digest__title.digest__title--black Как замечательно отбеливать зубы в студии WR
+              section.digest__prev.digest__prev--none-color
+                a.digest__play(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="" aria-label="Включение видео")
+                  span
+                h3.digest__big-title.digest__title--black Заголовок статьи с видео блоком
                 p.digest__text Товарищи! начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
                 footer.digest__footer
-                  a.btn.btn--main(href="single.html") Читать далее
-                  span.digest__data.digest__data--black 26, ноябрь 2018
+                  a.btn.btn--main.digest__btn(href="single.html") Читать далее
+                  span.digest__data.digest__data--black.digest__data--size 26, ноябрь 2018
           .section__col-medium
             a.digest.digest--mb(href="single.html")
               article.digest__article

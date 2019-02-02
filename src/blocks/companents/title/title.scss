@@ -1,8 +1,8 @@
 .title {
   font-family: $geometria;
-  font-size: 36px;
   font-weight: 300;
-  line-height: 46px;
+  font-size: 18px;
+  line-height: 27px;
   color: $black;
 
   span {
@@ -15,6 +15,11 @@
     span {
       color: $white;
     }
+  }
+
+  @media (min-width: $screen-md) {
+    font-size: 36px;
+    line-height: 46px;
   }
 }
 

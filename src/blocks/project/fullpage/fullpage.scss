@@ -1,5 +1,7 @@
 .fullpage {
   // height: 100vh;
+  position: relative;
   min-height: 799px;
+  overflow: hidden;
   background-color: #030303;
 }

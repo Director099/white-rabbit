@@ -10,5 +10,12 @@
 
 .services__column {
   @include make-col-ready();
-  @include make-col(4);
+
+  @media (min-width: $screen-md) {
+    @include make-col(6);
+  }
+
+  @media (min-width: $screen-xl) {
+    @include make-col(4);
+  }
 }

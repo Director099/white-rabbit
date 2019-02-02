@@ -1,0 +1,45 @@
+.modal-content--auto {
+  width: auto;
+  border: none;
+  margin: auto;
+  background: transparent;
+}
+
+
+.modal {
+
+}
+
+.modal__content {
+
+}
+
+.modal__close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid #5d6976;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: calc(100% - 5px);
+    background: #5d6976;
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}

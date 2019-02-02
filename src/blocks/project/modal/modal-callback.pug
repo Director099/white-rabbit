@@ -1,0 +1,18 @@
+mixin modal-callback()
+  .modal.fade(id="modal-callback" tabindex="-1" role="dialog")
+    .modal-dialog.modal-dialog-centered(role="document")
+      .modal-content.modal-content--auto
+        .modal__content
+          button.modal__close(type="button" data-dismiss="modal" aria-label="Close")
+          form.form
+            h3.form__title Заказать обратный звонок
+            label.field-text
+              span.field-text__name Ваш телефон
+              input.field-text__input(type="tel" placeholder="+7 (___) - __ - __ - ___" required)
+            label.field-text.form__mb
+              span.field-text__name ваше имя
+              input.field-text__input(type="text" placeholder="Валерия" required)
+            button.btn.btn--main.form__btn Записаться в студию
+            label.field-checkbox
+              input.field-checkbox__input(type="checkbox" checked)
+              span.field-checkbox__text Я даю согласие на обработку #[a(href="#" target="_blank") персональных данных]

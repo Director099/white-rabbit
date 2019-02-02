@@ -11,7 +11,7 @@ $border-radius:               rem(3px) !default;
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   cursor: pointer;
 
   &__title {

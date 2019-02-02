@@ -22,6 +22,7 @@
     <link rel="preload" href="fonts/geometria/Geometria-Light.woff2" as="font">
     <link rel="preload" href="fonts/geometria/Geometria-ExtraLight.woff2" as="font">
     <link rel="preload" href="fonts/geometria/Geometria-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/geometria/Geometria-Heavy.woff2" as="font">
     <link rel="preload" href="fonts/gotham/GothamPro-Bold.woff2" as="font">
     <link rel="preload" href="fonts/unineue/UniNeue-Light.woff2" as="font">
     <link rel="preload" href="fonts/unineue/UniNeue-Bold.woff2" as="font">
@@ -36,21 +37,67 @@
 <body>
     <div class="fullpage">
         <div class="container">
-            <header class="page-header"><a class="logo" href="index.html"><img src="img/icon/logo-wh.svg" alt="White Rabbit cтудия отбеливания зубов"/></a>
+            <header class="page-header">
+                <div class="menu">
+                    <div class="container">
+                        <div class="menu__header"><a class="logo" href="index.html"><img src="img/icon/logo-wh.svg" alt="White Rabbit cтудия отбеливания зубов"/></a>
+                            <div class="phone-callback"><a class="phone-callback__tel" href="tel:88007755807">8 800 77 55 807</a>
+                                <button class="phone-callback__btn" data-toggle="modal" data-target="#modal-callback">Заказать звонок</button>
+                            </div>
+                        </div>
+                        <nav class="navigation">
+                            <ul class="navigation__list">
+                                <li class="navigation__item"><a class="navigation__link" href="#stages" data-scroll="">Как происходит отбеливание</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#bleach" data-scroll="">Степени отбеливания</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#visiting" data-scroll="">Бонусы и подарки</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#services" data-scroll="">Услуги студии</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#result" data-scroll="">Результаты прцедуры</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#catalog" data-scroll="">Продукция клиники</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#news" data-scroll="">Полезные советы</a></li>
+                                <li class="navigation__item"><a class="navigation__link" href="#contact" data-scroll="">Контакты</a></li>
+                            </ul>
+                            <ul class="social navigation__social">
+                                <li class="social__item"><a class="social__link" href="#" target="_blank" aria-label="Социальная сеть Facebook">vkontakte</a></li>
+                                <li class="social__item"><a class="social__link" href="#" target="_blank" aria-label="Социальная сеть Instagram">facebook</a></li>
+                                <li class="social__item"><a class="social__link" href="#" target="_blank" aria-label="Социальная сеть Vkontakte">instagram</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div><a class="logo" href="index.html"><img src="img/icon/logo-wh.svg" alt="White Rabbit cтудия отбеливания зубов"/></a>
                 <div class="phone-callback"><a class="phone-callback__tel" href="tel:88007755807">8 800 77 55 807</a>
-                    <button class="phone-callback__btn" data-toggle="modal" data-target="#callback">Заказать звонок</button>
+                    <button class="phone-callback__btn" data-toggle="modal" data-target="#modal-callback">Заказать звонок</button>
                 </div>
             </header>
             <section class="main-block">
                 <h1 class="main-block__title">Косметическое отбеливание зубов в Уфе</h1>
                 <p class="main-block__ton">от <span>6</span> до <span>20</span> тонов</p>
                 <button class="main-block__toggle" type="button" aria-label="Переключение разницы до и после"><span aria-label="Переключатель"></span></button><span class="main-block__text">Посмотри, как изменятся твои зубы после первой процедуры за 15-45 мин</span>
-                <button class="btn btn--main main-block__btn">Записаться в студию</button>
+                <button class="btn btn--main main-block__btn" data-toggle="modal" data-target="#modal-register">Записаться в студию</button>
             </section>
+        </div>
+        <div class="slide-video">
+            <div class="slide-video__slides"><a class="slide-video__item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox=""><img class="slide-video__img" src="img/content-img/video-1.jpg">
+            <button class="slide-video__play" type="button" aria-label="Запуск видео"></button>
+            <p class="slide-video__rev">#отзывы клиентов</p></a><a class="slide-video__item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox=""><img class="slide-video__img" src="img/content-img/video-2.jpg">
+            <button class="slide-video__play" type="button" aria-label="Запуск видео"></button>
+            <p class="slide-video__rev">#отзывы клиентов</p></a><a class="slide-video__item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox=""><img class="slide-video__img" src="img/content-img/video-3.jpg">
+            <button class="slide-video__play" type="button" aria-label="Запуск видео"></button>
+            <p class="slide-video__rev">#отзывы клиентов</p></a><a class="slide-video__item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox=""><img class="slide-video__img" src="img/content-img/video-2.jpg">
+            <button class="slide-video__play" type="button" aria-label="Запуск видео"></button>
+            <p class="slide-video__rev">#отзывы клиентов</p></a><a class="slide-video__item" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox=""><img class="slide-video__img" src="img/content-img/video-1.jpg">
+            <button class="slide-video__play" type="button" aria-label="Запуск видео"></button>
+            <p class="slide-video__rev">#отзывы клиентов</p></a></div>
+            <footer class="slide-video__footer">
+                <p class="slide-video__sum"><span class="slide-video__current">1</span><span class="slide-video__total"></span></p>
+                <div class="slide-video__arrows">
+                    <button class="slide-video__arrow slide-video__arrow--prev" aria-label="Слайд назад"></button>
+                    <button class="slide-video__arrow slide-video__arrow--next" aria-label="Слайд Вперед"></button>
+                </div>
+            </footer>
         </div>
     </div>
     <main>
-        <div class="section stages">
+        <div class="section stages" id="stages">
             <div class="container">
                 <section class="section__header section__header--center stages__header">
                     <p class="title-tagline">Как происходит отбеливание зубов</p>
@@ -110,8 +157,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section section--black" style="height: 830px"></div>
-                        <div class="section visiting">
+                        <div class="section section--black bleach" id="bleach" style="height: 830px">
+                            <div class="container">
+                                <section class="section__header section__header--center visiting__header">
+                                    <p class="title-tagline visiting__tagline">интерактивный прайс-лист</p>
+                                    <h2 class="title"><span>Выбери </span> отбеливания — сравни разницу</h2>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="section visiting" id="visiting">
                             <div class="container">
                                 <section class="section__header section__header--center visiting__header">
                                     <p class="title-tagline visiting__tagline">online запись</p>
@@ -135,7 +189,7 @@
                                     <form class="form form--arch">
                                         <h3 class="form__title">Онлайн запись в студию</h3>
                                         <label class="field-text"><span class="field-text__name">Ваш телефон</span>
-                                            <input class="field-text__input" type="tel" placeholder="+7 (___) - __ - __ - ___" required>
+                                            <input class="field-text__input" type="tel" placeholder="+7 (___) - __ - __ - ___" required="required"/>
               </label>
                                             <label class="field-text"><span class="field-text__name">Выбор услуги</span>
                                                 <select class="selectpicker" data-width="100%">
@@ -169,13 +223,13 @@
                                             </div>
                                             <button class="btn btn--main form__btn">Записаться в студию</button>
                                             <label class="field-checkbox">
-                                                <input class="field-checkbox__input" type="checkbox" checked><span class="field-checkbox__text">Я даю согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
+                                                <input class="field-checkbox__input" type="checkbox" checked="checked"/><span class="field-checkbox__text">Я даю согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
                                             </label>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="section section--black services">
+                        <div class="section section--black services" id="services">
                             <div class="container">
                                 <section class="section__header section__header--center services__header">
                                     <p class="title-tagline title-tagline--white services__tagline">наши улуги</p>
@@ -193,8 +247,11 @@
                                             <footer class="service__footer">
                                                 <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">45 <sub>мин</sub></span></div>
                                                 <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">3300</span></div>
-                                                <button class="btn btn--main service__btn">Записаться</button>
+                                                <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
                                             </footer>
+                                            <div class="service__answer">
+                                                <p>тут должно быть описание ультра - отбеливания</p>
+                                            </div>
                                         </section>
                                     </li>
                                     <li class="services__column">
@@ -208,8 +265,11 @@
                                             <footer class="service__footer">
                                                 <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">30 <sub>мин</sub></span></div>
                                                 <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">2700</span></div>
-                                                <button class="btn btn--main service__btn">Записаться</button>
+                                                <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
                                             </footer>
+                                            <div class="service__answer">
+                                                <p>тут должно быть описание ультра - отбеливания</p>
+                                            </div>
                                         </section>
                                     </li>
                                     <li class="services__column">
@@ -223,8 +283,11 @@
                                             <footer class="service__footer">
                                                 <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">15 <sub>мин</sub></span></div>
                                                 <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">1500</span></div>
-                                                <button class="btn btn--main service__btn">Записаться</button>
+                                                <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
                                             </footer>
+                                            <div class="service__answer">
+                                                <p>тут должно быть описание ультра - отбеливания</p>
+                                            </div>
                                         </section>
                                     </li>
                                     <li class="services__column">
@@ -237,8 +300,11 @@
                                             <footer class="service__footer">
                                                 <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">45 <sub>мин</sub></span></div>
                                                 <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">3300</span></div>
-                                                <button class="btn btn--main service__btn">Записаться</button>
+                                                <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
                                             </footer>
+                                            <div class="service__answer">
+                                                <p>тут должно быть описание ультра - отбеливания</p>
+                                            </div>
                                         </section>
                                     </li>
                                     <li class="services__column">
@@ -252,6 +318,9 @@
                                                 <div class="service__char"><span class="service__char-text service__char-text--size">Скидка</span><span class="service__char-total service__char-total--ru service__char-total--size">1000</span></div>
                                                 <p class="service__stipulation service__stipulation--white">суммарная скидка, при одновременном сеансе</p>
                                             </footer>
+                                            <div class="service__answer">
+                                                <p>тут должно быть описание ультра - отбеливания</p>
+                                            </div>
                                         </section>
                                     </li>
                                     <li class="services__column">
@@ -265,12 +334,15 @@
                                                 <div class="service__char"><span class="service__char-text service__char-text--size service__char-text--black">Скидка</span><span class="service__char-total service__char-total--ru service__char-total--size service__char-total--black">500</span></div>
                                                 <p class="service__stipulation">на любой вид услуг в студии отбеливания</p>
                                             </footer>
+                                            <div class="service__answer">
+                                                <p>тут должно быть описание ультра - отбеливания</p>
+                                            </div>
                                         </section>
                                     </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="section result">
+                        <div class="section result" id="result">
                             <div class="container">
                                 <section class="section__header section__header--center result__header">
                                     <p class="title-tagline">Результаты процедуры</p>
@@ -282,9 +354,10 @@
               <div class="result__insta"><span>instagram</span><strong>@whiterabbit_studio</strong></div></a><a class="result__item" href="img/content-img/result-3.jpg" data-fancybox><img class="result__img" src="img/content-img/result-3.jpg" alt="Изображение девушки">
               <div class="result__insta"><span>instagram</span><strong>@whiterabbit_studio</strong></div></a><a class="result__item" href="img/content-img/result-4.jpg" data-fancybox><img class="result__img" src="img/content-img/result-4.jpg" alt="Изображение девушки">
               <div class="result__insta"><span>instagram</span><strong>@whiterabbit_studio</strong></div></a><a class="result__item" href="img/content-img/result-5.jpg" data-fancybox><img class="result__img" src="img/content-img/result-5.jpg" alt="Изображение девушки">
+              <div class="result__insta"><span>instagram</span><strong>@whiterabbit_studio</strong></div></a><a class="result__item" href="img/content-img/result-5.jpg" data-fancybox><img class="result__img" src="img/content-img/result-5.jpg" alt="Изображение девушки">
               <div class="result__insta"><span>instagram</span><strong>@whiterabbit_studio</strong></div></a></a></div>
                         </div>
-                        <div class="section section--black catalog">
+                        <div class="section section--black catalog" id="catalog">
                             <div class="container">
                                 <section class="section__header section__header--center catalog__header">
                                     <p class="title-tagline title-tagline--white catalog__tagline">каталог товаров клиники</p>
@@ -306,7 +379,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -318,7 +391,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -330,7 +403,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -342,7 +415,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -354,7 +427,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -370,7 +443,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -382,7 +455,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -394,7 +467,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -406,7 +479,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -418,7 +491,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -434,7 +507,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -446,7 +519,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -458,7 +531,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -470,7 +543,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -482,7 +555,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -498,7 +571,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -510,7 +583,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -522,7 +595,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -534,7 +607,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -546,7 +619,7 @@
                                                         <p class="tovar__text">Пару строк описания, для чего используется товар</p>
                                                         <footer class="tovar__footer">
                                                             <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                            <button class="btn tovar__btn">Купить</button>
+                                                            <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
                                                         </footer>
                                                     </section>
                                                 </div>
@@ -556,7 +629,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section news">
+                        <div class="section news" id="news">
                             <div class="container">
                                 <section class="section__header section__header--center news__header">
                                     <p class="title-tagline">Блог студии</p>
@@ -565,11 +638,11 @@
                                 <div class="section__row news__mb">
                                     <div class="section__col-large">
                                         <article class="digest digest--big"><img class="digest__img" src="img/content-img/digest-1.jpg" alt="Заголовок статьи с видео блоком">
-                                            <div class="digest__prev digest__prev--none-color"><span class="digest__data">26, ноябрь 2018</span>
-                                                <h3 class="digest__title digest__title--black">Как замечательно отбеливать зубы в студии WR</h3>
+                                            <section class="digest__prev digest__prev--none-color"><a class="digest__play" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="" aria-label="Включение видео"><span></span></a>
+                                                <h3 class="digest__big-title digest__title--black">Заголовок статьи с видео блоком</h3>
                                                 <p class="digest__text">Товарищи! начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании модели развития.</p>
-                                                <footer class="digest__footer"><a class="btn btn--main" href="single.html">Читать далее</a><span class="digest__data digest__data--black">26, ноябрь 2018</span></footer>
-                                            </div>
+                                                <footer class="digest__footer"><a class="btn btn--main digest__btn" href="single.html">Читать далее</a><span class="digest__data digest__data--black digest__data--size">26, ноябрь 2018</span></footer>
+                                            </section>
                                         </article>
                                     </div>
                                     <div class="section__col-medium"><a class="digest digest--mb" href="single.html">
@@ -598,10 +671,20 @@
                             </div>
                         </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" id="contact">
         <div class="container">
             <div class="page-footer__row page-footer__row--center">
-                <div class="page-footer__column">
+                <div class="page-footer__column page-footer__column--md-2"><a class="logo page-footer__logo" href="index.html"><img src="img/icon/logo-wh.svg" alt="Косметическое  отбеливание  зубов в Уфе"/></a></div>
+                <div class="page-footer__column page-footer__column--md-3">
+                    <div class="phone"><span class="phone__text">Телефон для записи</span><a class="phone__link" href="tel:88007755807">8 800 77 55 807</a>
+                        <ul class="phone__list-messager">
+                            <li class="phone__messager">Телефон</li>
+                            <li class="phone__messager">Whats’app</li>
+                            <li class="phone__messager">Telegram</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer__column page-footer__column--md-1">
                     <p class="page-footer__address"><strong>г. Уфа,</strong> ул. Ленина 53, офис 505</p>
                     <ul class="social">
                         <li class="social__item"><a class="social__link" href="#" target="_blank" aria-label="Социальная сеть Facebook">
@@ -618,19 +701,80 @@
                   </svg></a></li>
                     </ul>
                 </div>
-                <div class="page-footer__column"><a class="logo page-footer__logo" href="index.html"><img src="img/icon/logo-wh.svg" alt="Косметическое  отбеливание  зубов в Уфе"/></a></div>
-                <div class="page-footer__column">
-                    <div class="phone"><span class="phone__text">Телефон для записи</span><a class="phone__link" href="tel:88007755807">8 800 77 55 807</a>
-                        <ul class="phone__list-messager">
-                            <li class="phone__messager">Телефон</li>
-                            <li class="phone__messager">Whats’app</li>
-                            <li class="phone__messager">Telegram</li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="modal-register" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-content--auto">
+                <div class="modal__content">
+                    <button class="modal__close" type="button" data-dismiss="modal" aria-label="Close"></button>
+                    <form class="form">
+                        <h3 class="form__title">Онлайн запись в студию</h3>
+                        <label class="field-text"><span class="field-text__name">Ваш телефон</span>
+                            <input class="field-text__input" type="tel" placeholder="+7 (___) - __ - __ - ___" required="required"/>
+              </label>
+                            <label class="field-text"><span class="field-text__name">Выбор услуги</span>
+                                <select class="selectpicker" data-width="100%">
+                  <option>- Выберете услугу -</option>
+                  <option>MEDIUM отбеливание</option>
+                  <option>LIGHT отбеливание</option>
+                  <option>LIGHT отбеливание</option>
+                  <option>ULTRA отбеливание</option>
+                  <option>Укрепление эмали</option>
+                </select>
+                            </label><span class="field-text__name">выберете время</span>
+                            <div class="form__row form__row--ident">
+                                <div class="form__column-7">
+                                    <label class="field-text">
+                                        <select class="selectpicker" data-width="100%">
+                      <option>27 октября</option>
+                      <option>28 октября</option>
+                      <option>29 октября</option>
+                    </select>
+                                    </label>
+                                </div>
+                                <div class="form__column-5">
+                                    <label class="field-text">
+                                        <select class="selectpicker" data-width="100%">
+                      <option>12 : 00</option>
+                      <option>13 : 00</option>
+                      <option>14 : 00</option>
+                    </select>
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn btn--main form__btn">Записаться в студию</button>
+                            <label class="field-checkbox">
+                                <input class="field-checkbox__input" type="checkbox" checked="checked"/><span class="field-checkbox__text">Я даю согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
+                            </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal-callback" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal-content--auto">
+                <div class="modal__content">
+                    <button class="modal__close" type="button" data-dismiss="modal" aria-label="Close"></button>
+                    <form class="form">
+                        <h3 class="form__title">Заказать обратный звонок</h3>
+                        <label class="field-text"><span class="field-text__name">Ваш телефон</span>
+                            <input class="field-text__input" type="tel" placeholder="+7 (___) - __ - __ - ___" required="required"/>
+              </label>
+                            <label class="field-text form__mb"><span class="field-text__name">ваше имя</span>
+                                <input class="field-text__input" type="text" placeholder="Валерия" required="required"/>
+              </label>
+                                <button class="btn btn--main form__btn">Записаться в студию</button>
+                                <label class="field-checkbox">
+                                    <input class="field-checkbox__input" type="checkbox" checked="checked"/><span class="field-checkbox__text">Я даю согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
+                                </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 

@@ -1,6 +1,6 @@
 .title-tagline {
   font-family: $geometria;
-  font-size: 9px;
+  font-size: 8px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1.8px;
@@ -8,5 +8,9 @@
 
   &--white {
     color: $white;
+  }
+
+  @media (min-width: $screen-md) {
+    font-size: 9px;
   }
 }

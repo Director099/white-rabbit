@@ -15,17 +15,32 @@
   align-items: flex-start;
   max-width: 637px;
   width: 100%;
+  margin-right: auto;
   margin-left: auto;
 
   &::after {
     content: "";
     position: absolute;
-    left: -552px;
-    top: -123px;
-    width: 690px;
-    height: 600px;
-    background: url("../img/decor/visiting-img.png") no-repeat ;
+    left: 150px;
+    top: -43px;
+    right: 0;
+    width: 540px;
+    height: 520px;
+    margin: auto;
+    background: url("../img/decor/visiting-img.png") no-repeat center/ contain;
     z-index: -1;
+
+    @media (min-width: $screen-md) {
+
+    }
+
+    @media (min-width: $screen-xl) {
+      left: -552px;
+      top: -123px;
+      width: 685px;
+      height: 665px;
+      margin: 0;
+    }
   }
 
   &::before {
@@ -38,12 +53,29 @@
     display: inline-block;
     position: absolute;
     top: -68px;
-    left: -330px;
+    left: -70px;
     font-size: 450px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
     z-index: -1;
+
+    @media (min-width: $screen-md) {
+      left: -70px;
+    }
+
+    @media (min-width: $screen-xl) {
+      left: -330px;
+    }
+  }
+
+  @media (min-width: $screen-md) {
+    padding-top: 460px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-right: 0;
+    padding-top: 0;
   }
 }
 

@@ -31,6 +31,7 @@ html(lang='ru')
     link(rel="preload" href="fonts/geometria/Geometria-Light.woff2" as="font")
     link(rel="preload" href="fonts/geometria/Geometria-ExtraLight.woff2" as="font")
     link(rel="preload" href="fonts/geometria/Geometria-Bold.woff2" as="font")
+    link(rel="preload" href="fonts/geometria/Geometria-Heavy.woff2" as="font")
 
     link(rel="preload" href="fonts/gotham/GothamPro-Bold.woff2" as="font")
 
@@ -54,4 +55,6 @@ html(lang='ru')
     block footer
       p «подвал»
     block page-bottom
+      +modal-register()
+      +modal-callback()
       script(src='js/script.js')
