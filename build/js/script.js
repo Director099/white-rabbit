@@ -313,9 +313,10 @@ $(".page-header__toggle-btn").on("click", function() {
   $(".page-header__toggle-btn").toggleClass("page-header__toggle-btn--active");
 })
 
-$("[data-fancybox]").fancybox({
+$("[data-fancybox='menu']").fancybox({
+  touch: false,
   beforeClose : function( instance, slide ) {
-    $(".page-header__toggle").toggleClass("page-header__toggle--active");
+    $(".page-header__toggle").removeClass("page-header__toggle--active");
     $(".page-header__toggle-btn").removeClass("page-header__toggle-btn--active");
   }
 });

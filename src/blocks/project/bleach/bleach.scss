@@ -1,6 +1,11 @@
 .bleach {
+  position: relative;
   padding-top: 100px;
   padding-bottom: 124px;
+  background-color: $black;
+  background-repeat: no-repeat;
+  background-image: url("../img/decor/bleach-top-decor.png"), url("../img/decor/bleach-bottom-decor.png");
+  background-position: top center, bottom center
 }
 
 .bleach__header {

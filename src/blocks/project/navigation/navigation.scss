@@ -45,6 +45,10 @@
   font-size: 14px;
   font-weight: 700;
 
+  &:hover {
+    color: #6c3a79;
+  }
+
   @media (min-width: $screen-md) {
     font-size: 18px;
   }

@@ -139,6 +139,18 @@ block content
           .range
             .range__gradient
               button.range__btn(aria-label="Ползунок отбеливания")
+      .parameter
+        ul.parameter__list
+          li.parameter__item
+            span.parameter__char Зубы стали светлее
+            strong.parameter__total #[sub на:] 32%
+          li.parameter__item
+            span.parameter__char Время процедуры:
+            strong.parameter__total 15 #[sub мин]
+          li.parameter__item
+            span.parameter__char Стоимость
+            strong.parameter__total.parameter__total--ru 1500
+        button.btn.btn--main.parameter__btn(data-toggle="modal" data-target="#modal-register") Записаться в студию
     .section.visiting(id="visiting")
       .container
         section.section__header.section__header--center.visiting__header
