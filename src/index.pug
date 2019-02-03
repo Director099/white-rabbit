@@ -4,15 +4,24 @@ block meta
   title Главная
 block header
   .fullpage
-    .container
-      +page-header()
-      section.main-block
-        h1.main-block__title Косметическое отбеливание зубов в Уфе
-        p.main-block__ton от #[span 6] до #[span 20] тонов
-        button.main-block__toggle(type="button", aria-label="Переключение разницы до и после")
-          span(aria-label="Переключатель")
-        span.main-block__text Посмотри, как изменятся твои зубы после первой процедуры за 15-45 мин
-        button.btn.btn--main.main-block__btn(data-toggle="modal" data-target="#modal-register") Записаться в студию
+    .fullpage__wrap
+      .container
+        +page-header()
+        .main-block
+          section.main-block__wrap
+            h1.main-block__title Косметическое отбеливание зубов в Уфе
+            p.main-block__ton от #[span 6] до #[span 20] тонов
+            button.main-block__toggle(type="button", aria-label="Переключение разницы до и после")
+              span(aria-label="Переключатель")
+            span.main-block__text Посмотри, как изменятся твои зубы после первой процедуры за 15-45 мин
+            button.btn.btn--main.main-block__btn(data-toggle="modal" data-target="#modal-register") Записаться в студию
+          ul.social.main-block__social
+            li.social__item
+              a.social__link(href="#" target="_blank" aria-label="Социальная сеть Facebook") vkontakte
+            li.social__item
+              a.social__link(href="#" target="_blank" aria-label="Социальная сеть Instagram") facebook
+            li.social__item
+              a.social__link(href="#" target="_blank" aria-label="Социальная сеть Vkontakte") instagram
     .slide-video
       .slide-video__slides
         a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
@@ -42,6 +51,9 @@ block header
         .slide-video__arrows
           button.slide-video__arrow.slide-video__arrow--prev(aria-label="Слайд назад")
           button.slide-video__arrow.slide-video__arrow--next(aria-label="Слайд Вперед")
+    .fullpage__woman
+      img.fullpage__woman-img(src="../img/woman/woman-yl.png", alt="Женщина с нормальными зубами")
+      img.fullpage__woman-img.fullpage__woman-img--none(src="../img/woman/woman-wh.png", alt="Женщина с отбелиными зубами" id="woman-teeth")
 block content
   main
     .section.stages(id="stages")
@@ -64,7 +76,7 @@ block content
             .stages__item(data-hash="2")
               .stage
                 section.stage__content
-                  strong.stage__count 01 / этап
+                  strong.stage__count 02 / этап
                   h3.stage__title Гель — White Rabbit
                   p Профессиональный гель white rabbit, содержит не менее 6% пероксид карбамида — согласно ТР ТС 009/2011.
                   p Это самое безопасное и эффективное средство отбеливания зубов из существующих не способное навредить. Гель подходит даже для зубов с высокой чувствительностью.
@@ -74,35 +86,59 @@ block content
             .stages__item(data-hash="3")
               .stage
                 section.stage__content
-                  strong.stage__count 01 / этап
+                  strong.stage__count 03 / этап
                   h3.stage__title LED лампа холодного свечения
                   p Для осветления эмали, мы используем светодиодную LED-лампу, излучающую  холодный свет
                   p Под воздействием лампы, отбеливающий гель проникает в эмаль и дентин, окисляя пигменты окрашивающие зуб. Затем, окисленные пигменты вымываются из тканей зуба вместе с водой. Для лучшего результата, мы рекомендуем проводить не менее трёх сессий по 15 минут за одно посещение
                 .stage__decor.stage__decor--3
                   img(src="img/content-img/stage-3.png", alt="Эргономичные кресла")
             .stages__item(data-hash="4")
-              .stage
+              .stage.stage--reverse-lg
                 section.stage__content
-                  strong.stage__count 01 / этап
+                  strong.stage__count 04 / этап
                   h3.stage__title От 6 до 20 тонов за сеанс
                   p В зависимости от индивидуальных особенностей и естественного тона вашей эмали, за один визит в нашу студию, вы сможете получить результат отбеливания от 6 до 20 тонов.
                   p После процедуры на 5-7 дней следует отказатьсяот продуктов содержащих искусственные или натуральные красители, а так же от пищи с повышенной кислотностью. При соблюдении всех рекомендаций, результат сохранитьсяот полу года до двух лет.
-                .stage__decor.stage__decor--1
-                  img(src="img/content-img/stage-1.png", alt="Эргономичные кресла")
-          ol.stages__dots-list
-            li.stages__dots-item
-              a.stages__dot.stages__dot--active(href="#1") Удобная посадка
-            li.stages__dots-item
-              a.stages__dot(href="#2") Отбеливающий гель
-            li.stages__dots-item
-              a.stages__dot(href="#3") LED - лампа
-            li.stages__dots-item
-              a.stages__dot(href="#4") Результат
-    .section.section--black.bleach(id="bleach" style="height: 830px")
+                .stage__decor.stage__decor--full
+                  img(src="img/content-img/stage-4.png", alt="Эргономичные кресла")
+          .stages__dots-wrap
+            ol.stages__dots-list
+              li.stages__dots-item
+                a.stages__dot.stages__dot--active(href="#1") Удобная посадка
+              li.stages__dots-item
+                a.stages__dot(href="#2") Отбеливающий гель
+              li.stages__dots-item
+                a.stages__dot(href="#3") LED - лампа
+              li.stages__dots-item
+                a.stages__dot(href="#4") Результат
+    .section.section--black.bleach(id="bleach")
       .container
-        section.section__header.section__header--center.visiting__header
-          p.title-tagline.visiting__tagline интерактивный прайс-лист
-          h2.title #[span Выбери ] отбеливания — сравни разницу
+        section.section__header.bleach__header
+          p.title-tagline.title-tagline--white.bleach__tagline интерактивный прайс-лист
+          h2.title.title--white #[span Выбери ] степень  отбеливания — сравни разницу
+        .whitening
+          ul.whitening__list
+            li.whitening__item
+              .whitening__desk
+                p.whitening__text До процедур
+            li.whitening__item
+              p.whitening__number 01 /
+              .whitening__desk.whitening__desk--active
+                strong.whitening__name LITE отбеливание
+                p.whitening__text от 3 до 6 тонов
+            li.whitening__item
+              p.whitening__number 02 /
+              .whitening__desk
+                strong.whitening__name MEDIUM отбеливание
+                p.whitening__text от 8 до 12 тонов
+            li.whitening__item
+              p.whitening__number 03 /
+              .whitening__desk
+                strong.whitening__name ULTRA отбеливание
+                p.whitening__text от 14 до 20 тонов
+          .range
+            .range__gradient
+              button.range__btn(aria-label="Ползунок отбеливания")
     .section.visiting(id="visiting")
       .container
         section.section__header.section__header--center.visiting__header
@@ -204,9 +240,9 @@ block content
                 button.service__question(aria-label="Подробная информация об услуге")
               h3.service__title.service__title--couple Приходите вдвоем
               p.service__desc.service__desc--size.service__desc--width для ультра и&nbsp;медиум процедур отбеливания
-              footer.service__footer
+              footer.service__footer.service__footer--md-bottom
                 .service__char
-                  span.service__char-text.service__char-text--size Скидка
+                  span.service__char-text.service__char-text--size.service__char-text--white Скидка
                   span.service__char-total.service__char-total--ru.service__char-total--size 1000
                 p.service__stipulation.service__stipulation--white суммарная скидка, при одновременном сеансе
               .service__answer
@@ -264,16 +300,18 @@ block content
       .container
         section.section__header.section__header--center.catalog__header
           p.title-tagline.title-tagline--white.catalog__tagline каталог товаров клиники
-          h2.title.title--white Самостоятельный #[span уход за зубами] с продукцией от White Rabbit
-        ul.nav(role="tablist")
-          li.nav__item
-            a.nav__link.active(data-toggle="tab" href="#tab-1") Все товары
-          li.nav__item
-            a.nav__link(data-toggle="tab" href="#tab-2") Зубная паста
-          li.nav__item
-            a.nav__link(data-toggle="tab" href="#tab-3") Зубные щетки
-          li.nav__item
-            a.nav__link(data-toggle="tab" href="#tab-4") Ополаскиватели
+          h2.title.title--white Самостоятельный #[span уход за&nbsp;зубами] и с&nbsp;продукцией от&nbsp;White Rabbit
+        .view-tovar
+          button.view-tovar__btn Все товары
+          ul.nav.view-tovar__nav(role="tablist")
+            li.nav__item
+              a.nav__link.active(data-toggle="tab" href="#tab-1") Все товары
+            li.nav__item
+              a.nav__link(data-toggle="tab" href="#tab-2") Зубная паста
+            li.nav__item
+              a.nav__link(data-toggle="tab" href="#tab-3") Зубные щетки
+            li.nav__item
+              a.nav__link(data-toggle="tab" href="#tab-4") Ополаскиватели
         .tab-content
           .tab-pane.fade.show.active(id="tab-1")
             .catalog__slider.owl-carousel.owl-theme

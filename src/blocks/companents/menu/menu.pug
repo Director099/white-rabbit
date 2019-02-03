@@ -1,7 +1,10 @@
 mixin menu(menu)
-  .menu
+  .menu(id="menu")
     .container
       .menu__header
+        .page-header__toggle
+          button.page-header__toggle-btn(aria-label="Кнопка открытие, закрытие меню" data-fancybox="" data-fancybox-close)
+            span
         a.logo(href="index.html")
           img(src="img/icon/logo-wh.svg", alt="White Rabbit cтудия отбеливания зубов")
         .phone-callback

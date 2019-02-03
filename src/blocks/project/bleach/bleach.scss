@@ -1,0 +1,17 @@
+.bleach {
+  padding-top: 100px;
+  padding-bottom: 124px;
+}
+
+.bleach__header {
+  max-width: 540px;
+  margin-bottom: 94px;
+}
+
+.bleach__tagline {
+  margin-bottom: 23px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 23px;
+  }
+}

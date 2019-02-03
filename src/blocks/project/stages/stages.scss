@@ -2,28 +2,62 @@ $gradient-color: linear-gradient(-238deg, rgba(55, 36, 110, 0.28) 0%, rgba(196, 
 $color: rgba(196, 117, 140, 0.28);
 
 .stages {
-  padding-top: 79px;
+  padding-top: 53px;
+
   padding-bottom: 69px;
+
+  @media (min-width: $screen-lg) {
+    padding-top: 79px;
+    padding-bottom: 69px;
+  }
 }
 
 .stages__all {
-  margin-left: 70px;
+
+  @media (min-width: $screen-lg) {
+    margin-left: 70px;
+  }
 }
 
 .stages__header {
-  margin-bottom: 86px;
+  margin-bottom: 38px;
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 86px;
+  }
 }
 
 .stages__item {
-  width: 832px;
+
+  @media (min-width: $screen-lg) {
+    width: 832px;
+  }
 }
 
 .stages__slider .owl-stage-outer {
-  overflow: visible;
+
+
+  @media (min-width: $screen-lg) {
+    overflow: visible;
+  }
 }
 
 .stages__slider {
-  margin-bottom: 89px;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 89px;
+  }
+}
+
+.stages__dots-wrap {
+  overflow-x: auto;
+
+  @media (min-width: $screen-lg) {
+    overflow-x: visible;
+  }
 }
 
 .stages__dots-list {
@@ -31,24 +65,34 @@ $color: rgba(196, 117, 140, 0.28);
   display: flex;
   justify-content: space-between;
   counter-reset: dots;
-  max-width: 1060px;
+  min-width: 620px;
+  padding: 0 2px;
+
+  @media (min-width: $screen-lg) {
+    max-width: 1060px;
+    padding: 0;
+  }
 }
 
 .stages__dots-item {
   position: relative;
-  max-width: 170px;
-  width: 100%;
+  width: 50%;
   counter-increment: dots;
   z-index: 1;
+
+  @media (min-width: $screen-lg) {
+    max-width: 170px;
+    width: 100%;
+  }
 }
 
 .stages__dot {
   position: relative;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 300;
-  line-height: 21px;
-  padding-top: 41px;
+  line-height: 16px;
+  padding-top: 45px;
   padding-bottom: 9px;
   border-bottom: 1px dashed transparent;
   color: #3d3e52;
@@ -59,20 +103,31 @@ $color: rgba(196, 117, 140, 0.28);
     position: absolute;
     top: -5px;
     left: -4px;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: 700;
-    line-height: 62px;
+    line-height: 52px;
     color: #ebebeb;
     z-index: -1;
+
+    @media (min-width: $screen-lg) {
+      font-size: 80px;
+      line-height: 62px;
+    }
   }
 
   &::before {
     content: "";
     position: absolute;
-    top: 27px;
+    top: 22px;
     width: 10px;
     height: 2px;
     background-color: $black;
+
+    @media (min-width: $screen-lg) {
+      font-size: 80px;
+      line-height: 62px;
+      top: 27px;
+    }
   }
 
   &--active {
@@ -87,5 +142,12 @@ $color: rgba(196, 117, 140, 0.28);
 
   &:hover {
     color: inherit;
+  }
+
+  @media (min-width: $screen-lg) {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    padding-top: 41px;
   }
 }

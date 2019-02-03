@@ -1,25 +1,33 @@
 .phone-callback {
+  // position: relative;
   max-width: 195px;
   text-align: right;
   color: $white;
   margin-top: 6px;
+  // z-index: 9;
   // padding-right: 15px;
 
-  // @media(min-width: $screen-md) {
-  //   padding-right: 41px;
-  // }
+  @media(min-width: $screen-md) {
+    padding-right: 41px;
+    // z-index: 1;
+  }
 }
 
 .phone-callback__tel {
   display: block;
-  font: 400 12px/20px $unineue;
-  font-weight: 700;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
   color: $white;
   margin-right: 5px;
-  // background: url("../img/sprite/phone-call-wh.svg") no-repeat 0 50% / 14px;
+  background: url("../img/icon/icon-telephone.svg") no-repeat 0 50% / contain;
 
-  @media(min-width: $screen-md) {
+  @media(min-width: $screen-xl) {
     font-size: 16px;
+    width: auto;
+    height: auto;
+    font: 700 16px/20px $unineue;
+    background: none;
   }
 
   // @media(min-width: $screen-xl) {
@@ -28,9 +36,9 @@
 }
 
 .phone-callback__btn {
-  // display: none;
+  display: none;
 
-  @media(min-width: $screen-md) {
+  @media(min-width: $screen-xl) {
     display: inline-block;
     color: #73777c;
     background: transparent;

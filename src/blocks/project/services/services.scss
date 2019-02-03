@@ -1,6 +1,27 @@
 .services {
-  padding-top: 109px;
-  padding-bottom: 76px;
+  padding-top: 55px;
+  padding-bottom: 40px;
+
+  @media (min-width: $screen-md) {
+    padding-top: 109px;
+    padding-bottom: 76px;
+  }
+}
+
+.services__tagline {
+  margin-bottom: 6px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 18px;
+  }
+}
+
+.services__header {
+  margin-bottom: 43px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 58px;
+  }
 }
 
 .services__row {

@@ -73,12 +73,17 @@ $border-radius:               rem(3px) !default;
   &--dott {
     background: transparent;
     border-radius: 0;
-    padding: 0 0 12px;
+    padding: 0 0 3px;
     border-bottom: 1px dashed $black;
     color: $black;
-    font-size: 16px;
+    font-size: 12px;
     text-transform: none;
     letter-spacing: normal;
+
+    @media (min-width: $screen-md) {
+      font-size: 16px;
+      padding: 0 0 12px;
+    }
   }
 
   &--main {

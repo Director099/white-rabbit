@@ -3,5 +3,62 @@
   position: relative;
   min-height: 799px;
   overflow: hidden;
-  background-color: #030303;
+  background: #030303;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: url("../img/decor/decor-light.png") no-repeat top;
+  }
+}
+
+.fullpage__wrap {
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: $screen-xl) {
+    width: calc(100% - 205px);
+    padding-left: 205px;
+  }
+}
+
+.fullpage__woman {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: -78px;
+  margin: 0 0 0 auto;
+  width: 278px;
+  height: 682px;
+  z-index: 1;
+
+
+  @media (min-width: $screen-xl) {
+    bottom: -120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 418px;
+    height: 784px;
+  }
+}
+
+.fullpage__woman-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: $time;
+
+  &--none {
+    opacity: 0;
+  }
 }

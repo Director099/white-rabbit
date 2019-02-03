@@ -1,0 +1,54 @@
+.whitening {
+  position: relative;
+  max-width: 350px;
+  width: 100%;
+}
+
+.whitening__list {
+  @include ul-none();
+}
+
+.whitening__number {
+  margin: 17px 0 0px;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  font-size: 9px;
+  font-weight: 300;
+  color: #6a7388;
+}
+
+.whitening__name {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: $white;
+  font-size: 18px;
+  transition: $time;
+}
+
+.whitening__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 75px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.whitening__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6a7388;
+  margin: 0;
+}
+
+.whitening__desk {
+  max-width: 201px;
+  width: 100%;
+  margin-left: auto;
+}
+
+.whitening__desk--active .whitening__name {
+  font-weight: 700;
+}

@@ -1,15 +1,15 @@
 .service {
   position: relative;
   width: 100%;
-  min-height: 460px;
-  padding: 37px 32px 22px 29px;
+  min-height: 372px;
+  padding: 26px 26px 22px 22px;
   border-radius: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 19px;
   background-image: linear-gradient(-217deg, #1e2328 0%, #080a0d 100%);
   // background-size: cover !important;
 
   &--min {
-    min-height: 380px;
+    min-height: 276px;
 
     @media (min-width: $screen-md) {
       min-height: calc(100% - 30px);
@@ -38,20 +38,24 @@
 
   &--couple {
     background: url("../img/decor/service-5.png") no-repeat center / cover;
+
+    @media (min-width: $screen-md) {
+      min-height: calc(100% - 30px);
+    }
   }
 
   &--birthday {
     background: url("../img/decor/service-6.png") no-repeat center / cover;
   }
+
+  @media (min-width: $screen-md) {
+    padding: 37px 32px 22px 29px;
+    min-height: 460px;
+    margin-bottom: 30px;
+  }
 }
 
-.services__tagline {
-  margin-bottom: 18px;
-}
 
-.services__header {
-  margin-bottom: 58px;
-}
 
 .service__quantity {
   font-size: 14px;
@@ -71,28 +75,55 @@
   }
 
   &--fortification {
-    margin-top: -9px;
+    font-size: 21px;
+    margin-top: -34px;
+
+    @media (min-width: $screen-md) {
+      font-size: 30px;
+      margin-top: -9px;
+    }
   }
 
   &--couple {
-    margin-top: -50px;
-    margin-bottom: 11px;
+    font-size: 21px;
+    margin-top: -47px;
+    margin-bottom: 8px;
+
+    @media (min-width: $screen-md) {
+      font-size: 30px;
+      // margin-top: -9px;
+      margin-top: -50px;
+      margin-bottom: 11px;
+    }
   }
 
   &--birthday {
-    margin-top: 80px;
+    max-width: 160px;
+    font-size: 21px;
+    margin-top: 62px;
     margin-bottom: 5px;
+
+    @media (min-width: $screen-md) {
+      max-width: 200px;
+      margin-top: 80px;
+      margin-bottom: 5px;
+      font-size: 30px;
+    }
   }
 
   &--ultra {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: -5px;
+
+    @media (min-width: $screen-md) {
+      font-size: 50px;
+    }
   }
 
   &--medium {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: -5px;
@@ -101,10 +132,14 @@
       linear-gradient(-39deg, #7a818c 0%, #ffffff 100%),
       #ffffff
     )
+
+    @media (min-width: $screen-md) {
+      font-size: 50px;
+    }
   }
 
   &--light {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: -5px;
@@ -113,13 +148,21 @@
       linear-gradient(-39deg, #8c897a 0%, #ffffff 100%),
       #ffffff
     )
+
+    @media (min-width: $screen-md) {
+      font-size: 50px;
+    }
   }
 }
 
 .service__header {
   position: relative;
   width: 100%;
-  margin-bottom: 57px;
+  margin-bottom: 48px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 57px;
+  }
 }
 
 .service__question {
@@ -142,23 +185,37 @@
 
 .service__desc {
   max-width: 185px;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 30px;
-  margin-bottom: 79px;
+  margin-bottom: 73px;
   color: $white;
 
-  &--size {
-    font-size: 16px;
-    line-height: 25px;
-  }
-
   &--width {
-    max-width: 130px;
+    max-width: 140px;
+
+    @media (min-width: $screen-md) {
+      max-width: 130px;
+    }
   }
 
   &--black {
     color: $black;
+  }
+
+  @media (min-width: $screen-md) {
+    font-size: 21px;
+    margin-bottom: 79px;
+  }
+
+  &--size {
+    font-size: 12px;
+    line-height: 18px;
+
+    @media (min-width: $screen-md) {
+      font-size: 16px;
+      line-height: 25px;
+    }
   }
 }
 
@@ -204,10 +261,12 @@
 }
 
 .service__char {
-
-
   &--ident {
-    margin-bottom: 32px;
+    margin-bottom: 13px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -219,8 +278,14 @@
   margin-bottom: 4px;
 
   &--size {
-    font-size: 14px;
     font-weight: 700;
+
+    @media (min-width: $screen-md) {
+      font-size: 14px;
+    }
+  }
+
+  &--white {
     color: $white;
   }
 
@@ -237,34 +302,58 @@
 }
 
 .service__char-total {
-  font-size: 29px;
+  font-size: 23px;
   font-weight: 300;
   font-family: $unineue;
   color: $white;
 
   &--ru {
-    padding-right: 23px;
-    background: url("../img/icon/ruble-wh.svg") no-repeat 100% 50% / 20px;
-  }
+    padding-right: 16px;
+    background: url("../img/icon/ruble-wh.svg") no-repeat 100% 50% / 14px;
 
-  &--size {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
-    background-position: 100% 68%;
+    @media (min-width: $screen-md) {
+      padding-right: 23px;
+      background-size: 20px;
+    }
   }
 
   &--black {
     color: $black;
     background-image: url("../img/icon/ruble.svg")
   }
+
+  @media (min-width: $screen-md) {
+    font-size: 29px;
+  }
+
+  &--size {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    background-position: 100% 68%;
+
+    @media (min-width: $screen-lg) {
+      font-size: 50px;
+      line-height: 60px;
+    }
+  }
 }
 
 .service__footer {
   position: absolute;
-  bottom: 18px;
-  left: 29px;
-  right: 32px;
+  bottom: 25px;
+  left: 21px;
+  right: 25px;
+
+  &--md-bottom {
+    bottom: 63px;
+  }
+
+  @media (min-width: $screen-md) {
+    bottom: 18px;
+    left: 29px;
+    right: 32px;
+  }
 }
 
 .service__btn {
@@ -278,16 +367,38 @@
 
 .service__stipulation {
   position: absolute;
-  bottom: 7px;
-  right: 0;
-  max-width: 165px;
+  bottom: 0px;
+  right: 17px;
+  max-width: 137px;
   margin: 0;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 300;
-  line-height: 21px;
+  line-height: 14px;
 
   &--white {
     color: $white;
+  }
+
+  @media (min-width: $screen-md) {
+    bottom: 7px;
+    right: 0;
+    max-width: 165px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+.service__footer--md-bottom .service__stipulation {
+  bottom: -38px;
+  left: 0;
+
+  @media (min-width: $screen-md) {
+    left: auto;
+    right: 0;
+    bottom: 7px;
+    max-width: 165px;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
