@@ -136,9 +136,10 @@ block content
               .whitening__desk
                 strong.whitening__name ULTRA отбеливание
                 p.whitening__text от 14 до 20 тонов
-          .range
-            .range__gradient
-              button.range__btn(aria-label="Ползунок отбеливания")
+          //- .range
+          //-   .range__gradient
+          //-     button.range__btn(aria-label="Ползунок отбеливания")
+          input(id="alt-input" type="range" min="0" max="3" step="1" value="2" data-orientation="vertical")
         .parameter
           ul.parameter__list
             li.parameter__item

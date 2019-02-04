@@ -207,50 +207,46 @@
                                                 </div>
                                             </li>
                                         </ul>
-                                        <div class="range">
-                                            <div class="range__gradient">
-                                                <button class="range__btn" aria-label="Ползунок отбеливания"></button>
-                                            </div>
+                                        <input id="alt-input" type="range" min="0" max="3" step="1" value="2" data-orientation="vertical">
+          </div>
+                                        <div class="parameter">
+                                            <ul class="parameter__list">
+                                                <li class="parameter__item"><span class="parameter__char">Зубы стали светлее</span><strong class="parameter__total"><sub>на:</sub> 32%</strong></li>
+                                                <li class="parameter__item"><span class="parameter__char">Время процедуры:</span><strong class="parameter__total">15 <sub>мин</sub></strong></li>
+                                                <li class="parameter__item"><span class="parameter__char">Стоимость</span><strong class="parameter__total parameter__total--ru">1500</strong></li>
+                                            </ul>
+                                            <button class="btn btn--main parameter__btn" data-toggle="modal" data-target="#modal-register">Записаться в студию</button>
                                         </div>
-                                    </div>
-                                    <div class="parameter">
-                                        <ul class="parameter__list">
-                                            <li class="parameter__item"><span class="parameter__char">Зубы стали светлее</span><strong class="parameter__total"><sub>на:</sub> 32%</strong></li>
-                                            <li class="parameter__item"><span class="parameter__char">Время процедуры:</span><strong class="parameter__total">15 <sub>мин</sub></strong></li>
-                                            <li class="parameter__item"><span class="parameter__char">Стоимость</span><strong class="parameter__total parameter__total--ru">1500</strong></li>
-                                        </ul>
-                                        <button class="btn btn--main parameter__btn" data-toggle="modal" data-target="#modal-register">Записаться в студию</button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="section visiting" id="visiting">
-                                <div class="container">
-                                    <section class="section__header section__header--center visiting__header">
-                                        <p class="title-tagline visiting__tagline">online запись</p>
-                                        <h2 class="title">Получай <span>приятные</span> бонусы после записи в студию</h2>
-                                    </section>
-                                    <div class="visiting__content">
-                                        <div class="visiting__desk">
-                                            <p class="visiting__subtitle">При каждом посещении дарим вам приятные подарки</p>
-                                            <ul class="visiting__list">
-                                                <li class="visiting__item"><strong>Бамбуковая зубная щетка с&nbsp;угольным напылением</strong>
-                                                    <p>После первого посещение, вы получаете скидку на второе до 10%</p>
-                                                </li>
-                                                <li class="visiting__item"><strong>Комплекс по уходу</strong>
-                                                    <p>Профессиональный набор по уходу за гигиеной рта от WRITE RABBIT</p>
-                                                </li>
-                                                <li class="visiting__item"><strong>Лечебную воду</strong>
-                                                    <p>Профессиональный набор по уходу за гигиеной рта от WRITE RABBIT</p>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <form class="form form--arch">
-                                            <h3 class="form__title">Онлайн запись в студию</h3>
-                                            <label class="field-text"><span class="field-text__name">Ваш телефон</span>
-                                                <input class="field-text__input" type="tel" placeholder="+7 (___) - __ - __ - ___" required="required"/>
+                                <div class="section visiting" id="visiting">
+                                    <div class="container">
+                                        <section class="section__header section__header--center visiting__header">
+                                            <p class="title-tagline visiting__tagline">online запись</p>
+                                            <h2 class="title">Получай <span>приятные</span> бонусы после записи в студию</h2>
+                                        </section>
+                                        <div class="visiting__content">
+                                            <div class="visiting__desk">
+                                                <p class="visiting__subtitle">При каждом посещении дарим вам приятные подарки</p>
+                                                <ul class="visiting__list">
+                                                    <li class="visiting__item"><strong>Бамбуковая зубная щетка с&nbsp;угольным напылением</strong>
+                                                        <p>После первого посещение, вы получаете скидку на второе до 10%</p>
+                                                    </li>
+                                                    <li class="visiting__item"><strong>Комплекс по уходу</strong>
+                                                        <p>Профессиональный набор по уходу за гигиеной рта от WRITE RABBIT</p>
+                                                    </li>
+                                                    <li class="visiting__item"><strong>Лечебную воду</strong>
+                                                        <p>Профессиональный набор по уходу за гигиеной рта от WRITE RABBIT</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <form class="form form--arch">
+                                                <h3 class="form__title">Онлайн запись в студию</h3>
+                                                <label class="field-text"><span class="field-text__name">Ваш телефон</span>
+                                                    <input class="field-text__input" type="tel" placeholder="+7 (___) - __ - __ - ___" required="required"/>
               </label>
-                                                <label class="field-text"><span class="field-text__name">Выбор услуги</span>
-                                                    <select class="selectpicker" data-width="100%">
+                                                    <label class="field-text"><span class="field-text__name">Выбор услуги</span>
+                                                        <select class="selectpicker" data-width="100%">
                   <option>- Выберете услугу -</option>
                   <option>MEDIUM отбеливание</option>
                   <option>LIGHT отбеливание</option>
@@ -258,475 +254,475 @@
                   <option>ULTRA отбеливание</option>
                   <option>Укрепление эмали</option>
                 </select>
-                                                </label><span class="field-text__name">выберете время</span>
-                                                <div class="form__row form__row--ident">
-                                                    <div class="form__column-7">
-                                                        <label class="field-text">
-                                                            <input class="field-text__input" type="text" data-toggle="datepicker" placeholder="28 октября"/>
+                                                    </label><span class="field-text__name">выберете время</span>
+                                                    <div class="form__row form__row--ident">
+                                                        <div class="form__column-7">
+                                                            <label class="field-text">
+                                                                <input class="field-text__input" type="text" data-toggle="datepicker" placeholder="28 октября"/>
                   </label>
-                                                    </div>
-                                                    <div class="form__column-5">
-                                                        <label class="field-text">
-                                                            <select class="selectpicker" data-width="100%">
+                                                        </div>
+                                                        <div class="form__column-5">
+                                                            <label class="field-text">
+                                                                <select class="selectpicker" data-width="100%">
                       <option>12 : 00</option>
                       <option>13 : 00</option>
                       <option>14 : 00</option>
                     </select>
-                                                        </label>
+                                                            </label>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <button class="btn btn--main form__btn">Записаться в студию</button>
-                                                <label class="field-checkbox">
-                                                    <input class="field-checkbox__input" type="checkbox" checked="checked"/><span class="field-checkbox__text">Я даю согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
-                                                </label>
-                                        </form>
+                                                    <button class="btn btn--main form__btn">Записаться в студию</button>
+                                                    <label class="field-checkbox">
+                                                        <input class="field-checkbox__input" type="checkbox" checked="checked"/><span class="field-checkbox__text">Я даю согласие на обработку <a href="#" target="_blank">персональных данных</a></span>
+                                                    </label>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="section section--black services" id="services">
-                                <div class="container">
-                                    <section class="section__header section__header--center services__header">
-                                        <p class="title-tagline title-tagline--white services__tagline">наши улуги</p>
-                                        <h2 class="title title--white"><span>Услуги</span> студии</h2>
-                                    </section>
-                                    <ul class="services__row">
-                                        <li class="services__column">
-                                            <section class="service service--ultra">
-                                                <header class="service__header">
-                                                    <div class="service__tooth-tone service__tooth-tone--fill"><span class="service__quantity">от 14 до 20 тонов</span></div>
-                                                    <button class="service__question" aria-label="Подробная информация об услуге"></button>
-                                                </header>
-                                                <h3 class="service__title service__title--ultra">ULTRA</h3>
-                                                <p class="service__desc">отбеливание</p>
-                                                <footer class="service__footer">
-                                                    <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">45 <sub>мин</sub></span></div>
-                                                    <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">3300</span></div>
-                                                    <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
-                                                </footer>
-                                                <div class="service__answer">
-                                                    <p>тут должно быть описание ультра - отбеливания</p>
-                                                </div>
-                                            </section>
-                                        </li>
-                                        <li class="services__column">
-                                            <section class="service service--medium">
-                                                <header class="service__header">
-                                                    <div class="service__tooth-tone service__tooth-tone--8"><span class="service__quantity">от 8 до 12 тонов</span></div>
-                                                    <button class="service__question" aria-label="Подробная информация об услуге"></button>
-                                                </header>
-                                                <h3 class="service__title service__title--medium">MEDIUM</h3>
-                                                <p class="service__desc">отбеливание</p>
-                                                <footer class="service__footer">
-                                                    <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">30 <sub>мин</sub></span></div>
-                                                    <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">2700</span></div>
-                                                    <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
-                                                </footer>
-                                                <div class="service__answer">
-                                                    <p>тут должно быть описание ультра - отбеливания</p>
-                                                </div>
-                                            </section>
-                                        </li>
-                                        <li class="services__column">
-                                            <section class="service service--light">
-                                                <header class="service__header">
-                                                    <div class="service__tooth-tone service__tooth-tone--6"><span class="service__quantity">от 3 до 6 тонов</span></div>
-                                                    <button class="service__question" aria-label="Подробная информация об услуге"></button>
-                                                </header>
-                                                <h3 class="service__title service__title--light">LIGHT</h3>
-                                                <p class="service__desc">отбеливание</p>
-                                                <footer class="service__footer">
-                                                    <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">15 <sub>мин</sub></span></div>
-                                                    <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">1500</span></div>
-                                                    <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
-                                                </footer>
-                                                <div class="service__answer">
-                                                    <p>тут должно быть описание ультра - отбеливания</p>
-                                                </div>
-                                            </section>
-                                        </li>
-                                        <li class="services__column">
-                                            <section class="service service--min service--fortification">
-                                                <header class="service__header">
-                                                    <button class="service__question" aria-label="Подробная информация об услуге"></button>
-                                                </header>
-                                                <h3 class="service__title service__title--fortification">Укрепление</h3>
-                                                <p class="service__desc">эмали</p>
-                                                <footer class="service__footer">
-                                                    <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">45 <sub>мин</sub></span></div>
-                                                    <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">3300</span></div>
-                                                    <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
-                                                </footer>
-                                                <div class="service__answer">
-                                                    <p>тут должно быть описание ультра - отбеливания</p>
-                                                </div>
-                                            </section>
-                                        </li>
-                                        <li class="services__column">
-                                            <section class="service service--min service--couple">
-                                                <header class="service__header">
-                                                    <button class="service__question" aria-label="Подробная информация об услуге"></button>
-                                                </header>
-                                                <h3 class="service__title service__title--couple">Приходите вдвоем</h3>
-                                                <p class="service__desc service__desc--size service__desc--width">для ультра и&nbsp;медиум процедур отбеливания</p>
-                                                <footer class="service__footer service__footer--md-bottom">
-                                                    <div class="service__char"><span class="service__char-text service__char-text--size service__char-text--white">Скидка</span><span class="service__char-total service__char-total--ru service__char-total--size">1000</span></div>
-                                                    <p class="service__stipulation service__stipulation--white">суммарная скидка, при одновременном сеансе</p>
-                                                </footer>
-                                                <div class="service__answer">
-                                                    <p>тут должно быть описание ультра - отбеливания</p>
-                                                </div>
-                                            </section>
-                                        </li>
-                                        <li class="services__column">
-                                            <section class="service service--min service--birthday">
-                                                <header class="service__header">
-                                                    <button class="service__question" aria-label="Подробная информация об услуге"></button>
-                                                </header>
-                                                <h3 class="service__title service__title--black service__title--birthday">День Рождения</h3>
-                                                <p class="service__desc service__desc--size service__desc--black">за 14 дней до и после дня рождения</p>
-                                                <footer class="service__footer">
-                                                    <div class="service__char"><span class="service__char-text service__char-text--size service__char-text--black">Скидка</span><span class="service__char-total service__char-total--ru service__char-total--size service__char-total--black">500</span></div>
-                                                    <p class="service__stipulation">на любой вид услуг в студии отбеливания</p>
-                                                </footer>
-                                                <div class="service__answer">
-                                                    <p>тут должно быть описание ультра - отбеливания</p>
-                                                </div>
-                                            </section>
-                                        </li>
-                                    </ul>
+                                <div class="section section--black services" id="services">
+                                    <div class="container">
+                                        <section class="section__header section__header--center services__header">
+                                            <p class="title-tagline title-tagline--white services__tagline">наши улуги</p>
+                                            <h2 class="title title--white"><span>Услуги</span> студии</h2>
+                                        </section>
+                                        <ul class="services__row">
+                                            <li class="services__column">
+                                                <section class="service service--ultra">
+                                                    <header class="service__header">
+                                                        <div class="service__tooth-tone service__tooth-tone--fill"><span class="service__quantity">от 14 до 20 тонов</span></div>
+                                                        <button class="service__question" aria-label="Подробная информация об услуге"></button>
+                                                    </header>
+                                                    <h3 class="service__title service__title--ultra">ULTRA</h3>
+                                                    <p class="service__desc">отбеливание</p>
+                                                    <footer class="service__footer">
+                                                        <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">45 <sub>мин</sub></span></div>
+                                                        <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">3300</span></div>
+                                                        <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
+                                                    </footer>
+                                                    <div class="service__answer">
+                                                        <p>тут должно быть описание ультра - отбеливания</p>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li class="services__column">
+                                                <section class="service service--medium">
+                                                    <header class="service__header">
+                                                        <div class="service__tooth-tone service__tooth-tone--8"><span class="service__quantity">от 8 до 12 тонов</span></div>
+                                                        <button class="service__question" aria-label="Подробная информация об услуге"></button>
+                                                    </header>
+                                                    <h3 class="service__title service__title--medium">MEDIUM</h3>
+                                                    <p class="service__desc">отбеливание</p>
+                                                    <footer class="service__footer">
+                                                        <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">30 <sub>мин</sub></span></div>
+                                                        <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">2700</span></div>
+                                                        <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
+                                                    </footer>
+                                                    <div class="service__answer">
+                                                        <p>тут должно быть описание ультра - отбеливания</p>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li class="services__column">
+                                                <section class="service service--light">
+                                                    <header class="service__header">
+                                                        <div class="service__tooth-tone service__tooth-tone--6"><span class="service__quantity">от 3 до 6 тонов</span></div>
+                                                        <button class="service__question" aria-label="Подробная информация об услуге"></button>
+                                                    </header>
+                                                    <h3 class="service__title service__title--light">LIGHT</h3>
+                                                    <p class="service__desc">отбеливание</p>
+                                                    <footer class="service__footer">
+                                                        <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">15 <sub>мин</sub></span></div>
+                                                        <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">1500</span></div>
+                                                        <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
+                                                    </footer>
+                                                    <div class="service__answer">
+                                                        <p>тут должно быть описание ультра - отбеливания</p>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li class="services__column">
+                                                <section class="service service--min service--fortification">
+                                                    <header class="service__header">
+                                                        <button class="service__question" aria-label="Подробная информация об услуге"></button>
+                                                    </header>
+                                                    <h3 class="service__title service__title--fortification">Укрепление</h3>
+                                                    <p class="service__desc">эмали</p>
+                                                    <footer class="service__footer">
+                                                        <div class="service__char service__char--ident"><span class="service__char-text">Время процедуры:</span><span class="service__char-total">45 <sub>мин</sub></span></div>
+                                                        <div class="service__char"><span class="service__char-text">Стоимость</span><span class="service__char-total service__char-total--ru">3300</span></div>
+                                                        <button class="btn btn--main service__btn" data-toggle="modal" data-target="#modal-register">Записаться</button>
+                                                    </footer>
+                                                    <div class="service__answer">
+                                                        <p>тут должно быть описание ультра - отбеливания</p>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li class="services__column">
+                                                <section class="service service--min service--couple">
+                                                    <header class="service__header">
+                                                        <button class="service__question" aria-label="Подробная информация об услуге"></button>
+                                                    </header>
+                                                    <h3 class="service__title service__title--couple">Приходите вдвоем</h3>
+                                                    <p class="service__desc service__desc--size service__desc--width">для ультра и&nbsp;медиум процедур отбеливания</p>
+                                                    <footer class="service__footer service__footer--md-bottom">
+                                                        <div class="service__char"><span class="service__char-text service__char-text--size service__char-text--white">Скидка</span><span class="service__char-total service__char-total--ru service__char-total--size">1000</span></div>
+                                                        <p class="service__stipulation service__stipulation--white">суммарная скидка, при одновременном сеансе</p>
+                                                    </footer>
+                                                    <div class="service__answer">
+                                                        <p>тут должно быть описание ультра - отбеливания</p>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                            <li class="services__column">
+                                                <section class="service service--min service--birthday">
+                                                    <header class="service__header">
+                                                        <button class="service__question" aria-label="Подробная информация об услуге"></button>
+                                                    </header>
+                                                    <h3 class="service__title service__title--black service__title--birthday">День Рождения</h3>
+                                                    <p class="service__desc service__desc--size service__desc--black">за 14 дней до и после дня рождения</p>
+                                                    <footer class="service__footer">
+                                                        <div class="service__char"><span class="service__char-text service__char-text--size service__char-text--black">Скидка</span><span class="service__char-total service__char-total--ru service__char-total--size service__char-total--black">500</span></div>
+                                                        <p class="service__stipulation">на любой вид услуг в студии отбеливания</p>
+                                                    </footer>
+                                                    <div class="service__answer">
+                                                        <p>тут должно быть описание ультра - отбеливания</p>
+                                                    </div>
+                                                </section>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="section result" id="result">
-                                <div class="container">
-                                    <section class="section__header section__header--center result__header">
-                                        <p class="title-tagline">Результаты процедуры</p>
-                                        <h2 class="title">Посмотрите <span>результат</span> отбеливания на примере наших клиентов</h2>
-                                    </section>
-                                </div>
-                                <div class="result__slider owl-carousel owl-theme"><a class="result__item" href="img/content-img/result-1.jpg" data-fancybox><img class="result__img" src="img/content-img/result-1.jpg" alt="Изображение девушки">
+                                <div class="section result" id="result">
+                                    <div class="container">
+                                        <section class="section__header section__header--center result__header">
+                                            <p class="title-tagline">Результаты процедуры</p>
+                                            <h2 class="title">Посмотрите <span>результат</span> отбеливания на примере наших клиентов</h2>
+                                        </section>
+                                    </div>
+                                    <div class="result__slider owl-carousel owl-theme"><a class="result__item" href="img/content-img/result-1.jpg" data-fancybox><img class="result__img" src="img/content-img/result-1.jpg" alt="Изображение девушки">
             <div class="result__insta"><span>instagram</span><strong>@whiterabbit_studio</strong></div><a class="result__item" href="img/content-img/result-2.jpg" data-fancybox><img class="result__img" src="img/content-img/result-2.jpg" alt="Изображение девушки">
               <div class="result__insta"><span>instagram</span><strong>@whiterabbit_studio</strong></div></a><a class="result__item" href="img/content-img/result-3.jpg" data-fancybox><img class="result__img" src="img/content-img/result-3.jpg" alt="Изображение девушки">
               <div class="result__insta"><span>instagram</span><strong>@whiterabbit_studio</strong></div></a><a class="result__item" href="img/content-img/result-4.jpg" data-fancybox><img class="result__img" src="img/content-img/result-4.jpg" alt="Изображение девушки">
               <div class="result__insta"><span>instagram</span><strong>@whiterabbit_studio</strong></div></a><a class="result__item" href="img/content-img/result-5.jpg" data-fancybox><img class="result__img" src="img/content-img/result-5.jpg" alt="Изображение девушки">
               <div class="result__insta"><span>instagram</span><strong>@whiterabbit_studio</strong></div></a><a class="result__item" href="img/content-img/result-5.jpg" data-fancybox><img class="result__img" src="img/content-img/result-5.jpg" alt="Изображение девушки">
               <div class="result__insta"><span>instagram</span><strong>@whiterabbit_studio</strong></div></a></a></div>
-                            </div>
-                            <div class="section section--black catalog" id="catalog">
-                                <div class="container">
-                                    <section class="section__header section__header--center catalog__header">
-                                        <p class="title-tagline title-tagline--white catalog__tagline">каталог товаров клиники</p>
-                                        <h2 class="title title--white">Самостоятельный <span>уход за&nbsp;зубами</span> и с&nbsp;продукцией от&nbsp;White Rabbit</h2>
-                                    </section>
-                                    <div class="view-tovar">
-                                        <button class="view-tovar__btn">Все товары</button>
-                                        <ul class="nav view-tovar__nav" role="tablist">
-                                            <li class="nav__item"><a class="nav__link active" data-toggle="tab" href="#tab-1">Все товары</a></li>
-                                            <li class="nav__item"><a class="nav__link" data-toggle="tab" href="#tab-2">Зубная паста</a></li>
-                                            <li class="nav__item"><a class="nav__link" data-toggle="tab" href="#tab-3">Зубные щетки</a></li>
-                                            <li class="nav__item"><a class="nav__link" data-toggle="tab" href="#tab-4">Ополаскиватели</a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="tab-content">
-                                        <div class="tab-pane fade show active" id="tab-1">
-                                            <div class="catalog__slider owl-carousel owl-theme">
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                </div>
+                                <div class="section section--black catalog" id="catalog">
+                                    <div class="container">
+                                        <section class="section__header section__header--center catalog__header">
+                                            <p class="title-tagline title-tagline--white catalog__tagline">каталог товаров клиники</p>
+                                            <h2 class="title title--white">Самостоятельный <span>уход за&nbsp;зубами</span> и с&nbsp;продукцией от&nbsp;White Rabbit</h2>
+                                        </section>
+                                        <div class="view-tovar">
+                                            <button class="view-tovar__btn">Все товары</button>
+                                            <ul class="nav view-tovar__nav" role="tablist">
+                                                <li class="nav__item"><a class="nav__link active" data-toggle="tab" href="#tab-1">Все товары</a></li>
+                                                <li class="nav__item"><a class="nav__link" data-toggle="tab" href="#tab-2">Зубная паста</a></li>
+                                                <li class="nav__item"><a class="nav__link" data-toggle="tab" href="#tab-3">Зубные щетки</a></li>
+                                                <li class="nav__item"><a class="nav__link" data-toggle="tab" href="#tab-4">Ополаскиватели</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-content">
+                                            <div class="tab-pane fade show active" id="tab-1">
+                                                <div class="catalog__slider owl-carousel owl-theme">
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="tab-pane" id="tab-2">
-                                            <div class="catalog__slider owl-carousel owl-theme">
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                            <div class="tab-pane" id="tab-2">
+                                                <div class="catalog__slider owl-carousel owl-theme">
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="tab-pane" id="tab-3">
-                                            <div class="catalog__slider owl-carousel owl-theme">
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
-                                                    </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
-                                                    </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
-                                                    </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
-                                                    </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="tab-pane" id="tab-4">
-                                            <div class="catalog__slider owl-carousel owl-theme">
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                            <div class="tab-pane" id="tab-3">
+                                                <div class="catalog__slider owl-carousel owl-theme">
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                            </div>
+                                            <div class="tab-pane" id="tab-4">
+                                                <div class="catalog__slider owl-carousel owl-theme">
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                                <div class="catalog__item">
-                                                    <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
-                                                        <section class="tovar__desc">
-                                                            <h3 class="tovar__title">Зубная паста «TEETH»</h3>
-                                                            <p class="tovar__text">Пару строк описания, для чего используется товар</p>
-                                                            <footer class="tovar__footer">
-                                                                <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
-                                                                <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
-                                                            </footer>
-                                                        </section>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+                                                    <div class="catalog__item">
+                                                        <div class="tovar"><img class="tovar__img" src="img/content-img/tovar-2.jpg"/>
+                                                            <section class="tovar__desc">
+                                                                <h3 class="tovar__title">Зубная паста «TEETH»</h3>
+                                                                <p class="tovar__text">Пару строк описания, для чего используется товар</p>
+                                                                <footer class="tovar__footer">
+                                                                    <p class="tovar__price"><span class="tovar__price-text">Стоимость</span><span class="tovar__price-cost">3300</span></p>
+                                                                    <button class="btn tovar__btn" data-toggle="modal" data-target="#modal-callback">Купить</button>
+                                                                </footer>
+                                                            </section>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="section news" id="news">
-                                <div class="container">
-                                    <section class="section__header section__header--center news__header">
-                                        <p class="title-tagline">Блог студии</p>
-                                        <h2 class="title"><span>Советы</span> и полезные статьи по уходу за зубами</h2>
-                                    </section>
-                                    <div class="section__row news__mb">
-                                        <div class="section__col-large">
-                                            <article class="digest digest--big"><img class="digest__img" src="img/content-img/digest-1.jpg" alt="Заголовок статьи с видео блоком">
-                                                <section class="digest__prev digest__prev--none-color"><a class="digest__play" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="" aria-label="Включение видео"><span></span></a>
-                                                    <h3 class="digest__big-title digest__title--black">Заголовок статьи с видео блоком</h3>
-                                                    <p class="digest__text">Товарищи! начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании модели развития.</p>
-                                                    <footer class="digest__footer"><a class="btn btn--main digest__btn" href="single.html">Читать далее</a><span class="digest__data digest__data--black digest__data--size">26, ноябрь 2018</span></footer>
-                                                </section>
-                                            </article>
-                                        </div>
-                                        <div class="section__col-medium"><a class="digest digest--mb" href="single.html">
+                                <div class="section news" id="news">
+                                    <div class="container">
+                                        <section class="section__header section__header--center news__header">
+                                            <p class="title-tagline">Блог студии</p>
+                                            <h2 class="title"><span>Советы</span> и полезные статьи по уходу за зубами</h2>
+                                        </section>
+                                        <div class="section__row news__mb">
+                                            <div class="section__col-large">
+                                                <article class="digest digest--big"><img class="digest__img" src="img/content-img/digest-1.jpg" alt="Заголовок статьи с видео блоком">
+                                                    <section class="digest__prev digest__prev--none-color"><a class="digest__play" href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="" aria-label="Включение видео"><span></span></a>
+                                                        <h3 class="digest__big-title digest__title--black">Заголовок статьи с видео блоком</h3>
+                                                        <p class="digest__text">Товарищи! начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании модели развития.</p>
+                                                        <footer class="digest__footer"><a class="btn btn--main digest__btn" href="single.html">Читать далее</a><span class="digest__data digest__data--black digest__data--size">26, ноябрь 2018</span></footer>
+                                                    </section>
+                                                </article>
+                                            </div>
+                                            <div class="section__col-medium"><a class="digest digest--mb" href="single.html">
                 <article class="digest__article"><img class="digest__img" src="img/content-img/digest-2.jpg" alt="Как замечательно отбеливать зубы в студии WR">
                   <div class="digest__prev"><span class="digest__data">26, ноябрь 2018</span>
                     <h3 class="digest__title">Как замечательно отбеливать зубы в студии WR</h3>
                   </div>
                 </article></a>
-                                            <div class="section__row">
-                                                <div class="section__col-fifty"><a class="digest" href="single.html">
+                                                <div class="section__row">
+                                                    <div class="section__col-fifty"><a class="digest" href="single.html">
                     <article class="digest__article"><img class="digest__img" src="img/content-img/digest-3.jpg" alt="Название статьи с кликабельным заголовком">
                       <div class="digest__prev"><span class="digest__data">26, ноябрь 2018</span>
                         <h3 class="digest__title digest__title--size-mini">Название статьи с кликабельным заголовком</h3>
                       </div>
                     </article></a></div>
-                                                <div class="section__col-fifty"><a class="digest" href="single.html">
+                                                    <div class="section__col-fifty"><a class="digest" href="single.html">
                     <article class="digest__article"><img class="digest__img" src="img/content-img/digest-4.jpg" alt="Название статьи с кликабельным заголовком">
                       <div class="digest__prev"><span class="digest__data">26, ноябрь 2018</span>
                         <h3 class="digest__title digest__title--size-mini">Название статьи с кликабельным заголовком</h3>
                       </div>
                     </article></a></div>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="section__footer section__footer--center"><a class="btn btn--dott" href="blog.html">Смотреть все статьи</a></div>
                                     </div>
-                                    <div class="section__footer section__footer--center"><a class="btn btn--dott" href="blog.html">Смотреть все статьи</a></div>
                                 </div>
-                            </div>
         </main>
         <footer class="page-footer" id="contact">
             <div class="container">

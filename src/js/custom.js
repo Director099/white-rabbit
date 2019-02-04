@@ -6,7 +6,13 @@
 //     });
 // });
 
-
+$('input[type="range"]').rangeslider({
+    polyfill : false,
+    // isRTL:true,
+    onSlide: function(position, value) {
+      console.log(value)
+    }
+});
 
 
 var videoSlider = $(".slide-video__slides");
