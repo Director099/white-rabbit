@@ -12,7 +12,7 @@ $line-height:                 1.5 !default;
   position: relative;
   max-width: 270px;
   width: 100%;
-  padding: 38px 23px 27px;
+  padding: 20px 23px 22px;
   box-shadow: 0 17px 29px rgba(89, 89, 89, 0.15);
   border-radius: 10px;
   background-image: linear-gradient(-218deg, #384049 0%, #080a0d 100%);
@@ -46,7 +46,9 @@ $line-height:                 1.5 !default;
     }
   }
 
-
+  @media (min-width: $screen-md) {
+    padding: 38px 23px 27px;
+  }
 }
 
 .form__fieldset {
@@ -79,7 +81,11 @@ $line-height:                 1.5 !default;
   font-size: 16px;
   font-weight: 700;
   color: $white;
-  margin-bottom: 19px;
+  margin-bottom: 4px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 19px;
+  }
 }
 
 .form__row {

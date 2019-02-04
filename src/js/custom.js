@@ -6,38 +6,7 @@
 //     });
 // });
 
-// Переключение в хедере
 
-$(".main-block__toggle").on("click", function() {
-  console.log($("[data-woman-teeth]"))
-  $("#woman-teeth").toggleClass("fullpage__woman-img--none");
-  $(".main-block__toggle").toggleClass("main-block__toggle--active");
-})
-
-// Плавный скол с навигации
-
-$("[data-scroll]").click(function () {
-  $(".page-header__toggle").toggleClass("page-header__toggle--active");
-  $(".page-header__toggle-btn").removeClass("page-header__toggle-btn--active");
-  var elementClick = $(this).attr("href")
-  var destination = $(elementClick).offset().top;
-  jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
-  $("data-fancybox='menu'").close($("[data-scroll]"));
-  return false;
-});
-
-$(".page-header__toggle-btn").on("click", function() {
-  $(".page-header__toggle").toggleClass("page-header__toggle--active");
-  $(".page-header__toggle-btn").toggleClass("page-header__toggle-btn--active");
-})
-
-$("[data-fancybox='menu']").fancybox({
-  touch: false,
-  beforeClose : function( instance, slide ) {
-    $(".page-header__toggle").removeClass("page-header__toggle--active");
-    $(".page-header__toggle-btn").removeClass("page-header__toggle-btn--active");
-  }
-});
 
 
 var videoSlider = $(".slide-video__slides");
@@ -202,3 +171,52 @@ $(".nav__link").on("click", function() {
   $(".view-tovar__nav").removeClass("view-tovar__nav--active");
 })
 
+// Переключение в хедере
+
+$(".main-block__toggle").on("click", function() {
+  console.log($("[data-woman-teeth]"))
+  $("#woman-teeth").toggleClass("fullpage__woman-img--none");
+  $(".main-block__toggle").toggleClass("main-block__toggle--active");
+})
+
+$('[data-toggle="datepicker"]').mask("00/00/0000");
+
+$('[data-toggle="datepicker"]').datepicker({
+  format: 'dd/mm/yyyy',
+  days: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+  daysShort: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+  daysMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+  months: ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'],
+  monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+  weekStart: 1,
+  startView: 0,
+  zIndex: 99999999,
+  disabledClass: "disabled",
+  startDate: new Date(),
+  yearFirst: false
+});
+
+// Плавный скол с навигации
+
+$("[data-scroll]").click(function () {
+  $(".page-header__toggle").toggleClass("page-header__toggle--active");
+  $(".page-header__toggle-btn").removeClass("page-header__toggle-btn--active");
+  var elementClick = $(this).attr("href")
+  var destination = $(elementClick).offset().top;
+  jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 800);
+  $("data-fancybox='menu'").close($("[data-scroll]"));
+  return false;
+});
+
+$(".page-header__toggle-btn").on("click", function() {
+  $(".page-header__toggle").toggleClass("page-header__toggle--active");
+  $(".page-header__toggle-btn").toggleClass("page-header__toggle-btn--active");
+})
+
+$("[data-fancybox='menu']").fancybox({
+  touch: false,
+  beforeClose : function( instance, slide ) {
+    $(".page-header__toggle").removeClass("page-header__toggle--active");
+    $(".page-header__toggle-btn").removeClass("page-header__toggle-btn--active");
+  }
+});

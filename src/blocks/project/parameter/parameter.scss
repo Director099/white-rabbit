@@ -1,74 +1,131 @@
 .parameter {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 304px;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-image: linear-gradient(-204deg, #1e2328 0%, #080a0d 100%);
+  max-width: 242px;
+  margin-left: auto;
+  margin-right: auto;
 
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   z-index: -1;
-
-  // }
+  @media(min-width: $screen-xl) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 304px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 1;
+    background-image: linear-gradient(-204deg, #1e2328 0%, #080a0d 100%);
+  }
 }
 
 .parameter__list {
   @include ul-none();
-  margin-bottom: 51px;
+  display: flex;
+  margin-bottom: 37px;
+  box-shadow: 0 -1px 65px #000000;
+  border-radius: 10px;
+  background-image: linear-gradient(-204deg, #1e2328 0%, #101419 100%);
+
+  @media(min-width: $screen-xl) {
+    display: block;
+    background-image: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 51px;
+  }
 }
 
 .parameter__item {
-  padding-bottom: 40px;
-  margin-bottom: 38px;;
-  border-bottom: 1px solid #2e343b;
+  width: 50%;
+  padding: 6px 17px 5px 19px;
+  border-right: 1px solid #2e343b;
+
+  &:first-child {
+    display: none;
+
+    @media(min-width: $screen-xl) {
+      display: block;
+    }
+  }
 
   &:last-child {
-    margin-bottom: 0;
-    border-bottom: none;
-    padding-bottom: 0;
+    border-right: 0;
+    padding-left: 30px;
+
+    @media(min-width: $screen-xl) {
+      padding-left: 0;
+      padding-bottom: 40px;
+      margin-bottom: 38px;
+      border-bottom: 1px solid #2e343b;
+    }
+  }
+
+  @media(min-width: $screen-xl) {
+    width: auto;
+    padding: 0;
+    padding-bottom: 40px;
+    margin-bottom: 38px;
+    border-right: 0;
+    border-bottom: 1px solid #2e343b;
   }
 }
 
 .parameter__char {
   display: block;
-  margin-bottom: 5px;
-  font-size: 12px;
+  margin-bottom: 0px;
+  font-size: 9px;
   font-weight: 300;
   line-height: 18px;
   color: #6a7388;
+
+  @media(min-width: $screen-xl) {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
 }
 
 .parameter__total {
   position: relative;
   color: $white;
   font-family: $unineue;
-  font-size: 44px;
+  font-size: 20px;
 
   &--ru {
-    padding-right: 44px;
-    background: url("../img/icon/ruble-wh.svg") no-repeat 100% 56%/30px;
+    padding-right: 20px;
+    background: url("../img/icon/ruble-wh.svg") no-repeat 100% 62%/ 14px;
+
+    @media(min-width: $screen-xl) {
+      padding-right: 44px;
+      background-position: 100% 56%;
+      background-size: 30px;
+    }
   }
 
   sub {
     bottom: 0;
-    font-size: 21px;
+    font-size: 11px;
+
+    @media(min-width: $screen-xl) {
+      font-size: 21px;
+    }
+  }
+
+  @media(min-width: $screen-xl) {
+    font-size: 44px;
   }
 }
 
 .parameter__btn {
-  padding: 23px 30px;
-  box-shadow: 0 4px 0 #8f287e, 0 9px 13px rgba(150,43,122,.35),  0 0px 62px #6c3a79, 0 0 79px rgba(195, 63, 138, 0.29);;
+  padding: 13px 30px 10px;
+  max-width: 260px;
+  width: 100%;
+  box-shadow: 0 4px 0 #8f287e, 0 9px 13px rgba(150,43,122,.35),  0 0px 62px #6c3a79, 0 0 79px rgba(195, 63, 138, 0.29);
+
+  @media(min-width: $screen-xl) {
+    padding: 23px 30px 20px;
+    width: auto;
+    max-width: 100%;
+  }
 }

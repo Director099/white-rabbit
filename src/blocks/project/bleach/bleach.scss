@@ -1,20 +1,31 @@
 .bleach {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 124px;
+  padding-top: 66px;
+  padding-bottom: 67px;
   background-color: $black;
   background-repeat: no-repeat;
   background-image: url("../img/decor/bleach-top-decor.png"), url("../img/decor/bleach-bottom-decor.png");
-  background-position: top center, bottom center
+  background-position: top center, bottom center;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 100px;
+    padding-bottom: 124px;
+  }
 }
 
 .bleach__header {
   max-width: 540px;
-  margin-bottom: 94px;
+  margin-bottom: 69px;
+  text-align: center;
+
+  @media (min-width: $screen-xl) {
+    text-align: left;
+    margin-bottom: 94px;
+  }
 }
 
 .bleach__tagline {
-  margin-bottom: 23px;
+  margin-bottom: 9px;
 
   @media (min-width: $screen-md) {
     margin-bottom: 23px;

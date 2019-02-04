@@ -19,11 +19,8 @@ mixin form(mods)
     span.field-text__name выберете время
     .form__row.form__row--ident
       .form__column-7
-        label.field-text
-          select.selectpicker(data-width="100%")
-            option 27 октября
-            option 28 октября
-            option 29 октября
+        label.field-text()
+          input.field-text__input(type="text" data-toggle="datepicker" placeholder="28 октября")
       .form__column-5
         label.field-text
           select.selectpicker(data-width="100%")

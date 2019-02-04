@@ -19,7 +19,7 @@ $border-radius:               rem(3px) !default;
   $block-name:                &; // #{$block-name}__element
 
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 
   &__name {
     display: inline-block;
@@ -80,7 +80,7 @@ $border-radius:               rem(3px) !default;
     }
 
     &::placeholder {
-      color: $text-color--muted;
+      color: #9aaac7;
       opacity: 1;
     }
 
@@ -106,7 +106,7 @@ $border-radius:               rem(3px) !default;
   background: #3f4959;
   color: #9aaac7;
   letter-spacing: normal;
-  padding: 8.5px 5px 8.5px 16px;
+  padding: 10px 5px 9.5px 16px;
   box-shadow: 0 13px 13px rgba(53, 85, 136, 0.25);
   border: 1px solid #3f4959;
 }
