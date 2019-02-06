@@ -4,10 +4,417 @@ block meta
   title Главная
 block header
   .fullpage
-    .container
-      +page-header()
+    .fullpage__wrap
+      .container
+        +page-header()
+        .main-block
+          section.main-block__wrap
+            h1.main-block__title Косметическое отбеливание зубов в Уфе
+            p.main-block__ton от #[span 6] до #[span 20] тонов
+            button.main-block__toggle(type="button", aria-label="Переключение разницы до и после")
+              span(aria-label="Переключатель")
+            span.main-block__text Посмотри, как изменятся твои зубы после первой процедуры за 15-45 мин
+            button.btn.btn--main.main-block__btn(data-toggle="modal" data-target="#modal-register") Записаться в студию
+          ul.social.main-block__social
+            li.social__item
+              a.social__link(href="#" target="_blank" aria-label="Социальная сеть Facebook") vkontakte
+            li.social__item
+              a.social__link(href="#" target="_blank" aria-label="Социальная сеть Instagram") facebook
+            li.social__item
+              a.social__link(href="#" target="_blank" aria-label="Социальная сеть Vkontakte") instagram
+    .slide-video
+      .slide-video__slides
+        a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
+          img.slide-video__img(src="img/content-img/video-1.jpg")
+          button.slide-video__play(type="button" aria-label="Запуск видео")
+          p.slide-video__rev #отзывы клиентов
+        a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
+          img.slide-video__img(src="img/content-img/video-2.jpg")
+          button.slide-video__play(type="button" aria-label="Запуск видео")
+          p.slide-video__rev #отзывы клиентов
+        a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
+          img.slide-video__img(src="img/content-img/video-3.jpg")
+          button.slide-video__play(type="button" aria-label="Запуск видео")
+          p.slide-video__rev #отзывы клиентов
+        a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
+          img.slide-video__img(src="img/content-img/video-2.jpg")
+          button.slide-video__play(type="button" aria-label="Запуск видео")
+          p.slide-video__rev #отзывы клиентов
+        a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
+          img.slide-video__img(src="img/content-img/video-1.jpg")
+          button.slide-video__play(type="button" aria-label="Запуск видео")
+          p.slide-video__rev #отзывы клиентов
+      footer.slide-video__footer
+        p.slide-video__sum
+          span.slide-video__current 1
+          span.slide-video__total
+        .slide-video__arrows
+          button.slide-video__arrow.slide-video__arrow--prev(aria-label="Слайд назад")
+          button.slide-video__arrow.slide-video__arrow--next(aria-label="Слайд Вперед")
+    .fullpage__woman
+      img.fullpage__woman-img(src="../img/woman/woman-yl.png", alt="Женщина с нормальными зубами")
+      img.fullpage__woman-img.fullpage__woman-img--none(src="../img/woman/woman-wh.png", alt="Женщина с отбелиными зубами" id="woman-teeth")
 block content
   main
+    .section.stages(id="stages")
+      .container
+        section.section__header.section__header--center.stages__header
+          p.title-tagline Как происходит отбеливание зубов
+          h2.title Комфортно, безопасно и безболезненно
+        .stages__all
+          .stages__slider.owl-carousel.owl-theme
+            .stages__item(data-hash="1")
+              .stage
+                section.stage__content
+                  strong.stage__count 01 / этап
+                  h3.stage__title Эргономичные кресла
+                  p Наш подход — дизайн не в ущерб комфорту!
+                  p В большинстве студий отбеливания используют  китайские кресла капсулы (ball chair), в которых не удобно находится больше двух минут, клиенты испытывают дискомфорт, а процедура отбеливания больше похожа на испытание для позвоночника.
+                  p В студии отбеливания white rabbits — мы используем удобные эргономичные кресла
+                .stage__decor.stage__decor--1
+                  img(src="img/content-img/stage-1.png", alt="Эргономичные кресла")
+            .stages__item(data-hash="2")
+              .stage
+                section.stage__content
+                  strong.stage__count 02 / этап
+                  h3.stage__title Гель — White Rabbit
+                  p Профессиональный гель white rabbit, содержит не менее 6% пероксид карбамида — согласно ТР ТС 009/2011.
+                  p Это самое безопасное и эффективное средство отбеливания зубов из существующих не способное навредить. Гель подходит даже для зубов с высокой чувствительностью.
+                  p Раздражающее действие – нет Аллергические эффекты – нет
+                .stage__decor.stage__decor--2
+                  img(src="img/content-img/stage-2.png", alt="Эргономичные кресла")
+            .stages__item(data-hash="3")
+              .stage
+                section.stage__content
+                  strong.stage__count 03 / этап
+                  h3.stage__title LED лампа холодного свечения
+                  p Для осветления эмали, мы используем светодиодную LED-лампу, излучающую  холодный свет
+                  p Под воздействием лампы, отбеливающий гель проникает в эмаль и дентин, окисляя пигменты окрашивающие зуб. Затем, окисленные пигменты вымываются из тканей зуба вместе с водой. Для лучшего результата, мы рекомендуем проводить не менее трёх сессий по 15 минут за одно посещение
+                .stage__decor.stage__decor--3
+                  img(src="img/content-img/stage-3.png", alt="Эргономичные кресла")
+            .stages__item(data-hash="4")
+              .stage.stage--reverse-lg
+                section.stage__content
+                  strong.stage__count 04 / этап
+                  h3.stage__title От 6 до 20 тонов за сеанс
+                  p В зависимости от индивидуальных особенностей и естественного тона вашей эмали, за один визит в нашу студию, вы сможете получить результат отбеливания от 6 до 20 тонов.
+                  p После процедуры на 5-7 дней следует отказатьсяот продуктов содержащих искусственные или натуральные красители, а так же от пищи с повышенной кислотностью. При соблюдении всех рекомендаций, результат сохранитьсяот полу года до двух лет.
+                .stage__decor.stage__decor--full
+                  img(src="img/content-img/stage-4.png", alt="Эргономичные кресла")
+          .stages__dots-wrap
+            ol.stages__dots-list
+              li.stages__dots-item
+                a.stages__dot.stages__dot--active(href="#1") Удобная посадка
+              li.stages__dots-item
+                a.stages__dot(href="#2") Отбеливающий гель
+              li.stages__dots-item
+                a.stages__dot(href="#3") LED - лампа
+              li.stages__dots-item
+                a.stages__dot(href="#4") Результат
+    .section.section--black.bleach(id="bleach")
+      .container
+        section.section__header.bleach__header
+          p.title-tagline.title-tagline--white.bleach__tagline интерактивный прайс-лист
+          h2.title.title--white #[span Выбери ] степень  отбеливания — сравни разницу
+        .whitening
+          ul.whitening__list
+            li.whitening__item
+              .whitening__desk
+                p.whitening__text До процедур
+            li.whitening__item
+              p.whitening__number 01 /
+              .whitening__desk.whitening__desk--active
+                strong.whitening__name LITE отбеливание
+                p.whitening__text от 3 до 6 тонов
+            li.whitening__item
+              p.whitening__number 02 /
+              .whitening__desk
+                strong.whitening__name MEDIUM отбеливание
+                p.whitening__text от 8 до 12 тонов
+            li.whitening__item
+              p.whitening__number 03 /
+              .whitening__desk
+                strong.whitening__name ULTRA отбеливание
+                p.whitening__text от 14 до 20 тонов
+          //- .range
+          //-   .range__gradient
+          //-     button.range__btn(aria-label="Ползунок отбеливания")
+          input(id="alt-input" type="range" min="0" max="3" step="1" value="2" data-orientation="vertical")
+        .parameter
+          ul.parameter__list
+            li.parameter__item
+              span.parameter__char Зубы стали светлее
+              strong.parameter__total #[sub на:] 32%
+            li.parameter__item
+              span.parameter__char Время процедуры:
+              strong.parameter__total 15 #[sub мин]
+            li.parameter__item
+              span.parameter__char Стоимость
+              strong.parameter__total.parameter__total--ru 1500
+          button.btn.btn--main.parameter__btn(data-toggle="modal" data-target="#modal-register") Записаться в студию
+    .section.visiting(id="visiting")
+      .container
+        section.section__header.section__header--center.visiting__header
+          p.title-tagline.visiting__tagline online запись
+          h2.title Получай #[span приятные] бонусы после записи в студию
+        .visiting__content
+          .visiting__desk
+            p.visiting__subtitle При каждом посещении дарим вам приятные подарки
+            ul.visiting__list
+              li.visiting__item
+                strong Бамбуковая зубная щетка с&nbsp;угольным напылением
+                p После первого посещение, вы получаете скидку на второе до 10%
+              li.visiting__item
+                strong Комплекс по уходу
+                p Профессиональный набор по уходу за гигиеной рта от WRITE RABBIT
+              li.visiting__item
+                strong Лечебную воду
+                p Профессиональный набор по уходу за гигиеной рта от WRITE RABBIT
+          +form("form--arch")
+    .section.section--black.services(id="services")
+      .container
+        section.section__header.section__header--center.services__header
+          p.title-tagline.title-tagline--white.services__tagline наши улуги
+          h2.title.title--white #[span Услуги] студии
+        ul.services__row
+          li.services__column
+            section.service.service--ultra
+              header.service__header
+                .service__tooth-tone.service__tooth-tone--fill
+                  span.service__quantity от 14 до 20 тонов
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--ultra ULTRA
+              p.service__desc отбеливание
+              footer.service__footer
+                .service__char.service__char--ident
+                  span.service__char-text Время процедуры:
+                  span.service__char-total 45 #[sub мин]
+                .service__char
+                  span.service__char-text Стоимость
+                  span.service__char-total.service__char-total--ru 3300
+                button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
+          li.services__column
+            section.service.service--medium
+              header.service__header
+                .service__tooth-tone.service__tooth-tone--8
+                  span.service__quantity от 8 до 12 тонов
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--medium MEDIUM
+              p.service__desc отбеливание
+              footer.service__footer
+                .service__char.service__char--ident
+                  span.service__char-text Время процедуры:
+                  span.service__char-total 30 #[sub мин]
+                .service__char
+                  span.service__char-text Стоимость
+                  span.service__char-total.service__char-total--ru 2700
+                button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
+          li.services__column
+            section.service.service--light
+              header.service__header
+                .service__tooth-tone.service__tooth-tone--6
+                  span.service__quantity от 3 до 6 тонов
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--light LIGHT
+              p.service__desc отбеливание
+              footer.service__footer
+                .service__char.service__char--ident
+                  span.service__char-text Время процедуры:
+                  span.service__char-total 15 #[sub мин]
+                .service__char
+                  span.service__char-text Стоимость
+                  span.service__char-total.service__char-total--ru 1500
+                button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
+          li.services__column
+            section.service.service--min.service--fortification
+              header.service__header
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--fortification Укрепление
+              p.service__desc эмали
+              footer.service__footer
+                .service__char.service__char--ident
+                  span.service__char-text Время процедуры:
+                  span.service__char-total 45 #[sub мин]
+                .service__char
+                  span.service__char-text Стоимость
+                  span.service__char-total.service__char-total--ru 3300
+                button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
+          li.services__column
+            section.service.service--min.service--couple
+              header.service__header
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--couple Приходите вдвоем
+              p.service__desc.service__desc--size.service__desc--width для ультра и&nbsp;медиум процедур отбеливания
+              footer.service__footer.service__footer--md-bottom
+                .service__char
+                  span.service__char-text.service__char-text--size.service__char-text--white Скидка
+                  span.service__char-total.service__char-total--ru.service__char-total--size 1000
+                p.service__stipulation.service__stipulation--white суммарная скидка, при одновременном сеансе
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
+          li.services__column
+            section.service.service--min.service--birthday
+              header.service__header
+                button.service__question(aria-label="Подробная информация об услуге")
+              h3.service__title.service__title--black.service__title--birthday День Рождения
+              p.service__desc.service__desc--size.service__desc--black за 14 дней до и после дня рождения
+              footer.service__footer
+                .service__char
+                  span.service__char-text.service__char-text--size.service__char-text--black Скидка
+                  span.service__char-total.service__char-total--ru.service__char-total--size.service__char-total--black 500
+                p.service__stipulation на любой вид услуг в студии отбеливания
+              .service__answer
+                p тут должно быть описание ультра - отбеливания
+    .section.result(id="result")
+      .container
+        section.section__header.section__header--center.result__header
+          p.title-tagline Результаты процедуры
+          h2.title Посмотрите #[span результат] отбеливания на примере наших клиентов
+      .result__slider.owl-carousel.owl-theme
+        a.result__item(href="img/content-img/result-1.jpg", data-fancybox)
+          img.result__img(src="img/content-img/result-1.jpg", alt="Изображение девушки")
+          .result__insta
+            span instagram
+            strong @whiterabbit_studio
+          a.result__item(href="img/content-img/result-2.jpg", data-fancybox)
+            img.result__img(src="img/content-img/result-2.jpg", alt="Изображение девушки")
+            .result__insta
+              span instagram
+              strong @whiterabbit_studio
+          a.result__item(href="img/content-img/result-3.jpg", data-fancybox)
+            img.result__img(src="img/content-img/result-3.jpg", alt="Изображение девушки")
+            .result__insta
+              span instagram
+              strong @whiterabbit_studio
+          a.result__item(href="img/content-img/result-4.jpg", data-fancybox)
+            img.result__img(src="img/content-img/result-4.jpg", alt="Изображение девушки")
+            .result__insta
+              span instagram
+              strong @whiterabbit_studio
+          a.result__item(href="img/content-img/result-5.jpg", data-fancybox)
+            img.result__img(src="img/content-img/result-5.jpg", alt="Изображение девушки")
+            .result__insta
+              span instagram
+              strong @whiterabbit_studio
+          a.result__item(href="img/content-img/result-5.jpg", data-fancybox)
+            img.result__img(src="img/content-img/result-5.jpg", alt="Изображение девушки")
+            .result__insta
+              span instagram
+              strong @whiterabbit_studio
+    .section.section--black.catalog(id="catalog")
+      .container
+        section.section__header.section__header--center.catalog__header
+          p.title-tagline.title-tagline--white.catalog__tagline каталог товаров клиники
+          h2.title.title--white Самостоятельный #[span уход за&nbsp;зубами] и с&nbsp;продукцией от&nbsp;White Rabbit
+        .view-tovar
+          button.view-tovar__btn Все товары
+          ul.nav.view-tovar__nav(role="tablist")
+            li.nav__item
+              a.nav__link.active(data-toggle="tab" href="#tab-1") Все товары
+            li.nav__item
+              a.nav__link(data-toggle="tab" href="#tab-2") Зубная паста
+            li.nav__item
+              a.nav__link(data-toggle="tab" href="#tab-3") Зубные щетки
+            li.nav__item
+              a.nav__link(data-toggle="tab" href="#tab-4") Ополаскиватели
+        .tab-content
+          .tab-pane.fade.show.active(id="tab-1")
+            .catalog__slider.owl-carousel.owl-theme
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+          .tab-pane(id="tab-2")
+            .catalog__slider.owl-carousel.owl-theme
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+          .tab-pane(id="tab-3")
+            .catalog__slider.owl-carousel.owl-theme
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+          .tab-pane(id="tab-4")
+            .catalog__slider.owl-carousel.owl-theme
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+              .catalog__item
+                +tovar()
+    .section.news(id="news")
+      .container
+        section.section__header.section__header--center.news__header
+          p.title-tagline Блог студии
+          h2.title #[span Советы] и полезные статьи по уходу за зубами
+        .section__row.news__mb
+          .section__col-large
+            article.digest.digest--big
+              img.digest__img(src="img/content-img/digest-1.jpg", alt="Заголовок статьи с видео блоком")
+              section.digest__prev.digest__prev--none-color
+                a.digest__play(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="" aria-label="Включение видео")
+                  span
+                h3.digest__big-title.digest__title--black Заголовок статьи с видео блоком
+                p.digest__text Товарищи! начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
+                footer.digest__footer
+                  a.btn.btn--main.digest__btn(href="single.html") Читать далее
+                  span.digest__data.digest__data--black.digest__data--size 26, ноябрь 2018
+          .section__col-medium
+            a.digest.digest--mb(href="single.html")
+              article.digest__article
+                img.digest__img(src="img/content-img/digest-2.jpg", alt="Как замечательно отбеливать зубы в студии WR")
+                .digest__prev
+                  span.digest__data 26, ноябрь 2018
+                  h3.digest__title Как замечательно отбеливать зубы в студии WR
+            .section__row
+              .section__col-fifty
+                a.digest(href="single.html")
+                  article.digest__article
+                    img.digest__img(src="img/content-img/digest-3.jpg", alt="Название статьи с кликабельным заголовком")
+                    .digest__prev
+                      span.digest__data 26, ноябрь 2018
+                      h3.digest__title.digest__title--size-mini Название статьи с кликабельным заголовком
+              .section__col-fifty
+                a.digest(href="single.html")
+                  article.digest__article
+                    img.digest__img(src="img/content-img/digest-4.jpg", alt="Название статьи с кликабельным заголовком")
+                    .digest__prev
+                      span.digest__data 26, ноябрь 2018
+                      h3.digest__title.digest__title--size-mini Название статьи с кликабельным заголовком
+        .section__footer.section__footer--center
+          a.btn.btn--dott(href="blog.html") Смотреть все статьи
 block footer
   +page-footer()
 

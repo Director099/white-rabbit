@@ -1,0 +1,21 @@
+.social {
+  @include ul-none();
+  display: flex;
+  margin-left: -7.5px;
+  margin-right: -7.5px;
+}
+
+.social__item {
+  display: inline-block;
+  padding: 7.5px;
+}
+
+.social__link {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.social__icon {
+  fill: #737f91;
+}

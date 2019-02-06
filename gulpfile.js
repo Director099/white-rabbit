@@ -94,10 +94,14 @@ gulp.task('js', function () {
     'node_modules/jquery-migrate/dist/jquery-migrate.min.js',
     'node_modules/popper.js/dist/umd/popper.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
-    // 'node_modules/owl.carousel/dist/owl.carousel.min.js',
+    'node_modules/owl.carousel/dist/owl.carousel.min.js',
+    'node_modules/slick-carousel/slick/slick.min.js',
     'node_modules/jquery-mask-plugin/dist/jquery.mask.min.js',
     'node_modules/scrollup/dist/jquery.scrollUp.min.js',
+    'node_modules/rangeslider.js/dist/rangeslider.js',
+    'node_modules/@chenfengyuan/datepicker/dist/datepicker.min.js',
     'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
+    'node_modules/bootstrap-select/dist/js/bootstrap-select.min.js',
     dirs.source + '/js/custom.js'
   ])
     .pipe(plumber())

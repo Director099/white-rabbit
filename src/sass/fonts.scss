@@ -35,6 +35,15 @@
 }
 
 @font-face {
+  font-family: 'Geometria';
+  src:  url('../fonts/geometria/Geometria-Heavy.woff2') format('woff2'),
+        url('../fonts/geometria/Geometria-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Gotham';
   src:  url('../fonts/gotham/GothamPro-Bold.woff2') format('woff2'),
         url('../fonts/gotham/GothamPro-Bold.woff') format('woff');
@@ -48,6 +57,15 @@
   src:  url('../fonts/unineue/UniNeue-Light.woff2') format('woff2'),
         url('../fonts/unineue/UniNeue-Light.woff') format('woff');
   font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Unineue';
+  src:  url('../fonts/unineue/UniNeue-Bold.woff2') format('woff2'),
+        url('../fonts/unineue/UniNeue-Bold.woff') format('woff');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }

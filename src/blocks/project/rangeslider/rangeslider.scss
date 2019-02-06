@@ -1,0 +1,75 @@
+.rangeslider {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  right: 0;
+  width: 22px;
+  height: 100%;
+  box-shadow: inset 3px 0 7px rgba(0, 0, 0, 0.49);
+  border-radius: 50px;
+  background-image: linear-gradient(to top, #211820 0%, #2a2f37 100%);
+  // background-image: linear-gradient(-231deg, #da4453 0%, #89216b 100%);
+
+
+  @media(min-width: $screen-xl) {
+    left: 62px;
+    top: -0px;
+    width: 42px;
+    // height: calc(100% + 21px);
+  }
+}
+
+.rangeslider__fill {
+  position: absolute;
+  // height: 146px;
+  bottom: 0;
+  width: 100%;
+  // border-radius: 0 0px 50px 50px;
+  border-radius: 50px;
+  transition: $time;
+  box-shadow: inset 3px 0 7px rgba(0, 0, 0, 0.49);
+  // background-image: linear-gradient(to top, #211820 0%, #2a2f37 100%);
+
+  background-image: linear-gradient(-231deg, #da4453 0%, #89216b 100%);
+}
+
+.rangeslider__handle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 22px;
+  height: 23px;
+  box-shadow: 2px 0 13px rgba(0, 0, 0, 0.5), 0 0 79px rgba(203, 122, 168, 0.65);
+  background-color: $white;
+  border: none;
+  border-radius: 50%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 7px;
+    height: 7px;
+    transform: translate(-50% ,-60%) rotate(45deg);
+    border-right: 1px solid #030303;
+    border-bottom: 1px solid #030303;
+  }
+
+  @media(min-width: $screen-xl) {
+    width: 42px;
+    height: 43px;
+
+    &::after {
+      width: 10px;
+      height: 10px;
+      transform: translate(-50% ,-50%) rotate(45deg);
+    }
+  }
+}
+
+// .rangeslider__fill {
+//   background: #00ff00 !important;
+//   position: absolute  !important;
+// }

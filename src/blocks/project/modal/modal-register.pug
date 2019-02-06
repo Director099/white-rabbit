@@ -1,0 +1,7 @@
+mixin modal-register()
+  .modal.fade(id="modal-register" tabindex="-1" role="dialog")
+    .modal-dialog.modal-dialog-centered(role="document")
+      .modal-content.modal-content--auto
+        .modal__content
+          button.modal__close(type="button" data-dismiss="modal" aria-label="Close")
+          +form()

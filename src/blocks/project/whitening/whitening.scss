@@ -1,0 +1,83 @@
+.whitening {
+  position: relative;
+  max-width: 136px;
+  width: 100%;
+  margin-left: auto;
+  margin-bottom: 54px;
+
+  @media(min-width: $screen-xl) {
+    max-width: 350px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+}
+
+.whitening__list {
+  @include ul-none();
+}
+
+.whitening__number {
+  display: none;
+
+  @media(min-width: $screen-xl) {
+    display: block;
+    margin: 17px 0 0px;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 300;
+    color: #6a7388;
+  }
+}
+
+.whitening__name {
+  display: inline-block;
+  margin-bottom: 7px;
+  color: $white;
+  font-size: 12px;
+  transition: $time;
+
+  @media(min-width: $screen-xl) {
+    font-size: 18px;
+  }
+}
+
+.whitening__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 47px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media(min-width: $screen-xl) {
+    margin-bottom: 75px;
+  }
+}
+
+.whitening__text {
+  font-size: 11px;
+  font-weight: 400;
+  color: #6a7388;
+  margin: 0;
+
+  @media(min-width: $screen-xl) {
+    font-size: 14px;
+  }
+}
+
+.whitening__desk {
+  max-width: 94px;
+  width: 100%;
+  margin-left: auto;
+
+  @media(min-width: $screen-xl) {
+    max-width: 201px;
+  }
+}
+
+.whitening__desk--active .whitening__name {
+  font-weight: 700;
+}

@@ -1,0 +1,132 @@
+.slide-video {
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $screen-xl) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 205px;
+  }
+}
+
+.slide-video__slides {
+  overflow: hidden;
+
+  @media (min-width: $screen-xl) {
+    height: calc(100% - 66px);
+  }
+}
+
+.slide-video__item {
+  position: relative;
+  display: block;
+  height: 191px;
+  border: none !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgba(41, 44, 48, 0.64);
+  }
+
+  @media (min-width: $screen-xl) {
+    height: 33.333333%;
+  }
+}
+
+.slide-video__img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.slide-video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: transparent url("../img/icon/icon-play.svg") no-repeat center / 11px;
+  z-index: 9;
+  border: 1px solid #787d81;
+}
+
+.slide-video__rev {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: $gotham;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #b4b6b9;
+  z-index: 2;
+  text-align: center;
+  margin: 0px auto 20px;
+  letter-spacing: 1.8px;
+}
+
+.slide-video__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 50px;
+  background-color: #25282d;
+
+  @media (min-width: $screen-xl) {
+    padding: 24px;
+  }
+}
+
+.slide-video__sum {
+  margin: 0;
+  color: $white;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+
+  @media (min-width: $screen-xl) {
+    font-size: 12px;
+  }
+}
+
+.slide-video__current::after {
+  content: "/";
+  margin: 0 5px;
+  color: $white;
+}
+
+.slide-video__arrows {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50px;
+  width: 100%;
+}
+
+.slide-video__arrow {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  padding: 0;
+
+  &--prev {
+    background: url("../img/icon/icon-arrow-back.svg") no-repeat 0px 2px / 13px;
+  }
+
+  &--next {
+    transform: rotate(-180deg);
+    background: url("../img/icon/icon-arrow-back.svg") no-repeat 50% / 13px;
+  }
+}
