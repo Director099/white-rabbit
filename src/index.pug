@@ -119,39 +119,49 @@ block content
         .whitening
           ul.whitening__list
             li.whitening__item
-              .whitening__desk
+              .whitening__desk(data-shine="0", data-time="0", data-price="0")
                 p.whitening__text До процедур
             li.whitening__item
               p.whitening__number 01 /
-              .whitening__desk.whitening__desk--active
+              .whitening__desk.whitening__desk--active(data-shine="32", data-time="15", data-price="1500")
                 strong.whitening__name LITE отбеливание
                 p.whitening__text от 3 до 6 тонов
             li.whitening__item
               p.whitening__number 02 /
-              .whitening__desk
+              .whitening__desk(data-shine="42", data-time="25", data-price="2000")
                 strong.whitening__name MEDIUM отбеливание
                 p.whitening__text от 8 до 12 тонов
             li.whitening__item
               p.whitening__number 03 /
-              .whitening__desk
+              .whitening__desk(data-shine="52", data-time="45", data-price="2500")
                 strong.whitening__name ULTRA отбеливание
                 p.whitening__text от 14 до 20 тонов
-          //- .range
-          //-   .range__gradient
-          //-     button.range__btn(aria-label="Ползунок отбеливания")
-          input(id="alt-input" type="range" min="0" max="3" step="1" value="2" data-orientation="vertical")
+          input(id="alt-input" type="range" min="0" max="3" step="1" value="2" data-orientation="vertical" data-direction="ttb")
         .parameter
           ul.parameter__list
             li.parameter__item
               span.parameter__char Зубы стали светлее
-              strong.parameter__total #[sub на:] 32%
+              strong.parameter__total #[sub на:] #[span 32%]
             li.parameter__item
               span.parameter__char Время процедуры:
-              strong.parameter__total 15 #[sub мин]
+              strong.parameter__total #[span 15] #[sub мин]
             li.parameter__item
               span.parameter__char Стоимость
               strong.parameter__total.parameter__total--ru 1500
           button.btn.btn--main.parameter__btn(data-toggle="modal" data-target="#modal-register") Записаться в студию
+      .bleach__woman
+        picture
+          source(media="(min-width: 1200px)" srcset="img/woman/woman-before.png")
+          img.bleach__woman-img.bleach__woman-img--before(src="img/woman/woman-before-mob.png", alt="Изображение до процедур")
+        picture
+          source(media="(min-width: 1200px)" srcset="img/woman/woman-lite.png")
+          img.bleach__woman-img.bleach__woman-img--active(src="img/woman/woman-lite-mob.png", alt="Изображение LITE отбеливание")
+        picture
+          source(media="(min-width: 1200px)" srcset="img/woman/woman-medium.png")
+          img.bleach__woman-img(src="img/woman/woman-medium-mob.png", alt="Изображение MEDIUM отбеливание")
+        picture
+          source(media="(min-width: 1200px)" srcset="img/woman/woman-ultra.png")
+          img.bleach__woman-img(src="img/woman/woman-ultra-mob.png", alt="Изображение ULTRA отбеливание")
     .section.visiting(id="visiting")
       .container
         section.section__header.section__header--center.visiting__header

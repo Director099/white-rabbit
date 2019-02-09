@@ -34,6 +34,10 @@ img {
 .fancybox-active {
   overflow: hidden !important;
   position: fixed;
+
+  @media (min-width: $screen-xl) {
+    position: static;
+  }
 }
 
 .datepicker-dropdown  {

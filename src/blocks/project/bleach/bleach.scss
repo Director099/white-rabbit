@@ -4,19 +4,35 @@
   padding-bottom: 67px;
   background-color: $black;
   background-repeat: no-repeat;
-  background-image: url("../img/decor/bleach-top-decor.png"), url("../img/decor/bleach-bottom-decor.png");
-  background-position: top center, bottom center;
+  background-image: url("../img/decor/bleach-bottom-decor.png");
+  background-position: bottom center;
+  overflow: hidden;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/decor/bleach-top-decor.png") no-repeat top center;
+    z-index: 1;
+  }
 
   @media (min-width: $screen-xl) {
     padding-top: 100px;
-    padding-bottom: 124px;
+    padding-bottom: 94px;
   }
 }
 
 .bleach__header {
+  position: relative;
   max-width: 540px;
   margin-bottom: 69px;
   text-align: center;
+  z-index: 2;
 
   @media (min-width: $screen-xl) {
     text-align: left;
@@ -29,5 +45,64 @@
 
   @media (min-width: $screen-md) {
     margin-bottom: 23px;
+  }
+}
+
+.bleach__woman {
+  // position: absolute;
+  // bottom: -480px;
+  // left: 140px;
+  // right: 0;
+  z-index: 0;
+
+  img {
+    position: absolute;
+    left: -100px;
+    top: 230px;
+    width: 100%;
+    max-width: 296px;
+    max-height: 541px;
+
+    transition: 0.5s;
+    transition-delay: 0.5s;
+    z-index: 0;
+
+    @media (min-width: $screen-xl) {
+      top: 54px;
+      left: 144px;
+      right: 0;
+      margin: 0 auto;
+      max-width: 688px;
+      max-height: 1258px;
+    }
+  }
+
+  .bleach__woman-img--before {
+    top: inherit;
+    bottom: 115px;
+    left: -67px;
+    max-width: 324px;
+    max-height: 490px;
+
+    @media (min-width: $screen-xl) {
+      bottom: 0;
+      left: 0;
+      max-width: 1372px;
+      max-height: 767px;
+    }
+  }
+}
+
+
+.bleach__woman-img {
+  opacity: 0;
+  z-index: 1;
+
+
+  &--active {
+    opacity: 1;
+    z-index: 2;
+
+    transition: 0.5s !important;
   }
 }

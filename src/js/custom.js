@@ -8,12 +8,36 @@
 
 $('input[type="range"]').rangeslider({
     polyfill : false,
-    // isRTL:true,
+
     onSlide: function(position, value) {
-      console.log(value)
+      var altInput = $('#alt-input');
+      var newValue  = this.max - this.value + this.min;
+      altInput.val(newValue);
+
+      $(".whitening__desk").removeClass("whitening__desk--active");
+      $(".bleach__woman-img").removeClass("bleach__woman-img--active");
+
+      $(".bleach__woman-img").each(function(index, elem) {
+        if(newValue === index) {
+          console.log(index)
+          $(this).addClass("bleach__woman-img--active");
+        }
+      });
+
+      $(".whitening__desk").each(function(index, elem) {
+        if(newValue === index) {
+          $(this).addClass("whitening__desk--active");
+          var shine = $(this).data("shine");
+          var time = $(this).data("time");
+          var price = $(this).data("price");
+
+          $(".parameter__total span").eq(0).text(shine + "%");
+          $(".parameter__total span").eq(1).text(time);
+          $(".parameter__total").eq(2).text(price);
+        }
+      });
     }
 });
-
 
 var videoSlider = $(".slide-video__slides");
 

@@ -68,9 +68,7 @@
                             </nav>
                         </div>
                     </div>
-                    <div class="page-header__toggle">
-                        <button class="page-header__toggle-btn" href="#menu" aria-label="Кнопка открытие, закрытие меню" data-fancybox="menu" data-fancybox-close="data-fancybox-close"><span></span></button>
-                    </div><a class="logo page-header__logo" href="index.html"><img src="img/icon/logo-wh.svg" alt="White Rabbit cтудия отбеливания зубов"/></a>
+                    <div class="page-header__toggle"><a class="page-header__toggle-btn" href="#menu" aria-label="Кнопка открытие, закрытие меню" data-fancybox="menu" data-fancybox-close="data-fancybox-close"><span></span></a></div><a class="logo page-header__logo" href="index.html"><img src="img/icon/logo-wh.svg" alt="White Rabbit cтудия отбеливания зубов"/></a>
                     <div class="phone-callback"><a class="phone-callback__tel" href="tel:88007755807">8 800 77 55 807</a>
                         <button class="phone-callback__btn" data-toggle="modal" data-target="#modal-callback">Заказать звонок</button>
                     </div>
@@ -184,39 +182,53 @@
                                     <div class="whitening">
                                         <ul class="whitening__list">
                                             <li class="whitening__item">
-                                                <div class="whitening__desk">
+                                                <div class="whitening__desk" data-shine="0" data-time="0" data-price="0">
                                                     <p class="whitening__text">До процедур</p>
                                                 </div>
                                             </li>
                                             <li class="whitening__item">
                                                 <p class="whitening__number">01 /</p>
-                                                <div class="whitening__desk whitening__desk--active"><strong class="whitening__name">LITE отбеливание</strong>
+                                                <div class="whitening__desk whitening__desk--active" data-shine="32" data-time="15" data-price="1500"><strong class="whitening__name">LITE отбеливание</strong>
                                                     <p class="whitening__text">от 3 до 6 тонов</p>
                                                 </div>
                                             </li>
                                             <li class="whitening__item">
                                                 <p class="whitening__number">02 /</p>
-                                                <div class="whitening__desk"><strong class="whitening__name">MEDIUM отбеливание</strong>
+                                                <div class="whitening__desk" data-shine="42" data-time="25" data-price="2000"><strong class="whitening__name">MEDIUM отбеливание</strong>
                                                     <p class="whitening__text">от 8 до 12 тонов</p>
                                                 </div>
                                             </li>
                                             <li class="whitening__item">
                                                 <p class="whitening__number">03 /</p>
-                                                <div class="whitening__desk"><strong class="whitening__name">ULTRA отбеливание</strong>
+                                                <div class="whitening__desk" data-shine="52" data-time="45" data-price="2500"><strong class="whitening__name">ULTRA отбеливание</strong>
                                                     <p class="whitening__text">от 14 до 20 тонов</p>
                                                 </div>
                                             </li>
                                         </ul>
-                                        <input id="alt-input" type="range" min="0" max="3" step="1" value="2" data-orientation="vertical">
+                                        <input id="alt-input" type="range" min="0" max="3" step="1" value="2" data-orientation="vertical" data-direction="ttb">
           </div>
                                         <div class="parameter">
                                             <ul class="parameter__list">
-                                                <li class="parameter__item"><span class="parameter__char">Зубы стали светлее</span><strong class="parameter__total"><sub>на:</sub> 32%</strong></li>
-                                                <li class="parameter__item"><span class="parameter__char">Время процедуры:</span><strong class="parameter__total">15 <sub>мин</sub></strong></li>
+                                                <li class="parameter__item"><span class="parameter__char">Зубы стали светлее</span><strong class="parameter__total"><sub>на:</sub> <span>32%</span></strong></li>
+                                                <li class="parameter__item"><span class="parameter__char">Время процедуры:</span><strong class="parameter__total"><span>15</span> <sub>мин</sub></strong></li>
                                                 <li class="parameter__item"><span class="parameter__char">Стоимость</span><strong class="parameter__total parameter__total--ru">1500</strong></li>
                                             </ul>
                                             <button class="btn btn--main parameter__btn" data-toggle="modal" data-target="#modal-register">Записаться в студию</button>
                                         </div>
+                                    </div>
+                                    <div class="bleach__woman">
+                                        <picture>
+                                            <source media="(min-width: 1200px)" srcset="img/woman/woman-before.png"><img class="bleach__woman-img bleach__woman-img--before" src="img/woman/woman-before-mob.png" alt="Изображение до процедур">
+          </picture>
+                                            <picture>
+                                                <source media="(min-width: 1200px)" srcset="img/woman/woman-lite.png"><img class="bleach__woman-img bleach__woman-img--active" src="img/woman/woman-lite-mob.png" alt="Изображение LITE отбеливание">
+          </picture>
+                                                <picture>
+                                                    <source media="(min-width: 1200px)" srcset="img/woman/woman-medium.png"><img class="bleach__woman-img" src="img/woman/woman-medium-mob.png" alt="Изображение MEDIUM отбеливание">
+          </picture>
+                                                    <picture>
+                                                        <source media="(min-width: 1200px)" srcset="img/woman/woman-ultra.png"><img class="bleach__woman-img" src="img/woman/woman-ultra-mob.png" alt="Изображение ULTRA отбеливание">
+          </picture>
                                     </div>
                                 </div>
                                 <div class="section visiting" id="visiting">
