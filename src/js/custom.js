@@ -1,10 +1,8 @@
 'use strict';
 
-// $(function () {
-//     $.scrollUp({
-//         scrollText: '',
-//     });
-// });
+$('.selectpicker').selectpicker({
+    dropupAuto: false
+});
 
 $('input[type="range"]').rangeslider({
     polyfill : false,
@@ -19,7 +17,7 @@ $('input[type="range"]').rangeslider({
 
       $(".bleach__woman-img").each(function(index, elem) {
         if(newValue === index) {
-          console.log(index)
+          // console.log(index)
           $(this).addClass("bleach__woman-img--active");
         }
       });
@@ -37,6 +35,15 @@ $('input[type="range"]').rangeslider({
         }
       });
     }
+});
+
+
+$(".whitening__desk").on("click", function(e) {
+  var $inputRange = $('input[type="range"]');
+  var value = $(this).data("number");
+
+  $inputRange.val(value).change();
+  $inputRange.rangeslider('update', true);
 });
 
 var videoSlider = $(".slide-video__slides");
@@ -67,8 +74,7 @@ videoSlider.slick({
       breakpoint: 1200,
       settings: {
         draggable: true,
-        vertical: false,
-        slidesToShow: 4
+        vertical: false
       }
     },
     {
@@ -113,9 +119,12 @@ $('.result__slider').owlCarousel({
   dots: false,
   responsive:{
     0:{
-        items: 3,
-        autoWidth: true,
+        items: 1,
         center: true
+    },
+    400:{
+      // items: 3,
+      items: 2
     },
     768:{
         items:3
@@ -131,7 +140,7 @@ var stageSlider = $(".stages__slider");
 stageSlider.owlCarousel({
   loop: false,
   margin: 95,
-  nav: false,
+  nav: true,
   dots: false,
   autoHeight: true,
   URLhashListener: false,
@@ -185,7 +194,21 @@ $(".service__question").hover(
   }
 )
 
+$(".service__close").on("click", function() {
+  $(".service__answer").removeClass("service__answer--active");
+});
+
 $('input[type=tel]').mask("+7 (000) 000 00 00");
+
+// $(document).on("focus", 'input[type="tel"]', function() {
+//   var value = $.trim($('input[type=tel]').val());
+//   if(value.length > 0) {
+
+//   } else {
+//     $(this).val("+7 (")
+//   }
+// })
+
 
 // Друпдаун котегории товара
 
@@ -220,6 +243,7 @@ $('[data-toggle="datepicker"]').datepicker({
   monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
   weekStart: 1,
   startView: 0,
+  autoHide: true,
   zIndex: 99999999,
   disabledClass: "disabled",
   startDate: new Date(),

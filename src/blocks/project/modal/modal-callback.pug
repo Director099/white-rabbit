@@ -7,11 +7,11 @@ mixin modal-callback()
           form.form
             h3.form__title Заказать обратный звонок
             label.field-text
-              span.field-text__name Ваш телефон
-              input.field-text__input(type="tel" placeholder="+7 (___) - __ - __ - ___" required)
-            label.field-text.form__mb
               span.field-text__name ваше имя
-              input.field-text__input(type="text" placeholder="Валерия" required)
+              input.field-text__input.field-text__input--name(type="text" placeholder="Валерия" required)
+            label.field-text.form__mb
+              span.field-text__name Ваш телефон
+              input.field-text__input.field-text__input--phone(type="tel" placeholder="+7 (___) - __ - __ - ___" required minlength="18")
             button.btn.btn--main.form__btn Записаться в студию
             label.field-checkbox
               input.field-checkbox__input(type="checkbox" checked)

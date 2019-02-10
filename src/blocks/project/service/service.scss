@@ -169,6 +169,7 @@
   position: absolute;
   top: -4px;
   right: -1px;
+  padding: 5px;
   width: 20px;
   height: 20px;
   border: none;
@@ -447,4 +448,40 @@
   line-height: 29px;
   margin: 0;
   color: $white;
+}
+
+.service__close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  display: block;
+  border-radius: 50px;
+  background: #86878a;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: calc(100% - 7px);
+    background: #000;
+  }
+
+  &::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  @media (min-width: $screen-md) {
+    display: none;
+  }
 }

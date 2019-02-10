@@ -14,35 +14,36 @@ block header
             button.main-block__toggle(type="button", aria-label="Переключение разницы до и после")
               span(aria-label="Переключатель")
             span.main-block__text Посмотри, как изменятся твои зубы после первой процедуры за 15-45 мин
+          .main-block__center
             button.btn.btn--main.main-block__btn(data-toggle="modal" data-target="#modal-register") Записаться в студию
-          ul.social.main-block__social
-            li.social__item
-              a.social__link(href="#" target="_blank" aria-label="Социальная сеть Facebook") vkontakte
-            li.social__item
-              a.social__link(href="#" target="_blank" aria-label="Социальная сеть Instagram") facebook
-            li.social__item
-              a.social__link(href="#" target="_blank" aria-label="Социальная сеть Vkontakte") instagram
+            ul.social.main-block__social
+              li.social__item
+                a.social__link(href="#" target="_blank" aria-label="Социальная сеть Facebook") vkontakte
+              li.social__item
+                a.social__link(href="#" target="_blank" aria-label="Социальная сеть Instagram") facebook
+              li.social__item
+                a.social__link(href="#" target="_blank" aria-label="Социальная сеть Vkontakte") instagram
     .slide-video
       .slide-video__slides
         a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
-          img.slide-video__img(src="img/content-img/video-1.jpg")
-          button.slide-video__play(type="button" aria-label="Запуск видео")
+          img.slide-video__img(src="img/content-img/video-1.jpg" alt="отзывы клиентов")
+          span.slide-video__play(aria-label="Запуск видео")
           p.slide-video__rev #отзывы клиентов
         a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
-          img.slide-video__img(src="img/content-img/video-2.jpg")
-          button.slide-video__play(type="button" aria-label="Запуск видео")
+          img.slide-video__img(src="img/content-img/video-2.jpg" alt="отзывы клиентов")
+          span.slide-video__play(aria-label="Запуск видео")
           p.slide-video__rev #отзывы клиентов
         a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
-          img.slide-video__img(src="img/content-img/video-3.jpg")
-          button.slide-video__play(type="button" aria-label="Запуск видео")
+          img.slide-video__img(src="img/content-img/video-3.jpg" alt="отзывы клиентов")
+          span.slide-video__play(aria-label="Запуск видео")
           p.slide-video__rev #отзывы клиентов
         a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
-          img.slide-video__img(src="img/content-img/video-2.jpg")
-          button.slide-video__play(type="button" aria-label="Запуск видео")
+          img.slide-video__img(src="img/content-img/video-2.jpg" alt="отзывы клиентов")
+          span.slide-video__play(aria-label="Запуск видео")
           p.slide-video__rev #отзывы клиентов
         a.slide-video__item(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="")
-          img.slide-video__img(src="img/content-img/video-1.jpg")
-          button.slide-video__play(type="button" aria-label="Запуск видео")
+          img.slide-video__img(src="img/content-img/video-1.jpg" alt="отзывы клиентов")
+          span.slide-video__play(aria-label="Запуск видео")
           p.slide-video__rev #отзывы клиентов
       footer.slide-video__footer
         p.slide-video__sum
@@ -119,21 +120,21 @@ block content
         .whitening
           ul.whitening__list
             li.whitening__item
-              .whitening__desk(data-shine="0", data-time="0", data-price="0")
+              .whitening__desk(data-number="0", data-shine="0", data-time="0", data-price="0")
                 p.whitening__text До процедур
             li.whitening__item
               p.whitening__number 01 /
-              .whitening__desk.whitening__desk--active(data-shine="32", data-time="15", data-price="1500")
+              .whitening__desk.whitening__desk--active(data-number="1", data-shine="32", data-time="15", data-price="1500")
                 strong.whitening__name LITE отбеливание
                 p.whitening__text от 3 до 6 тонов
             li.whitening__item
               p.whitening__number 02 /
-              .whitening__desk(data-shine="42", data-time="25", data-price="2000")
+              .whitening__desk(data-number="2", data-shine="42", data-time="25", data-price="2000")
                 strong.whitening__name MEDIUM отбеливание
                 p.whitening__text от 8 до 12 тонов
             li.whitening__item
               p.whitening__number 03 /
-              .whitening__desk(data-shine="52", data-time="45", data-price="2500")
+              .whitening__desk(data-number="3", data-shine="52", data-time="45", data-price="2500")
                 strong.whitening__name ULTRA отбеливание
                 p.whitening__text от 14 до 20 тонов
           input(id="alt-input" type="range" min="0" max="3" step="1" value="2" data-orientation="vertical" data-direction="ttb")
@@ -150,18 +151,10 @@ block content
               strong.parameter__total.parameter__total--ru 1500
           button.btn.btn--main.parameter__btn(data-toggle="modal" data-target="#modal-register") Записаться в студию
       .bleach__woman
-        picture
-          source(media="(min-width: 1200px)" srcset="img/woman/woman-before.png")
-          img.bleach__woman-img.bleach__woman-img--before(src="img/woman/woman-before-mob.png", alt="Изображение до процедур")
-        picture
-          source(media="(min-width: 1200px)" srcset="img/woman/woman-lite.png")
-          img.bleach__woman-img.bleach__woman-img--active(src="img/woman/woman-lite-mob.png", alt="Изображение LITE отбеливание")
-        picture
-          source(media="(min-width: 1200px)" srcset="img/woman/woman-medium.png")
-          img.bleach__woman-img(src="img/woman/woman-medium-mob.png", alt="Изображение MEDIUM отбеливание")
-        picture
-          source(media="(min-width: 1200px)" srcset="img/woman/woman-ultra.png")
-          img.bleach__woman-img(src="img/woman/woman-ultra-mob.png", alt="Изображение ULTRA отбеливание")
+        img.bleach__woman-img(src="img/woman/woman-lite.png", alt="Изображение LITE отбеливание")
+        img.bleach__woman-img.bleach__woman-img--active(src="img/woman/woman-lite.png", alt="Изображение LITE отбеливание")
+        img.bleach__woman-img(src="img/woman/woman-medium.png", alt="Изображение MEDIUM отбеливание")
+        img.bleach__woman-img(src="img/woman/woman-ultra.png", alt="Изображение ULTRA отбеливание")
     .section.visiting(id="visiting")
       .container
         section.section__header.section__header--center.visiting__header
@@ -204,6 +197,7 @@ block content
                   span.service__char-total.service__char-total--ru 3300
                 button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
               .service__answer
+                button.service__close(aria-label="Закртыие всплывашки")
                 p тут должно быть описание ультра - отбеливания
           li.services__column
             section.service.service--medium
@@ -222,6 +216,7 @@ block content
                   span.service__char-total.service__char-total--ru 2700
                 button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
               .service__answer
+                button.service__close(aria-label="Закртыие всплывашки")
                 p тут должно быть описание ультра - отбеливания
           li.services__column
             section.service.service--light
@@ -240,6 +235,7 @@ block content
                   span.service__char-total.service__char-total--ru 1500
                 button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
               .service__answer
+                button.service__close(aria-label="Закртыие всплывашки")
                 p тут должно быть описание ультра - отбеливания
           li.services__column
             section.service.service--min.service--fortification
@@ -256,6 +252,7 @@ block content
                   span.service__char-total.service__char-total--ru 3300
                 button.btn.btn--main.service__btn(data-toggle="modal" data-target="#modal-register") Записаться
               .service__answer
+                button.service__close(aria-label="Закртыие всплывашки")
                 p тут должно быть описание ультра - отбеливания
           li.services__column
             section.service.service--min.service--couple
@@ -269,6 +266,7 @@ block content
                   span.service__char-total.service__char-total--ru.service__char-total--size 1000
                 p.service__stipulation.service__stipulation--white суммарная скидка, при одновременном сеансе
               .service__answer
+                button.service__close(aria-label="Закртыие всплывашки")
                 p тут должно быть описание ультра - отбеливания
           li.services__column
             section.service.service--min.service--birthday
@@ -282,6 +280,7 @@ block content
                   span.service__char-total.service__char-total--ru.service__char-total--size.service__char-total--black 500
                 p.service__stipulation на любой вид услуг в студии отбеливания
               .service__answer
+                button.service__close(aria-label="Закртыие всплывашки")
                 p тут должно быть описание ультра - отбеливания
     .section.result(id="result")
       .container
@@ -289,36 +288,42 @@ block content
           p.title-tagline Результаты процедуры
           h2.title Посмотрите #[span результат] отбеливания на примере наших клиентов
       .result__slider.owl-carousel.owl-theme
-        a.result__item(href="img/content-img/result-1.jpg", data-fancybox)
+        .result__item
           img.result__img(src="img/content-img/result-1.jpg", alt="Изображение девушки")
           .result__insta
+            a.result__increase(href="img/content-img/result-1.jpg", data-fancybox)
             span instagram
-            strong @whiterabbit_studio
-          a.result__item(href="img/content-img/result-2.jpg", data-fancybox)
-            img.result__img(src="img/content-img/result-2.jpg", alt="Изображение девушки")
-            .result__insta
-              span instagram
-              strong @whiterabbit_studio
-          a.result__item(href="img/content-img/result-3.jpg", data-fancybox)
-            img.result__img(src="img/content-img/result-3.jpg", alt="Изображение девушки")
-            .result__insta
-              span instagram
-              strong @whiterabbit_studio
-          a.result__item(href="img/content-img/result-4.jpg", data-fancybox)
-            img.result__img(src="img/content-img/result-4.jpg", alt="Изображение девушки")
-            .result__insta
-              span instagram
-              strong @whiterabbit_studio
-          a.result__item(href="img/content-img/result-5.jpg", data-fancybox)
-            img.result__img(src="img/content-img/result-5.jpg", alt="Изображение девушки")
-            .result__insta
-              span instagram
-              strong @whiterabbit_studio
-          a.result__item(href="img/content-img/result-5.jpg", data-fancybox)
-            img.result__img(src="img/content-img/result-5.jpg", alt="Изображение девушки")
-            .result__insta
-              span instagram
-              strong @whiterabbit_studio
+            a(href="#" target="_blank") @whiterabbit_studio
+        .result__item
+          img.result__img(src="img/content-img/result-2.jpg", alt="Изображение девушки")
+          .result__insta
+            a.result__increase(href="img/content-img/result-2.jpg", data-fancybox)
+            span instagram
+            a(href="#" target="_blank") @whiterabbit_studio
+        .result__item
+          img.result__img(src="img/content-img/result-3.jpg", alt="Изображение девушки")
+          .result__insta
+            a.result__increase(href="img/content-img/result-3.jpg", data-fancybox)
+            span instagram
+            a(href="#" target="_blank") @whiterabbit_studio
+        .result__item
+          img.result__img(src="img/content-img/result-4.jpg", alt="Изображение девушки")
+          .result__insta
+            a.result__increase(href="img/content-img/result-4.jpg", data-fancybox)
+            span instagram
+            a(href="#" target="_blank") @whiterabbit_studio
+        .result__item
+          img.result__img(src="img/content-img/result-5.jpg", alt="Изображение девушки")
+          .result__insta
+            a.result__increase(href="img/content-img/result-5.jpg", data-fancybox)
+            span instagram
+            a(href="#" target="_blank") @whiterabbit_studio
+        .result__item
+          img.result__img(src="img/content-img/result-5.jpg", alt="Изображение девушки")
+          .result__insta
+            a.result__increase(href="img/content-img/result-5.jpg", data-fancybox)
+            span instagram
+            a(href="#" target="_blank") @whiterabbit_studio
     .section.section--black.catalog(id="catalog")
       .container
         section.section__header.section__header--center.catalog__header

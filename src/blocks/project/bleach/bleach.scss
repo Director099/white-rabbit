@@ -49,10 +49,6 @@
 }
 
 .bleach__woman {
-  // position: absolute;
-  // bottom: -480px;
-  // left: 140px;
-  // right: 0;
   z-index: 0;
 
   img {
@@ -66,6 +62,10 @@
     transition: 0.5s;
     transition-delay: 0.5s;
     z-index: 0;
+
+    @media (min-width: $screen-md) {
+      top: 285px;
+    }
 
     @media (min-width: $screen-xl) {
       top: 54px;

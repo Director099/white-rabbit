@@ -1,0 +1,34 @@
+extends pug/layout.pug
+
+block meta
+  title Новость
+block header
+
+block content
+  main
+    .page.page--single
+      .container
+        header.page__header
+          a.page__prev(href="blog.html") Назад
+          a.page__home(href="index.html") На главную страницу
+        article.single
+          header.single__header
+            strong.single__teg Лечение, здоровье
+            h1.single__title Как замечательно отбеливать зубы в студии WR
+            time.single__time(datetime="2018-11-26") 26, ноябрь 2018
+          p Классический «Lorem ipsum dolor sit amet…» проход отнести к ремиксов римского философа Цицерона 45 г. до н.э. текст De Finibus Bonorum et Malorum («О крайностями добра и зла»). Более конкретно, проход, как полагают, происходит из секций 1.10.32 - 33 из его текста, с наиболее заметным часть извлечена ниже:
+          img(src="img/content-img/blog-2.jpg" alt="Как замечательно отбеливать зубы в студии WR")
+          p Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск
+          h2 Какой замечательный заголовок h2
+          p Пять столетий спустя Lorem Ipsum испытал всплеск популярности с выпуском сухого переноса листов Letraset в. Эти листы надписи можно потереть на любом месте и были быстро приняты художники-графики, принтеры, архитекторов и рекламодателей для их профессионального вида и простоты использования. Letraset включены Lorem Ipsum проходы в арсеналом шрифтов, стилей и размеров, затвердевание место Латинского-эск
+          .digest.digest--big.single__digest
+            img.digest__img(src="img/content-img/digest-1.jpg", alt="Заголовок статьи с видео блоком")
+            section.digest__prev.digest__prev--none-color
+              a.digest__play(href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" data-fancybox="" aria-label="Включение видео")
+                span
+              h3.digest__big-title.digest__title--black Заголовок статьи с видео блоком
+              p.digest__text.single__text Товарищи! начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании модели развития.
+          h2 Какой замечательный заголовок h3
+          p Классический «Lorem ipsum dolor sit amet…» проход отнести к ремиксов римского философа Цицерона 45 г. до н.э. текст De Finibus Bonorum et Malorum («О крайностями добра и :
+block footer
+  +page-footer()

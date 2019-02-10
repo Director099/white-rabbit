@@ -83,19 +83,27 @@ $border-radius:               rem(3px) !default;
       color: #9aaac7;
       opacity: 1;
     }
-
-    // @at-root textarea#{&} {
-    //   $textarea-height: ($line-height * 2) + ($field-padding-vertical * 2);
-
-    //   height: auto;
-    //   min-height: calc(#{$textarea-height} + 2px);
-    //   resize: vertical;
-    // }
   }
 
   &__help-text {
     // @include field-help-text;
   }
+}
+
+.field-text__input--phone {
+  padding-left: 35px;
+  background-image: url("../img/icon/phone-gradient.png");
+  background-position: 15px 50%;
+  background-size: 12px;
+  background-repeat: no-repeat;
+}
+
+.field-text__input--name {
+  padding-left: 35px;
+  background-image: url("../img/icon/user.svg");
+  background-position: 15px 50%;
+  background-size: 12px;
+  background-repeat: no-repeat;
 }
 
 .field-text .dropdown-toggle {
@@ -109,4 +117,86 @@ $border-radius:               rem(3px) !default;
   padding: 10px 5px 9.5px 16px;
   box-shadow: 0 13px 13px rgba(53, 85, 136, 0.25);
   border: 1px solid #3f4959;
+}
+
+.selectpicker--dots + .dropdown-toggle {
+  padding-left: 55px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 6px;
+    border: none;
+    background: url("../img/icon/dots.png") no-repeat center;
+  }
+}
+
+.field-text .bootstrap-select .dropdown-menu .inner {
+  max-height: 208px !important;
+}
+
+.bootstrap-select.show .dropdown-toggle{
+  border-radius: 10px 10px 0 0px;
+}
+
+.dropdown-menu {
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0 0 10px 10px;
+  background-color: #3f4959;
+
+}
+
+.dropdown-item {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 14px;
+  color: $white;
+
+  &:hover {
+    color: $white;
+    background-color: #4f5a6b;
+  }
+}
+
+.bootstrap-select .dropdown-menu li a {
+  position: relative;
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+    background-color: $white;
+  }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #4f5a6b;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-60%) rotate(40deg);
+    width: 4px;
+    height: 8px;
+    z-index: 1;
+
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+  }
 }

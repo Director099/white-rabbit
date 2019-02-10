@@ -80,6 +80,10 @@ $border-radius:               rem(3px) !default;
     text-transform: none;
     letter-spacing: normal;
 
+    &:hover {
+      color: $black;
+    }
+
     @media (min-width: $screen-md) {
       font-size: 16px;
       padding: 0 0 12px;

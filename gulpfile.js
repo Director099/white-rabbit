@@ -175,5 +175,5 @@ function reload(done) {
 gulp.task('tinify', function () {
   return gulp.src('src/img/**/*.{png,jpg}')
     .pipe(tinify('q2jg3LuY5Bktm617swAOD7nk3X3Mc8OH'))
-    .pipe(gulp.dest('build/new-img'));
+    .pipe(gulp.dest('src/new-img'));
 });

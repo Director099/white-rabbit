@@ -1,7 +1,6 @@
 .fullpage {
-  // height: 100vh;
   position: relative;
-  min-height: 799px;
+
   overflow: hidden;
   background: #030303;
   z-index: 1;
@@ -17,6 +16,11 @@
     z-index: 2;
     background: url("../img/decor/decor-light.png") no-repeat top;
   }
+
+  @media (min-width: $screen-xl) {
+    height: 100vh;
+    min-height: 799px;
+  }
 }
 
 .fullpage__wrap {
@@ -24,8 +28,13 @@
   z-index: 3;
 
   @media (min-width: $screen-xl) {
+    height: 100%;
     width: calc(100% - 205px);
     padding-left: 205px;
+
+    > .container {
+      height: 100%;
+    }
   }
 }
 
@@ -61,4 +70,36 @@
   &--none {
     opacity: 0;
   }
+}
+
+.fullpage__center  {
+  text-align: center;
+  padding-bottom: 40px;
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 110px;
+  }
+}
+
+.fullpage__text {
+  color: $white;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 27px;
+}
+
+.fullpage--blog {
+  &::before {
+    display: none;
+    min-height: auto;
+  }
+
+  @media (min-width: $screen-xl) {
+    height: auto;
+    min-height: auto;
+  }
+}
+
+.fullpage--blog .phone-callback {
+  padding-right: 0;
 }

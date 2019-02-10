@@ -19,6 +19,12 @@
   }
 }
 
+.slick-list {
+  @media (min-width: $screen-xl) {
+    height: 100% !important;
+  }
+}
+
 .slide-video__item {
   position: relative;
   display: block;
@@ -33,10 +39,6 @@
     right: 0;
     top: 0;
     background-color: rgba(41, 44, 48, 0.64);
-  }
-
-  @media (min-width: $screen-xl) {
-    height: 33.333333%;
   }
 }
 

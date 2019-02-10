@@ -1,12 +1,19 @@
 .main-block {
   position: relative;
+
+  @media (min-width: $screen-xl) {
+    height: calc(100% - 173px);
+  }
 }
 
 .main-block__wrap {
   max-width: 250px;
+  margin-bottom: 51px;
 
   @media (min-width: $screen-xl) {
     max-width: 330px;
+    // margin-bottom: 46px;
+    margin-bottom: 0;
   }
 }
 
@@ -57,12 +64,12 @@
   font-weight: 300;
   line-height: 16px;
   color: #6a7388;
-  margin-bottom: 51px;
+  // margin-bottom: 51px;
 
   @media (min-width: $screen-xl) {
     font-size: 12px;
     line-height: 21px;
-    margin-bottom: 46px;
+
   }
 }
 
@@ -190,7 +197,13 @@
   padding: 11px 10px 10px;
   border-bottom: 4px solid #6b1953;
   margin-bottom: 39px;
-  box-shadow: 0 0px 62px #6c3a79, 0 0 79px rgba(195, 63, 138, 0.29);
+  transition: $time;
+  // box-shadow: 0 0px 62px #6c3a79, 0 0 79px rgba(195, 63, 138, 0.29);
+  box-shadow: 0 0px 28px #6c3a79, 0 0 79px rgba(195, 63, 138, 0.29);
+
+  &:hover {
+    box-shadow: 0 0px 62px #6c3a79, 0 0 79px rgba(195, 63, 138, 0.29);
+  }
 
   @media (min-width: $screen-xl) {
     margin-bottom: 0;
@@ -203,10 +216,9 @@
   margin: 0 0 26px;
 
   @media (min-width: $screen-xl) {
-    position: absolute;
-    bottom: 30px;
     right: 4px;
     margin: 0;
+    padding-right: 41px;
   }
 }
 
@@ -228,8 +240,19 @@
   padding: 0;
   color: $white;
   font-family: $geometria;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 300;
   width: auto;
   height: auto;
+}
+
+.main-block__center {
+  position: relative;
+
+  @media (min-width: $screen-xl) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100% - 360px);
+  }
 }
