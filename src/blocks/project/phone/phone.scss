@@ -1,0 +1,65 @@
+.phone {
+  max-width: 178px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 38px;
+  text-align: center;
+
+  @media (min-width: $screen-md) {
+    margin-right: 0;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+
+.phone__text {
+  display: block;
+  font-size: 10px;
+  font-weight: 300;
+  color: #737f91;
+  margin-bottom: 12px;
+
+  @media (min-width: $screen-md) {
+    font-size: 11px;
+    margin-bottom: 13px;
+  }
+}
+
+.phone__link {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 21px;
+  font-weight: 700;
+  font-family: $unineue;
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+
+
+  @media (min-width: $screen-md) {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
+
+.phone__list-messager {
+  @include ul-none();
+  display: flex;
+  justify-content: space-between;
+  max-width: 150px;
+  margin: 0 auto;
+  font-size: 10px;
+
+  @media (min-width: $screen-md) {
+    max-width: 100%;
+  }
+}
+
+.phone__messager {
+  font-size: 10px;
+  font-weight: 300;
+  color: $white;
+}

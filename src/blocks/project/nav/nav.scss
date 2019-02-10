@@ -1,0 +1,38 @@
+.nav {
+  justify-content: center;
+  // margin-bottom: 86px;
+}
+
+.nav__link {
+  display: inline-block;
+  width: 100%;
+  font-size: 10px;
+  font-weight: 300;
+  color: $white;
+  padding: 10px 10px 10px 22px;
+  // border-radius: 50px;
+  border: none;
+  transition: $time;
+  border-top: 1px solid $white;
+
+  &:hover {
+    color: #6a7388;
+  }
+
+  @media (min-width: $screen-lg) {
+    width: auto;
+    font-size: 14px;
+    padding: 15px 34px;
+    border-radius: 50px;
+    border-top: none;
+    color: #6a7388;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .nav__link.active {
+    background-color: #3f4959;
+    color: $white;
+    font-weight: 700;
+  }
+}

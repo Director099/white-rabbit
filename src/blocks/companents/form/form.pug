@@ -2,64 +2,37 @@
 //- ВНИМАНИЕ: в файле две примеси
 
 mixin form(mods)
-
-  //- Принимает:
-  //-   mods    {string} - список модификаторов
-  //- Вызов:
-        +form()
-          +fieldset('Название1')
-            +field-text({
-              helpText: 'Подсказка',
-              attrs: {
-                placeholder: 'Пример'
-              }
-            })
-            +field-text({
-              helpText: 'Подсказка',
-              attrs: {
-                placeholder: 'Пример'
-              }
-            })
-
-  -
-    // список модификаторов
-    var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-      var modsList = mods.split(',');
-      for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' form--' + modsList[i].trim();
-      }
-    }
-
-  form.form(class=allMods)&attributes(attributes)
-    block
-
-
-
-mixin fieldset(legend, mods)
-
-  //- Принимает:
-  //-   legend  {string} - название группы полей
-  //-   mods    {string} - список модификаторов
-  //- Вызов:
-        +fieldset('Название1')
-          +field-text({
-            helpText: 'Подсказка',
-            attrs: {
-              placeholder: 'Пример'
-            }
-          })
-
-  -
-    // список модификаторов
-    var allMods = '';
-    if(typeof(mods) !== 'undefined' && mods) {
-      var modsList = mods.split(',');
-      for (var i = 0; i < modsList.length; i++) {
-        allMods = allMods + ' form--' + modsList[i].trim();
-      }
-    }
-
-  fieldset.form__fieldset(class=allMods)&attributes(attributes)
-    legend.form__legend!= legend
-    block
+  form.form(class= mods)
+    h3.form__title Онлайн запись в студию
+    label.field-text
+      span.field-text__name ваше имя
+      input.field-text__input.field-text__input--name(type="text" placeholder="Валерия" required)
+    label.field-text
+      span.field-text__name Ваш телефон
+      input.field-text__input.field-text__input--phone(type="tel" minlength="18" placeholder="+7 (___) - __ - __ - ___" required)
+    span.field-text__name выберете время
+    .form__row.form__row--ident
+      .form__column-7
+        label.field-text()
+          input.field-text__input(type="text" data-toggle="datepicker" placeholder="28 октября" required)
+      .form__column-5
+        label.field-text
+          select.selectpicker(data-width="100%" data-dropup-auto="false")
+            option 9 : 00
+            option 10 : 00
+            option 11 : 00
+            option 12 : 00
+            option 13 : 00
+            option 14 : 00
+            option 15 : 00
+            option 16 : 00
+            option 17 : 00
+            option 18 : 00
+            option 19 : 00
+            option 20 : 00
+            option 21 : 00
+            option 22 : 00
+    button.btn.btn--main.form__btn Записаться в студию
+    label.field-checkbox
+      input.field-checkbox__input(type="checkbox" checked)
+      span.field-checkbox__text Я даю согласие на обработку #[a(href="#" target="_blank") персональных данных]

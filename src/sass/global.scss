@@ -1,3 +1,8 @@
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -24,4 +29,21 @@ button {
 
 img {
   max-width: 100%;
+}
+
+.fancybox-active {
+  overflow: hidden !important;
+  position: fixed;
+
+  @media (min-width: $screen-xl) {
+    position: static;
+  }
+}
+
+.datepicker-dropdown  {
+  // z-index: 99999999999 !important;
+}
+
+.datepicker-panel>ul>li.muted, .datepicker-panel>ul>li.muted:hover {
+  opacity:  0.5 !important;
 }

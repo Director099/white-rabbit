@@ -10,11 +10,20 @@
 @import "../../node_modules/bootstrap/scss/transitions";
 @import "../../node_modules/bootstrap/scss/modal";
 @import "../../node_modules/bootstrap/scss/reboot";
-@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/dropdown";
+// @import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules/bootstrap-select/sass/bootstrap-select.scss";
 
-// @import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
-// @import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
-// @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel.css";
+@import "../../node_modules/owl.carousel/dist/assets/owl.theme.default.css";
+
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
+@import "../../node_modules/@chenfengyuan/datepicker/dist/datepicker.min.css";
+
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css";
 
 // My style
 
@@ -31,10 +40,43 @@
 @import "../blocks/companents/title/title";
 @import "../blocks/companents/phone-callback/phone-callback";
 @import "../blocks/companents/logo/logo";
+@import "../blocks/companents/btn/btn";
+@import "../blocks/companents/social/social";
+@import "../blocks/companents/field-text/field-text";
+@import "../blocks/companents/field-checkbox/field-checkbox";
+@import "../blocks/companents/form/form";
+@import "../blocks/companents/menu/menu";
+@import "../blocks/companents/pagination/pagination";
 
-
+@import "../blocks/project/modal/modal";
+@import "../blocks/project/container/container";
+@import "../blocks/project/section/section";
 @import "../blocks/project/page-header/page-header";
 @import "../blocks/project/page-footer/page-footer";
 @import "../blocks/project/fullpage/fullpage";
-
+@import "../blocks/project/main-block/main-block";
+@import "../blocks/project/result/result";
+@import "../blocks/project/bleach/bleach";
+@import "../blocks/project/range/range";
+@import "../blocks/project/rangeslider/rangeslider";
+@import "../blocks/project/whitening/whitening";
+@import "../blocks/project/services/services";
+@import "../blocks/project/stage/stage";
+@import "../blocks/project/stages/stages";
+@import "../blocks/project/parameter/parameter";
+@import "../blocks/project/catalog/catalog";
+@import "../blocks/project/nav/nav";
+@import "../blocks/project/tovar/tovar";
+@import "../blocks/project/news/news";
+@import "../blocks/project/digest/digest";
+@import "../blocks/project/phone/phone";
+@import "../blocks/project/service/service";
+@import "../blocks/project/visiting/visiting";
+@import "../blocks/project/navigation/navigation";
+@import "../blocks/project/view-tovar/view-tovar";
+@import "../blocks/project/page/page";
+@import "../blocks/project/slide-video/slide-video";
+@import "../blocks/project/blog-prev/blog-prev";
+@import "../blocks/project/cat-menu/cat-menu";
+@import "../blocks/project/single/single";
 

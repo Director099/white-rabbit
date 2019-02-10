@@ -1,5 +1,105 @@
 .fullpage {
-  // height: 100vh;
-  min-height: 800px;
-  background-color: #030303;
+  position: relative;
+
+  overflow: hidden;
+  background: #030303;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: url("../img/decor/decor-light.png") no-repeat top;
+  }
+
+  @media (min-width: $screen-xl) {
+    height: 100vh;
+    min-height: 799px;
+  }
+}
+
+.fullpage__wrap {
+  position: relative;
+  z-index: 3;
+
+  @media (min-width: $screen-xl) {
+    height: 100%;
+    width: calc(100% - 205px);
+    padding-left: 205px;
+
+    > .container {
+      height: 100%;
+    }
+  }
+}
+
+.fullpage__woman {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: -78px;
+  margin: 0 0 0 auto;
+  width: 278px;
+  height: 682px;
+  z-index: 1;
+
+
+  @media (min-width: $screen-xl) {
+    bottom: -120px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 418px;
+    height: 784px;
+  }
+}
+
+.fullpage__woman-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: $time;
+
+  &--none {
+    opacity: 0;
+  }
+}
+
+.fullpage__center  {
+  text-align: center;
+  padding-bottom: 40px;
+
+  @media (min-width: $screen-xl) {
+    padding-bottom: 110px;
+  }
+}
+
+.fullpage__text {
+  color: $white;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 27px;
+}
+
+.fullpage--blog {
+  &::before {
+    display: none;
+    min-height: auto;
+  }
+
+  @media (min-width: $screen-xl) {
+    height: auto;
+    min-height: auto;
+  }
+}
+
+.fullpage--blog .phone-callback {
+  padding-right: 0;
 }

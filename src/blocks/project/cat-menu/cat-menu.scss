@@ -1,0 +1,45 @@
+.cat-menu {
+  border: 1px solid #f6f6f6;
+  margin-bottom: 40px;
+  margin-left: auto;
+  padding: 35px 24px 9px 24px;
+
+  @media (min-width: $screen-xl) {
+    max-width: 288px;
+    margin-bottom: 0;
+  }
+}
+
+.cat-menu__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #222333;
+  margin-bottom: 40px;
+}
+
+.cat-menu__list {
+  @include ul-none();
+  margin-left: 3px;
+  margin-top: 16px;
+}
+
+.cat-menu__item {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #f6f6f6;
+  margin-bottom: 22px;
+}
+
+.cat-menu__link {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: $black;
+
+  &:hover {
+    color: $black;
+  }
+}

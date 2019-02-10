@@ -8,6 +8,7 @@
   display: inline-block;
   color: $color;
   background-image: $gradient-color;
+  background-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
