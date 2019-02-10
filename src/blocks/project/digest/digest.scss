@@ -214,6 +214,11 @@
   padding: 7px 21px 6px 12px;
   margin-right: 30px;
   font-size: 8px;
+  box-shadow: 0 0px 0px rgba(150,43,122,.85);
+
+  &:hover {
+    box-shadow: 0 1px 15px rgba(150,43,122,1);
+  }
 
   &::after {
     content: "";

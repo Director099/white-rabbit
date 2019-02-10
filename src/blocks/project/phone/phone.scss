@@ -34,6 +34,11 @@
   font-family: $unineue;
   color: $white;
 
+  &:hover {
+    color: $white;
+  }
+
+
   @media (min-width: $screen-md) {
     font-size: 24px;
     margin-bottom: 12px;
@@ -54,7 +59,7 @@
 }
 
 .phone__messager {
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 300;
   color: $white;
 }

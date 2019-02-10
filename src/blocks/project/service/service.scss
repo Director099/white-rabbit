@@ -364,6 +364,11 @@
   bottom: 5px;
   padding: 10px 19px;
   font-size: 9px;
+  box-shadow: 0 0px 0px rgba(150,43,122,.85);
+
+  &:hover {
+    box-shadow: 0 0px 20px rgba(150,43,122,1);
+  }
 }
 
 .service__stipulation {

@@ -122,7 +122,11 @@
   padding: 13px 30px 10px;
   max-width: 260px;
   width: 100%;
-  box-shadow: 0 4px 0 #8f287e, 0 9px 13px rgba(150,43,122,.35),  0 0px 62px #6c3a79, 0 0 79px rgba(195, 63, 138, 0.29);
+  box-shadow: 0 4px 0 #8f287e, 0 9px 13px rgba(150,43,122,.35),  0 0px 32px #6c3a79, 0 0 79px rgba(195, 63, 138, 0.29);
+
+  &:hover {
+    box-shadow: 0 4px 0 #8f287e, 0 9px 13px rgba(150,43,122,.35),  0 0px 62px #6c3a79, 0 0 79px rgba(195, 63, 139, 0.29);
+  }
 
   @media(min-width: $screen-xl) {
     padding: 23px 30px 20px;
