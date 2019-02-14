@@ -3620,11 +3620,31 @@ a.pagination__item:hover, a.pagination__item:focus {
     color: #efefef;
     margin-bottom: 7px;
 }
-.result__insta a {
+.result__link {
+    position: relative;
     font-size: 14px;
     font-weight: 700;
-    text-shadow: 0px 0px 3px #000000;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
     color: #efefef;
+    padding-left: 30px;
+}
+.result__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url("../img/icon/instagram-logo.svg") no-repeat left top/cover;
+}
+.result__link::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0px 25px 5px rgba(0, 0, 0, 0.8);
 }
 .result .owl-nav {
     margin: 0;
@@ -4804,8 +4824,8 @@ a.pagination__item:hover, a.pagination__item:focus {
 }
 .service__close {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 23px;
+    right: 25px;
     padding: 5px;
     width: 20px;
     height: 20px;
@@ -5235,7 +5255,7 @@ a.pagination__item:hover, a.pagination__item:focus {
     padding-bottom: 4px;
 }
 .cat-menu {
-    border: 1px solid #f6f6f6;
+    border: 1px solid #eeeeee;
     margin-bottom: 40px;
     margin-left: auto;
     padding: 35px 24px 9px 24px;
@@ -5256,7 +5276,7 @@ a.pagination__item:hover, a.pagination__item:focus {
 }
 .cat-menu__item {
     padding-bottom: 9px;
-    border-bottom: 1px solid #f6f6f6;
+    border-bottom: 1px solid #eeeeee;
     margin-bottom: 22px;
 }
 .cat-menu__link {
@@ -5327,6 +5347,35 @@ a.pagination__item:hover, a.pagination__item:focus {
 }
 .single .single__digest {
     margin-bottom: 35px;
+}
+.order-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 15px;
+}
+.order-page__title {
+    margin-bottom: 15px;
+}
+.order-page__social {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.order-page__social .social__link {
+    width: 40px;
+    height: 40px;
+}
+.order-page__text {
+    max-width: 480px;
+    margin: 0 auto 20px;
+}
+.order-page__block {
+    text-align: center;
+}
+.order-page__img {
+    transform: translateX(15px);
 }
 @media (min-width: 576px) {
     .modal-dialog {
@@ -5938,7 +5987,7 @@ a.pagination__item:hover, a.pagination__item:focus {
     }
     .phone-callback__btn {
         display: inline-block;
-        color: #73777c;
+        color: #eeeeee;
         background: transparent;
         font: 300 9px/17px "Geometria", "Arial", sans-serif;
         padding: 0;
@@ -6171,11 +6220,12 @@ a.pagination__item:hover, a.pagination__item:focus {
         bottom: 0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         max-width: 304px;
         width: 100%;
         height: 100%;
+        padding-bottom: 67px;
         margin: 0;
         background-image: linear-gradient(-204deg, #1e2328 0%, #080a0d 100%);
     }
@@ -6198,8 +6248,8 @@ a.pagination__item:hover, a.pagination__item:focus {
     .parameter__item {
         width: auto;
         padding: 0;
-        padding-bottom: 40px;
-        margin-bottom: 38px;
+        padding-bottom: 33px;
+        margin-bottom: 33px;
         border-right: 0;
         border-bottom: 1px solid #2e343b;
     }
