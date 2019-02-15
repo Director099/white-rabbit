@@ -6,6 +6,10 @@
   &--black {
     background: $black;
   }
+
+  @media (min-width: 1200px) and (max-width: 1340px) {
+    padding-left: 80px;
+  }
 }
 
 .section__header {
@@ -37,7 +41,8 @@
   }
 
   @media(min-width: $screen-xl) {
-    @include make-col(7.5);
+    //@include make-col(7.5);
+    flex: 0 0 60%;
     max-width: 730px;
   }
 }
@@ -50,7 +55,8 @@
   }
 
   @media(min-width: $screen-xl) {
-    @include make-col(4.9);
+    //@include make-col(4.9);
+    flex: 0 0 40%;
     max-width: 470px;
   }
 }

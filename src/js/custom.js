@@ -1,8 +1,8 @@
 'use strict';
 
-$('.selectpicker').selectpicker({
-    dropupAuto: false
-});
+// $('.selectpicker').selectpicker({
+//     dropupAuto: false
+// });
 
 $('input[type="range"]').rangeslider({
     polyfill : false,
@@ -194,8 +194,15 @@ $(".service__question").hover(
   }
 )
 
+$(".service__question").on('click', function() {
+  if($(window).width() < 1200) {
+    $(".service__question").fadeOut();
+  }
+})
+
 $(".service__close").on("click", function() {
   $(".service__answer").removeClass("service__answer--active");
+  $(".service__question").fadeIn();
 });
 
 $('input[type=tel]').mask("+7 (000) 000 00 00");

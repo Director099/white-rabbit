@@ -98,6 +98,10 @@
     height: auto;
     min-height: auto;
   }
+
+  @media (min-width: 1200px) and (max-width: 1340px) {
+    padding-left: 80px;
+  }
 }
 
 .fullpage--blog .phone-callback {
