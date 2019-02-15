@@ -146,6 +146,10 @@
     transform: translateY(-50%);
     box-shadow: 0 0px 25px 5px rgba(#000, 0.8%);
   }
+
+  &:hover {
+    color: #a06aad;
+  }
 }
 
 .result .owl-nav {
