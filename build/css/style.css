@@ -3730,15 +3730,11 @@ a.pagination__item:hover, a.pagination__item:focus {
     max-width: 296px;
     max-height: 541px;
     transition: 0.5s;
-    transition-delay: 0.5s;
     z-index: 0;
 }
-.bleach__woman .bleach__woman-img--before {
-    top: inherit;
-    bottom: 115px;
-    left: -67px;
-    max-width: 324px;
-    max-height: 490px;
+.bleach__woman img:first-child {
+    opacity: 1;
+    z-index: 0;
 }
 .bleach__woman-img {
     opacity: 0;
@@ -6142,12 +6138,6 @@ a.pagination__item:hover, a.pagination__item:focus {
         margin: 0 auto;
         max-width: 688px;
         max-height: 1258px;
-    }
-    .bleach__woman .bleach__woman-img--before {
-        bottom: 0;
-        left: 0;
-        max-width: 1372px;
-        max-height: 767px;
     }
     .range {
         left: 62px;
