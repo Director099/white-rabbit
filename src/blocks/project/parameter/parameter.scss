@@ -42,7 +42,7 @@
 
 .parameter__item {
   width: 50%;
-  padding: 6px 17px 5px 19px;
+  padding: 6px 17px 5px 18px;
   border-right: 1px solid #2e343b;
 
   &:first-child {
@@ -79,9 +79,9 @@
   display: block;
   margin-bottom: 0px;
   font-size: 9px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 18px;
-  color: #6a7388;
+  color: #b8bfd1;
 
   @media(min-width: $screen-xl) {
     font-size: 12px;
@@ -94,6 +94,7 @@
   color: $white;
   font-family: $unineue;
   font-size: 20px;
+  font-weight: 300;
 
   &--ru {
     padding-right: 20px;

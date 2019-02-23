@@ -1,10 +1,12 @@
 'use strict';
 
-// $('.selectpicker').selectpicker({
-//     dropupAuto: false
-// });
+if($(window).width() >= 768) {
+  $('.selectpickers').selectpicker({
+      dropupAuto: false
+  });
+}
 
-$('input[type="range"]').rangeslider({
+$('#alt-input').rangeslider({
     polyfill : false,
 
     onSlide: function(position, value) {
@@ -34,8 +36,35 @@ $('input[type="range"]').rangeslider({
           $(".parameter__total").eq(2).text(price);
         }
       });
+
     }
 });
+
+$('#toggle').rangeslider({
+  polyfill : false,
+
+  rangeClass: 'toggle-sliders',
+  disabledClass: 'toggle-sliders--disabled',
+  horizontalClass: 'toggle-sliders--horizontal',
+  verticalClass: 'toggle-sliders--vertical',
+  fillClass: 'toggle-sliders__fill',
+  handleClass: 'toggle-sliders__handle',
+
+  onSlideEnd: function(position, value) {
+
+    if (value === 0) {
+      $(".toggle-sliders").removeClass("toggle-sliders--active");
+      $("#woman-teeth").addClass("fullpage__woman-img--none");
+    } else {
+      $(".toggle-sliders").addClass("toggle-sliders--active");
+      $("#woman-teeth").removeClass("fullpage__woman-img--none");
+    }
+  }
+});
+
+// Переключение в хедере
+
+$(".toggle-sliders__handle").html("<span aria-label=\"Переключатель\"></span>");
 
 
 $(".whitening__desk").on("click", function(e) {
@@ -231,13 +260,7 @@ $(".nav__link").on("click", function() {
   $(".view-tovar__nav").removeClass("view-tovar__nav--active");
 })
 
-// Переключение в хедере
 
-$(".main-block__toggle").on("click", function() {
-  console.log($("[data-woman-teeth]"))
-  $("#woman-teeth").toggleClass("fullpage__woman-img--none");
-  $(".main-block__toggle").toggleClass("main-block__toggle--active");
-})
 
 $('[data-toggle="datepicker"]').mask("00/00/0000");
 

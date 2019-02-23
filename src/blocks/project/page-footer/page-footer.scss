@@ -48,7 +48,7 @@
 .page-footer__logo {
   display: block;
   // max-width: 64px;
-  margin: 0 auto 42px;
+  margin: 0 auto 0px;
   text-align: center;
 
 
@@ -85,5 +85,23 @@
   @media (min-width: $screen-md) {
     justify-content: flex-start;
     max-width: 154px;
+  }
+}
+
+.page-footer__developer {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: #b8bfd1;
+  margin-top: 5px;
+  margin-bottom: 42px;
+  transition: $time;
+
+  &:hover {
+    color: $white;
+  }
+
+  @media (min-width: $screen-lg) {
+    margin-bottom: 0;
   }
 }

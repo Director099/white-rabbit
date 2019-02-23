@@ -27,7 +27,7 @@ $border-radius:               rem(3px) !default;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1.6px;
-    color: #adb3bd;
+    color: #b8bfd1;
     margin-left: 14px;
     margin-bottom: 10px;
     // @include field-name;
@@ -90,6 +90,30 @@ $border-radius:               rem(3px) !default;
   }
 }
 
+.field-text--select {
+  text-transform: none;
+  font-weight: 300;
+  font-size: 12px;
+  border-radius: 10px;
+  background: #3f4959;
+  color: #9aaac7;
+  letter-spacing: normal;
+  padding: 10px 5px 11px 16px;
+  box-shadow: 0 13px 13px rgba(53,85,136,.25);
+  border: 1px solid #3f4959;
+
+  select {
+    background: transparent;
+    color: #9aaac7;
+    border: none;
+    appearance: none;
+  }
+
+  @media (min-width: $screen-md) {
+    padding: 0;
+  }
+}
+
 .field-text__input--phone {
   padding-left: 35px;
   background-image: url("../img/icon/phone-gradient.png");
@@ -110,13 +134,16 @@ $border-radius:               rem(3px) !default;
   text-transform: none;
   font-weight: 300;
   font-size: 12px;
-  border-radius: 10px;
-  background: #3f4959;
+  //border-radius: 10px;
+  //background: #3f4959;
   color: #9aaac7;
   letter-spacing: normal;
   padding: 10px 5px 9.5px 16px;
-  box-shadow: 0 13px 13px rgba(53, 85, 136, 0.25);
-  border: 1px solid #3f4959;
+  //box-shadow: 0 13px 13px rgba(53, 85, 136, 0.25);
+  //border: 1px solid #3f4959;
+
+  //padding: 0;
+  background: transparent;
 }
 
 .selectpicker--dots + .dropdown-toggle {
