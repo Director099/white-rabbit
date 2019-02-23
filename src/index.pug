@@ -11,8 +11,7 @@ block header
           section.main-block__wrap
             h1.main-block__title Косметическое отбеливание зубов в Уфе
             p.main-block__ton от #[span 6] до #[span 20] тонов
-            button.main-block__toggle(type="button", aria-label="Переключение разницы до и после")
-              span(aria-label="Переключатель")
+            input(id="toggle" type="range" min="0" max="1" step="1" value="0" )
             span.main-block__text Посмотри, как изменятся твои зубы после первой процедуры за 15-45 мин
           .main-block__center
             button.btn.btn--main.main-block__btn(data-toggle="modal" data-target="#modal-register") Записаться в студию
@@ -61,7 +60,7 @@ block content
       .container
         section.section__header.section__header--center.stages__header
           p.title-tagline Как происходит отбеливание зубов
-          h2.title Комфортно, безопасно и безболезненно
+          h2.title Комфортно, #[span безопасно] и безболезненно
         .stages__all
           .stages__slider.owl-carousel.owl-theme
             .stages__item(data-hash="1")

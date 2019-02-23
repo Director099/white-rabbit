@@ -60,11 +60,11 @@
 .service__quantity {
   font-size: 14px;
   font-weight: 300;
-  color: #6a7388;
+  color: #b8bfd1;
 }
 
 .service__title {
-  max-width: 200px;
+  max-width: 250px;
   font-size: 30px;
   font-weight: 700;
   color: $white;
@@ -131,7 +131,7 @@
     @include text-gradient(
       linear-gradient(-39deg, #7a818c 0%, #ffffff 100%),
       #ffffff
-    )
+    );
 
     @media (min-width: $screen-md) {
       font-size: 50px;
@@ -275,7 +275,7 @@
   display: block;
   font-size: 10px;
   font-weight: 400;
-  color: #828ba2;
+  color: #b8bfd1;
   margin-bottom: 4px;
 
   &--size {

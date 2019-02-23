@@ -40,12 +40,12 @@
 
   @media(min-width: $screen-xl) {
     display: inline-block;
-    color: #eee;
+    color: #b8bfd1;
     background: transparent;
-    font: 300 9px/17px $geometria;
+    font: 400 14px/17px $geometria;
     padding: 0;
     margin-right: 3px;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     border: none;
     border-bottom: 1px dotted #515558;
   }
