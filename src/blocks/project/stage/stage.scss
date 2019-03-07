@@ -25,7 +25,8 @@
   width: 100%;
 
   @media (min-width: $screen-lg) {
-    max-width: 470px;
+    max-width: 440px;
+    //max-width: 470px; // убрал из за последней фотографии
     padding: 32px 47px 28px;
     flex-shrink: 0;
   }
@@ -112,7 +113,7 @@
 
 .stage__decor--full {
   width: 100%;
-  flex-shrink: 0;
+  //flex-shrink: 0;
 
   img {
     height: 220px;
@@ -127,7 +128,7 @@
     overflow: hidden;
 
     img {
-      height: auto;
+      height: 100%;
     }
   }
 }

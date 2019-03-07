@@ -38,8 +38,8 @@
 
   &::after {
     @include elem();
-    opacity: 1;
-    background: rgba($white, 0.35%);
+    //opacity: 1;
+    background: rgba(black, 0.15%);
     transition: $time;
   }
 
@@ -75,14 +75,14 @@
 
   // background-image: linear-gradient(-39deg, rgba(3, 7, 10, 0.77) 0%, rgba(192, 195, 214, 0.28) 100%);
 
-  &::before {
-    @include elem();
-    width: 101%;
-    z-index: -1;
-    opacity: 0;
-    transition: $time;
-    background-image: linear-gradient(-39deg, rgba(3, 7, 10, 0.77) 0%, rgba(192, 195, 214, 0.28) 100%);
-  }
+  //&::before {
+  //  @include elem();
+  //  width: 101%;
+  //  z-index: -1;
+  //  opacity: 0;
+  //  transition: $time;
+  //  background-image: linear-gradient(-39deg, rgba(3, 7, 10, 0.77) 0%, rgba(192, 195, 214, 0.28) 100%);
+  //}
 
 
 
@@ -95,12 +95,13 @@
 .result__item:hover {
 
   &::after {
-    opacity: 0;
+    //opacity: 0;
+    background: rgba(black, 0.45%);
   }
 
-  .result__insta::before {
-    opacity: 1;
-  }
+  //.result__insta::before {
+  //  opacity: 1;
+  //}
 
   .result__increase {
     opacity: 1;
