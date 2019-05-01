@@ -72,17 +72,57 @@
 }
 
 .whitening__desk {
+  position: relative;
   max-width: 94px;
   width: 100%;
   min-height: 48px;
   margin-left: auto;
   cursor: pointer;
 
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -42px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: -35px;
+    width: 17px;
+    height: 8px;
+    opacity: 0;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: opacity .3s;
+    box-shadow: 1px 2px 0 $black, inset 0 -2px 0 $black;
+    z-index: 1;
+  }
+
   @media(min-width: $screen-xl) {
     max-width: 201px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      display: none;
+    }
   }
 }
 
 .whitening__desk--active .whitening__name {
   font-weight: 700;
+}
+
+.whitening__desk--active::before {
+  opacity: 1;
 }
