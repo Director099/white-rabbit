@@ -37,6 +37,9 @@
     box-shadow: none;
     border-radius: 0;
     margin-bottom: 51px;
+
+    max-width: 146px;
+    width: 100%;
   }
 }
 
@@ -135,5 +138,18 @@
     padding: 23px 30px 20px;
     width: auto;
     max-width: 100%;
+  }
+}
+
+.parameter__title {
+  display: none;
+  @media (min-width: $screen-xl) {
+    display: inline-block;
+    max-width: 146px;
+    width: 100%;
+    margin-bottom: 33px;
+    color: #fff;
+    font-size: 18px;
+    transition: $time;
   }
 }

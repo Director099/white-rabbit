@@ -119,25 +119,26 @@ block content
         .whitening
           ul.whitening__list
             li.whitening__item
-              .whitening__desk(data-number="0", data-shine="0", data-time="0", data-price="0")
+              .whitening__desk(data-number="0", data-shine="0", data-time="0", data-price="0" data-service="До процедур")
                 p.whitening__text До процедур
             li.whitening__item
               p.whitening__number 01 /
-              .whitening__desk.whitening__desk--active(data-number="1", data-shine="32", data-time="15", data-price="1500")
+              .whitening__desk.whitening__desk--active(data-number="1", data-shine="32", data-time="15", data-price="1500" data-service="LITE")
                 strong.whitening__name LITE отбеливание
                 p.whitening__text от 3 до 6 тонов
             li.whitening__item
               p.whitening__number 02 /
-              .whitening__desk(data-number="2", data-shine="42", data-time="25", data-price="2000")
+              .whitening__desk(data-number="2", data-shine="42", data-time="25", data-price="2000" data-service="MEDIUM")
                 strong.whitening__name MEDIUM отбеливание
                 p.whitening__text от 8 до 12 тонов
             li.whitening__item
               p.whitening__number 03 /
-              .whitening__desk(data-number="3", data-shine="52", data-time="45", data-price="2500")
+              .whitening__desk(data-number="3", data-shine="52", data-time="45", data-price="2500" data-service="ULTRA")
                 strong.whitening__name ULTRA отбеливание
                 p.whitening__text от 14 до 20 тонов
           input(id="alt-input" type="range" min="0" max="3" step="1" value="2" data-orientation="vertical" data-direction="ttb")
         .parameter
+          h3.parameter__title LITE
           ul.parameter__list
             li.parameter__item
               span.parameter__char Зубы стали светлее

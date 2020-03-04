@@ -30,10 +30,12 @@ $('#alt-input').rangeslider({
           var shine = $(this).data("shine");
           var time = $(this).data("time");
           var price = $(this).data("price");
+          var nameService = $(this).data("service");
 
           $(".parameter__total span").eq(0).text(shine + "%");
           $(".parameter__total span").eq(1).text(time);
           $(".parameter__total").eq(2).text(price);
+          $(".parameter__title").text(nameService)
         }
       });
 
