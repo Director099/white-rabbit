@@ -330,3 +330,11 @@ $("[data-fancybox='menu']").fancybox({
     $(".page-header__toggle-btn").removeClass("page-header__toggle-btn--active");
   }
 });
+
+$("form").submit(function(e) {
+  if ($(this).find('.js-field').val().length > 0) {
+    console.log($('.js-field').val().length);
+    e.preventDefault();
+    return false
+  }
+});
