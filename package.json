@@ -40,7 +40,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.2.5",
     "bootstrap": "^4.0.0-beta.3",
-    "bootstrap-select": "^1.13.5",
+    "bootstrap-select": "^1.13.6",
     "jquery": "^3.2.1",
     "jquery-mask-plugin": "^1.14.13",
     "jquery-migrate": "^3.0.1",
