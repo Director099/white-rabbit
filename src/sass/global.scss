@@ -7,6 +7,10 @@ html {
   box-sizing: border-box;
 }
 
+:focus {
+  outline: none !important;
+}
+
 body {
   background: #fafafa;
   font: 400 16px $geometria;

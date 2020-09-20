@@ -194,7 +194,7 @@ stageSlider.on('changed.owl.carousel', function(evt) {
 })
 
 $('.catalog__slider').owlCarousel({
-  loop: true,
+  // loop: true,
   margin: 30,
   nav: true,
   dots: true,

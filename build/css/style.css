@@ -2606,6 +2606,9 @@ html {
 * {
     box-sizing: border-box;
 }
+:focus {
+    outline: none !important;
+}
 body {
     background: #fafafa;
     font: 400 16px "Geometria", "Arial", sans-serif;
@@ -4097,6 +4100,9 @@ a.pagination__item:hover, a.pagination__item:focus {
 .parameter__btn:hover {
     box-shadow: 0 4px 0 #8f287e, 0 9px 13px rgba(150, 43, 122, 0.35), 0 0px 62px #6c3a79, 0 0 79px rgba(195, 63, 139, 0.29);
 }
+.parameter__title {
+    display: none;
+}
 .catalog {
     padding-top: 58px;
     padding-bottom: 70px;
@@ -4146,6 +4152,9 @@ a.pagination__item:hover, a.pagination__item:focus {
 }
 .catalog__slider .owl-nav.disabled + .owl-dots {
     margin-top: 48px;
+}
+.catalog__slider .owl-nav .disabled {
+    opacity: 0;
 }
 .catalog__slider .owl-dots .owl-dot span {
     width: 13px;
@@ -6296,6 +6305,8 @@ a.pagination__item:hover, a.pagination__item:focus {
         box-shadow: none;
         border-radius: 0;
         margin-bottom: 51px;
+        max-width: 146px;
+        width: 100%;
     }
     .parameter__item:first-child {
         display: block;
@@ -6333,6 +6344,15 @@ a.pagination__item:hover, a.pagination__item:focus {
         padding: 23px 30px 20px;
         width: auto;
         max-width: 100%;
+    }
+    .parameter__title {
+        display: inline-block;
+        max-width: 146px;
+        width: 100%;
+        margin-bottom: 33px;
+        color: #ffffff;
+        font-size: 18px;
+        transition: 0.3s;
     }
     .service--min {
         min-height: 380px;
