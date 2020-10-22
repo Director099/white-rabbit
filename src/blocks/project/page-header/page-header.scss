@@ -11,6 +11,20 @@
   }
 }
 
+.page-header__right,
+.page-header__left {
+  display: flex;
+  align-items: center;
+}
+
+.page-header__social {
+  margin-right: 70px;
+}
+
+.page-header__location {
+
+}
+
 .page-header__toggle {
   width: 15px;
 
@@ -100,11 +114,8 @@
   }
 }
 
-// .page-header__logo {
-//   position: relative;
-//   z-index: 9;
-
-//   @media (min-width: $screen-xl) {
-//     z-index: 1;
-//   }
-// }
+ .page-header__logo {
+   @media (min-width: $screen-xl) {
+     margin-right: 135px;
+   }
+ }

@@ -15,6 +15,16 @@
   width: 20px;
   height: 20px;
   text-shadow: 1px 1px 1px $black;
+
+  &--circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+    border: 1px solid rgba(184, 191, 209, 0.2);
+  }
 }
 
 .social__icon {

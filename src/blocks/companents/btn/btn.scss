@@ -65,10 +65,34 @@ $border-radius:               rem(3px) !default;
     }
   }
 
-  // &__icon {
-  //   display: inline-block;
-  //   vertical-align: middle;
-  // }
+   &__icon {
+     display: inline-block;
+     vertical-align: middle;
+     margin-right: 10px;
+   }
+
+  &--transparent {
+    background-color: transparent;
+  }
+
+  &--location {
+    display: flex;
+    align-items: center;
+    text-transform: inherit;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 25px 7px 10px;
+    font-weight: 400;
+  }
+
+  &--b-white {
+    border: 1px solid rgba(184, 191, 209, 0.2);
+    color: #B8BFD1;
+
+    &:hover {
+      color: #B8BFD1;
+    }
+  }
 
   &--dott {
     background: transparent;

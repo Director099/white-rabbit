@@ -24,10 +24,17 @@
 
 .navigation__list {
   @include ul-none();
-  margin-bottom: 50px;
+  margin-bottom: 18px;
 
-  @media (min-width: $screen-md) {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid rgba(184, 191, 209, 0.2);
+  border-bottom: 1px solid rgba(184, 191, 209, 0.2);
+
+  @media (min-width: $screen-xl) {
     margin-bottom: 0;
+    padding: 0;
+    border: 0;
   }
 }
 

@@ -323,6 +323,11 @@ $(".page-header__toggle-btn").on("click", function() {
   $(".page-header__toggle-btn").toggleClass("page-header__toggle-btn--active");
 })
 
+$("[data-fancybox]").fancybox({
+  touch: false,
+  baseClass: "",
+});
+
 $("[data-fancybox='menu']").fancybox({
   touch: false,
   beforeClose : function( instance, slide ) {
